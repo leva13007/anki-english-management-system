@@ -1,0 +1,6 @@
+# Anki export artifacts
+*.apkg
+*.colpkg
+
+# OS
+.DS_Store
