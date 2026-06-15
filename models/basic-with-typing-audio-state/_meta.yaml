@@ -1,0 +1,8 @@
+noteType: Basic (with typing)+audio+state
+fields:
+- Front
+- Back
+- Audio
+- State
+templates:
+- Card 1

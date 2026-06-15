@@ -1,0 +1,7 @@
+noteType: Basic (type in the answer) + audio
+fields:
+- Front
+- Back
+- Audio
+templates:
+- Card 1

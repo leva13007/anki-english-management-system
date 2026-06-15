@@ -1,0 +1,7 @@
+noteType: Video (type in the answer)
+fields:
+- Front
+- Back
+- VideoFilename
+templates:
+- Card 1
