@@ -1,8 +1,9 @@
 noteType: Video (type in the answer)
 fields:
+- VideoFilename
 - Front
 - Back
-- VideoFilename
 templates:
 - Card 1
+sortField: VideoFilename
 mediaFields: [VideoFilename]

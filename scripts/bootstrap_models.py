@@ -109,13 +109,29 @@ def main():
         styling = anki("modelStyling", modelName=model_name)
         css = styling["css"]
 
-        # _meta.yaml
-        meta = {
+        # _meta.yaml — merge з існуючим, щоб не загубити користувацькі поля
+        # (mediaFields, sortField додаються вручну і не мають перезаписуватись)
+        AUTO_FIELDS = {"noteType", "fields", "templates"}
+        meta_path = model_dir / "_meta.yaml"
+
+        # Авто-частина — те, що завжди береться з Anki
+        auto_meta = {
             "noteType": model_name,
             "fields": fields,
             "templates": list(templates.keys()),
         }
-        yaml_dump(meta, model_dir / "_meta.yaml")
+
+        # Якщо файл уже є — підтягуємо все, чого нема в AUTO_FIELDS
+        if meta_path.exists():
+            with open(meta_path, encoding="utf-8") as f:
+                existing = yaml.safe_load(f) or {}
+            user_meta = {k: v for k, v in existing.items() if k not in AUTO_FIELDS}
+        else:
+            user_meta = {}
+
+        # Збираємо у фінальному порядку: спочатку авто, потім користувацьке
+        meta = {**auto_meta, **user_meta}
+        yaml_dump(meta, meta_path)
 
         # style.css
         write_text(model_dir / "style.css", css)

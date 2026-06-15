@@ -5,4 +5,5 @@ fields:
 - Audio
 templates:
 - Card 1
+sortField: Front
 mediaFields: [Audio]

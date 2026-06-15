@@ -6,4 +6,5 @@ fields:
 - State
 templates:
 - Card 1
+sortField: Front
 mediaFields: [Audio]

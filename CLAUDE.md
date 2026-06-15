@@ -1,56 +1,94 @@
 # CLAUDE.md — anki-english
 
-Version-controlled source of truth for Anki flashcard decks. Cards live as CSV in git; AnkiConnect syncs them into Anki via HTTP API.
-
----
-
-## Status
-
-AnkiConnect is **not yet installed**. Current `decks/` directories are placeholder mocks — structure is defined but cards are empty. Real work starts after AnkiConnect is set up.
+Version-controlled source of truth for Anki flashcard decks. Cards, note types, and media are pulled from Anki via AnkiConnect and stored as YAML/HTML/CSS in git.
 
 ---
 
 ## AnkiConnect
 
-Plugin code: `2055492159`  
-Install: Tools → Add-ons → Get Add-ons → enter code → restart Anki.  
-Runs locally on `http://localhost:8765` (HTTP API, no auth).
-
-Key actions used in this project:
-- `addNote` / `updateNoteFields` — create or update a card
-- `addNotes` (bulk) — sync a full CSV batch
-- `storeMediaFile` — upload audio/image to `collection.media/`
-- `findNotes` / `notesInfo` — check what's already in Anki
+Plugin code: `2055492159`. Runs at `http://localhost:8765`.  
+Anki must be open for any script to work.
 
 ---
 
-## Deck structure
+## Scripts
 
-```
-decks/<deck-name>/
-  _meta.yaml   — noteType, deck name, fields, tags
-  cards.csv    — one row per card, header matches fields
-```
+All scripts live in `scripts/`, require `.venv` activated, use `requests` + `yaml`.
 
-`_meta.yaml` is the authoritative schema for a deck. `cards.csv` column order must match `fields` in `_meta.yaml`.
+| script | what it does |
+|--------|--------------|
+| `bootstrap_models.py` | pulls note types → `models/` (fields, templates, CSS) |
+| `bootstrap_decks.py` | pulls card data → `decks/` (_meta.yaml + cards.yaml) |
+| `bootstrap_media.py` | pulls media files → `media/` (interactive, confirms before downloading) |
+
+Bootstrap scripts are **idempotent** — safe to re-run.  
+`bootstrap_media.py` reads `mediaFields` from `models/*/_meta.yaml` to know which fields contain filenames.
 
 ---
 
-## Note types and fields
+## Note types (models)
 
-**Not yet defined.** Note types and their fields will be confirmed after connecting to Anki via AnkiConnect (`modelNames` / `modelFieldNames` actions). Document them in `docs/note-types.md` once known.
+Stored in `models/<safe-name>/`. `safe-name` is the Anki name lowercased, non-alphanum replaced with `-`.
+
+| Anki name | dir | fields | media field |
+|-----------|-----|--------|-------------|
+| Basic (type in the answer) + audio | `basic-type-in-the-answer-audio` | Front, Back, Audio | Audio |
+| Basic (with typing)+audio+state | `basic-with-typing-audio-state` | Front, Back, Audio, State | Audio |
+| Video (type in the answer) | `video-type-in-the-answer` | Front, Back, VideoFilename | VideoFilename |
+
+`_meta.yaml` in each model dir is the authoritative schema. `mediaFields` key tells `bootstrap_media.py` which fields hold filenames.
+
+---
+
+## Decks
+
+Stored in `decks/<safe-name>/`. Each deck has `_meta.yaml` (deckName + noteType) and `cards.yaml`.
+
+| dir | Anki deck name | note type |
+|-----|----------------|-----------|
+| `book` | Book | Basic (type in the answer) + audio |
+| `interview` | Interview | Basic (with typing)+audio+state |
+| `it-deck` | IT_deck | Basic (type in the answer) + audio |
+| `l2-vocab` | L2_vocab | Basic (type in the answer) + audio |
+| `medicine` | Medicine | Basic (type in the answer) + audio |
+| `video-by-movies` | Video_by_movies | Video (type in the answer) |
+
+`cards.yaml` format:
+```yaml
+- id: 1756166410321       # Anki noteId (integer)
+  fields:
+    Front: English sentence
+    Back: Ukrainian translation
+    Audio: "[sound:filename.mp3]"   # or VideoFilename: 00001.webm
+  tags: []
+```
+
+If a deck has multiple note types, bootstrap creates `cards.<safe-type>.yaml` files instead of a single `cards.yaml`.
 
 ---
 
 ## Media
 
-Files in `media/audio/` and `media/images/` must be uploaded to Anki's `collection.media/` before cards referencing them are imported. Use AnkiConnect `storeMediaFile` action.
+All files are flat in `media/`. Video cards use `.webm`, audio cards use `.mp3`.  
+Filenames in cards reference media directly (e.g. `00001.webm`, not a full path).  
+`media/` is committed to git (files are checked in).
 
 ---
 
-## Conventions
+## Python environment
 
-- One `cards.csv` per deck — no splitting.
-- Tags come from `_meta.yaml` (deck-level) and can be added per-card in the Tags column.
-- Never commit `.apkg` or `.colpkg` files — they are in `.gitignore`.
-- `docs/word-lists.md` is a staging area for vocabulary not yet turned into cards.
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install requests pyyaml
+```
+
+`.venv/` is gitignored.
+
+---
+
+## Gitignore
+
+- `.venv/` — Python venv
+- `__pycache__/` — bytecode
+- `backups/` — `.colpkg` snapshots (kept locally, not in git)
