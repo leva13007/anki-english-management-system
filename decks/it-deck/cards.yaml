@@ -102,13 +102,13 @@
   tags: []
 - id: 1765809130270
   fields:
-    Front: Нам (потребується ~логічна необхідність~)&nbsp;уточнити таймзону для цього сервісу
+    Front: Нам (потребується ~логічна необхідність~) уточнити таймзону для цього сервісу
     Back: We need to specify the timezone for this service
     Audio: IT_0019-We_need.mp3
   tags: []
 - id: 1765809130271
   fields:
-    Front: Вимоги чітко уточнюють безпекові обмеження&nbsp;
+    Front: Вимоги чітко уточнюють безпекові обмеження 
     Back: The requirements clearly specify the security constraints
     Audio: IT_0020-The_requirements.mp3
   tags: []
@@ -186,7 +186,7 @@
   tags: []
 - id: 1765809130284
   fields:
-    Front: Ми окреслили основні міграційні&nbsp;кроки
+    Front: Ми окреслили основні міграційні кроки
     Back: We outlined the main migration steps
     Audio: IT_0033-We_outlined.mp3
   tags: []
@@ -204,7 +204,7 @@
   tags: []
 - id: 1765809130287
   fields:
-    Front: Давай (намітимо в загальних рисах)&nbsp;вирішення&nbsp;спершу, а потім підемо в деталі
+    Front: Давай (намітимо в загальних рисах) вирішення спершу, а потім підемо в деталі
     Back: Let's outline the solution first and then go into details
     Audio: IT_0036-Let_s_outline.mp3
   tags: []
@@ -558,7 +558,7 @@
   tags: []
 - id: 1766234619420
   fields:
-    Front: Якщо баг є класифікованим&nbsp;неправильно, пріоритет може бути хибним
+    Front: Якщо баг є класифікованим неправильно, пріоритет може бути хибним
     Back: If a bug is classified incorrectly, the priority may be wrong
     Audio: IT_0095-If_a.mp3
   tags: []
@@ -648,7 +648,7 @@
   tags: []
 - id: 1766234619435
   fields:
-    Front: Узгоджувати&nbsp;означає привести речі в правильне положення або узгодженість, щоб вони відповідали
+    Front: Узгоджувати означає привести речі в правильне положення або узгодженість, щоб вони відповідали
       одна одній або правильно працювали разом
     Back: <div>To align means to bring things into the correct position, or agreement so they match or
       work properly together.</div>
@@ -752,7 +752,7 @@
   tags: []
 - id: 1766843318078
   fields:
-    Front: Ці витрати є важким до&nbsp;виправдання
+    Front: Ці витрати є важким до виправдання
     Back: These costs are hard to justify
     Audio: IT_0127-These_costs.mp3
   tags: []
@@ -830,7 +830,7 @@
   tags: []
 - id: 1766843318091
   fields:
-    Front: Як часто дані&nbsp; є синхронізованими?
+    Front: Як часто дані  є синхронізованими?
     Back: How often is the data synchronized?
     Audio: IT_0140-How_often.mp3
   tags: []
@@ -867,7 +867,7 @@
   tags: []
 - id: 1766843318097
   fields:
-    Front: Ми можемо (зробити <u><b>цей</b></u>&nbsp;висновок|вивести <b><u>це</u></b> з непрямих ознак)&nbsp;
+    Front: Ми можемо (зробити <u><b>цей</b></u> висновок|вивести <b><u>це</u></b> з непрямих ознак) 
       з логів
     Back: We can infer this from the logs
     Audio: IT_0146-We_can.mp3
@@ -898,7 +898,7 @@
   tags: []
 - id: 1766843318103
   fields:
-    Front: (відбуватися|Виникати)<b>&nbsp;</b>означає траплятися або виникати. Використовується для формальних,
+    Front: (відбуватися|Виникати)<b> </b>означає траплятися або виникати. Використовується для формальних,
       наукових або запланованих подій.
     Back: To occur means to happen or to come into existence. It is used for formal, scientific, or scheduled
       events.
@@ -1155,7 +1155,7 @@
   tags: []
 - id: 1767477089906
   fields:
-    Front: (Тривати|зберігатись всупереч)&nbsp;означає продовжувати існувати, незважаючи на зусилля це
+    Front: (Тривати|зберігатись всупереч) означає продовжувати існувати, незважаючи на зусилля це
       змінити
     Back: To persist means to continue to exist despite efforts to change it
     Audio: IT_0197-To_persist.mp3
@@ -1204,7 +1204,7 @@
   tags: []
 - id: 1767477089914
   fields:
-    Front: Ця поведінка (зберігатись всупереч|тривала) (між|для кожної)&nbsp;всіма середовищами
+    Front: Ця поведінка (зберігатись всупереч|тривала) (між|для кожної) всіма середовищами
     Back: This behaviour persisted across all environments
     Audio: IT_0205-This_behaviour.mp3
   tags: []
@@ -1318,7 +1318,7 @@
   tags: []
 - id: 1767477089934
   fields:
-    Front: Він запропонував інʼєктування&nbsp;логера замість імпорту його&nbsp;безпосередньо.
+    Front: Він запропонував інʼєктування логера замість імпорту його безпосередньо.
     Back: He suggested injecting the logger instead of importing it directly
     Audio: IT_0225-He_suggested.mp3
   tags: []
@@ -1451,7 +1451,7 @@
   tags: []
 - id: 1768180081377
   fields:
-    Front: Він відреагував швидко&nbsp;на код-ревʼю зауваження
+    Front: Він відреагував швидко на код-ревʼю зауваження
     Back: He responded quickly to the code review comments
     Audio: IT_0249-He_responded.mp3
   tags: []
@@ -1493,7 +1493,7 @@
   tags: []
 - id: 1768180081385
   fields:
-    Front: Ти&nbsp;маєш намір підтримувати цей код (надалі)|(в майбутньому)?
+    Front: Ти маєш намір підтримувати цей код (надалі)|(в майбутньому)?
     Back: Do you intend to maintain this code in the future?
     Audio: IT_0257-Do_you.mp3
   tags: []
@@ -1536,7 +1536,7 @@
 - id: 1768180081392
   fields:
     Front: Якщо ми маємо намір масштабувати систему, архітектура (має ~зовнішні обставини змушують~) бути
-      переглянутою&nbsp;
+      переглянутою 
     Back: If we intend to scale the system, the architecture will have to be revised
     Audio: IT_0264-If_we.mp3
   tags: []
@@ -1671,7 +1671,7 @@
 - id: 1768180081415
   fields:
     Front: (~безпосередньо~ Призводити) означає (безпосередньо викликати|спричиняти) рух або (поступово
-      приводить)&nbsp;до певного стану
+      приводить) до певного стану
     Back: To bring means to cause movement or lead to a certain state
     Audio: IT_0287-To_bring.mp3
   tags: []
@@ -2071,7 +2071,7 @@
   tags: []
 - id: 1769256692427
   fields:
-    Front: (Спричиняти&nbsp;~напряму~)&nbsp;означає бути (прямою)|(безпосередньою) причиною для події
+    Front: (Спричиняти ~напряму~) означає бути (прямою)|(безпосередньою) причиною для події
       або проблеми
     Back: To cause means to be the direct reason for an event or issue
     Audio: IT_0353-To_cause.mp3
@@ -2201,7 +2201,7 @@
   tags: []
 - id: 1769256692448
   fields:
-    Front: Якщо все буде (організовано|заплановано) (належним чином|правильно),&nbsp;жодних проблем не
+    Front: Якщо все буде (організовано|заплановано) (належним чином|правильно), жодних проблем не
       виникне(фокус на <i>процесі виникнення</i>)
     Back: If everything is arranged properly, no issues will arise
     Audio: IT_0374-If_everything.mp3
@@ -2365,7 +2365,7 @@
   tags: []
 - id: 1770760671088
   fields:
-    Front: Цей сервіс є встановленим&nbsp;один чи кілька разів?
+    Front: Цей сервіс є встановленим один чи кілька разів?
     Back: <div>Is this service instantiated once or multiple times?</div>
     Audio: IT_0402-How_many1.mp3
   tags: []
@@ -2408,7 +2408,7 @@
   tags: []
 - id: 1770760671095
   fields:
-    Front: Відповідне (вирішення ~яке вирішує проблему~) було обрано&nbsp;
+    Front: Відповідне (вирішення ~яке вирішує проблему~) було обрано 
     Back: An appropriate solution was chosen
     Audio: IT_0409-An_appropriate.mp3
   tags: []
@@ -2494,9 +2494,9 @@
   tags: []
 - id: 1770760671109
   fields:
-    Front: Ain't — це дуже неформальне скорочення, яке використовується замість am not,&nbsp;is not, are
+    Front: Ain't — це дуже неформальне скорочення, яке використовується замість am not, is not, are
       not, or have not.
-    Back: Ain't is a very informal contraction which is used instead of&nbsp;am not,&nbsp;is not, are
+    Back: Ain't is a very informal contraction which is used instead of am not, is not, are
       not, or have not.
     Audio: IT_0423-Ain_t_is2.mp3
   tags: []
@@ -2520,7 +2520,7 @@
   tags: []
 - id: 1770760671113
   fields:
-    Front: Це (не ~very informal~)&nbsp;працює так, як очікувалося
+    Front: Це (не ~very informal~) працює так, як очікувалося
     Back: It ain't working as expected
     Audio: IT_0427-It_ain_t.mp3
   tags: []
@@ -2533,7 +2533,7 @@
 - id: 1773081427839
   fields:
     Front: Я зараз на роботі, але я буду доступний для дзвінка через 13 хвилин
-    Back: I am at work right now, but I will be available for a call in&nbsp;thirteen minutes
+    Back: I am at work right now, but I will be available for a call in thirteen minutes
     Audio: IT_0429-I_am1.mp3
   tags: []
 - id: 1773081427843
@@ -2551,7 +2551,7 @@
 - id: 1773081427845
   fields:
     Front: Я був на дзвінку з інфраструктурною командою о 8:30
-    Back: I was on a call with the infrastructure team&nbsp;at half past eight
+    Back: I was on a call with the infrastructure team at half past eight
     Audio: IT_0432-I_was1.mp3
   tags: []
 - id: 1773081427846
@@ -2635,7 +2635,7 @@
 - id: 1773081427859
   fields:
     Front: Трафік на платформі зріс на 30% після релізу
-    Back: Traffic on the platform increased by&nbsp;thirty percent after the release.
+    Back: Traffic on the platform increased by thirty percent after the release.
     Audio: IT_0446-Traffic_on.mp3
   tags: []
 - id: 1773081427860
@@ -2724,13 +2724,13 @@
   tags: []
 - id: 1773081427875
   fields:
-    Front: Що сталося у вівторок&nbsp;(під час ~події~)&nbsp;тестування?
+    Front: Що сталося у вівторок (під час ~події~) тестування?
     Back: What happened on Tuesday during testing?
     Audio: IT_0462-What_happened.mp3
   tags: []
 - id: 1773081427876
   fields:
-    Front: Демо (відбудеться| буде мати місце) в&nbsp;середу наступнього тижня
+    Front: Демо (відбудеться| буде мати місце) в середу наступнього тижня
     Back: The demo will take place on Wednesday next week
     Audio: IT_0463-The_demo.mp3
   tags: []
@@ -2790,7 +2790,7 @@
   tags: []
 - id: 1773081427886
   fields:
-    Front: Ми працювали над цією проблемою&nbsp;(протягом ~число + одиниця часу~)&nbsp;(кілька ~помітно~)
+    Front: Ми працювали над цією проблемою (протягом ~число + одиниця часу~) (кілька ~помітно~)
       днів (fact)
     Back: We worked on this issue for several days
     Audio: IT_0473-We_worked.mp3
@@ -2845,7 +2845,7 @@
   tags: []
 - id: 1773081427895
   fields:
-    Front: Ми працюємо над цим питанням з початку спринту&nbsp;<b>&nbsp;(і досі працюємо).</b>
+    Front: Ми працюємо над цим питанням з початку спринту <b> (і досі працюємо).</b>
     Back: We have been working on this issue since the beginning of the sprint
     Audio: IT_0482-We_have.mp3
   tags: []
@@ -2857,13 +2857,13 @@
   tags: []
 - id: 1773081427897
   fields:
-    Front: (Кілька ~помітно більше~) критичних багів було знайдено під час тестування&nbsp;
+    Front: (Кілька ~помітно більше~) критичних багів було знайдено під час тестування 
     Back: Several critical bugs were found during testing
     Audio: IT_0484-Several_critical.mp3
   tags: []
 - id: 1773081427898
   fields:
-    Front: База даних була тимчасово недоступною під час міграції&nbsp;
+    Front: База даних була тимчасово недоступною під час міграції 
     Back: The database was temporarily unavailable during the migration
     Audio: IT_0485-The_database.mp3
   tags: []
@@ -2875,7 +2875,7 @@
   tags: []
 - id: 1773081427900
   fields:
-    Front: Ми (мусимо ~сильне правило, без варіантів~)&nbsp;відповісти на запит (протягом|до кінця|у межах
+    Front: Ми (мусимо ~сильне правило, без варіантів~) відповісти на запит (протягом|до кінця|у межах
       ліміту) 24 годин
     Back: We must respond to the request within 24 hours
     Audio: IT_0487-We_must.mp3
@@ -2894,19 +2894,19 @@
   tags: []
 - id: 1773081427903
   fields:
-    Front: Запит буде оброблений (протягом|у межах ліміту)&nbsp;(кількох ~трохи~) секунд
+    Front: Запит буде оброблений (протягом|у межах ліміту) (кількох ~трохи~) секунд
     Back: The request will be processed within a few seconds
     Audio: IT_0490-The_request.mp3
   tags: []
 - id: 1773081427904
   fields:
-    Front: Цей сервіс повинен відповідати (протягом&nbsp;~ліміт~)&nbsp;200 мілісекунд
+    Front: Цей сервіс повинен відповідати (протягом ~ліміт~) 200 мілісекунд
     Back: This service must respond within two hundred milliseconds
     Audio: IT_0491-This_service.mp3
   tags: []
 - id: 1773081427905
   fields:
-    Front: Виправлення (змушений&nbsp;~без варіантів~)&nbsp;бути доставлене (у межах ліміту)&nbsp;тижня
+    Front: Виправлення (змушений ~без варіантів~) бути доставлене (у межах ліміту) тижня
     Back: The fix must be delivered within a week
     Audio: IT_0492-The_fix.mp3
   tags: []
@@ -2930,7 +2930,7 @@
   tags: []
 - id: 1773081427910
   fields:
-    Front: Міграція (проходила у часі|тривала в межах інтервалу)&nbsp;з пʼятниці до суботи
+    Front: Міграція (проходила у часі|тривала в межах інтервалу) з пʼятниці до суботи
     Back: The migration ran from Friday to Saturday
     Audio: IT_0497-The_migration1.mp3
   tags: []
@@ -2948,7 +2948,7 @@
   tags: []
 - id: 1773081427913
   fields:
-    Front: Команда була зайнята (протягом усього періоду)&nbsp;спринту
+    Front: Команда була зайнята (протягом усього періоду) спринту
     Back: The team was busy throughout the sprint
     Audio: IT_0500-The_team.mp3
   tags: []
@@ -2960,19 +2960,19 @@
   tags: []
 - id: 1773081427915
   fields:
-    Front: Сервіс (залишався&nbsp;в тому самому стані)&nbsp;стабільним (протягом усієї) ночі.
+    Front: Сервіс (залишався в тому самому стані) стабільним (протягом усієї) ночі.
     Back: The service remained stable throughout the night
     Audio: IT_0502-The_service.mp3
   tags: []
 - id: 1773081427916
   fields:
-    Front: Користувачі активно використовували систему (протягом ~усього~)&nbsp; дня
+    Front: Користувачі активно використовували систему (протягом ~усього~)  дня
     Back: Users actively used the system throughout the day
     Audio: IT_0503-Users_actively.mp3
   tags: []
 - id: 1773081427917
   fields:
-    Front: Логи були&nbsp;зібрані (протягом усього) експерименту
+    Front: Логи були зібрані (протягом усього) експерименту
     Back: Logs were collected throughout the experiment
     Audio: IT_0504-Logs_were.mp3
   tags: []
@@ -3015,7 +3015,7 @@
   tags: []
 - id: 1774620256948
   fields:
-    Front: Складати&nbsp;означає формувати щось або бути частиною цілого.
+    Front: Складати означає формувати щось або бути частиною цілого.
     Back: To make up means to form something or be part of a whole
     Audio: IT_0511-To_make.mp3
   tags: []
@@ -3051,7 +3051,7 @@
   tags: []
 - id: 1774620256955
   fields:
-    Front: Добровільно означає робіння щось без примусу, неохоче означає&nbsp;без бажання
+    Front: Добровільно означає робіння щось без примусу, неохоче означає без бажання
     Back: Willingly means doing something without force, unwillingly means without desire
     Audio: IT_0517-Willingly_means.mp3
   tags: []
@@ -3153,14 +3153,14 @@
   tags: []
 - id: 1774620256972
   fields:
-    Front: Ми ~вже~ (стикалися|наштовхувалися з) цим&nbsp;<b>раніше</b>, коли сервіс провалювався під
+    Front: Ми ~вже~ (стикалися|наштовхувалися з) цим <b>раніше</b>, коли сервіс провалювався під
       навантаженням
     Back: We have encountered this before when the service failed under load
     Audio: IT_0534-We_have.mp3
   tags: []
 - id: 1774620256973
   fields:
-    Front: (Компенсувати|загладити|надолужити) означає (компенсувати|відшкодовувати)&nbsp;втрату або помилку
+    Front: (Компенсувати|загладити|надолужити) означає (компенсувати|відшкодовувати) втрату або помилку
     Back: To make up for means to compensate for a loss or mistake
     Audio: IT_0535-To_make.mp3
   tags: []
@@ -3196,14 +3196,14 @@
   tags: []
 - id: 1774620256979
   fields:
-    Front: Обговорювати означає&nbsp;обговорювати&nbsp;щось, щоб зрозуміти або (прийняти|зробити) (рішення
+    Front: Обговорювати означає обговорювати щось, щоб зрозуміти або (прийняти|зробити) (рішення
       ~ухвалити певний вибір~)
-    Back: To discuss means to talk about something&nbsp;to understand or make a decision
+    Back: To discuss means to talk about something to understand or make a decision
     Audio: IT_0541-To_discuss1.mp3
   tags: []
 - id: 1774620256980
   fields:
-    Front: Ми обговорюємо це (рішення&nbsp;~яке вирішує проблему~)&nbsp;на мітингу
+    Front: Ми обговорюємо це (рішення ~яке вирішує проблему~) на мітингу
     Back: We are discussing this solution in the meeting
     Audio: IT_0542-We_are.mp3
   tags: []
@@ -3239,7 +3239,7 @@
   tags: []
 - id: 1774620256986
   fields:
-    Front: Ми зупинилися на цьому (рішенні&nbsp;~яке вирішує проблему~) після (кількох ~помітно більше~)
+    Front: Ми зупинилися на цьому (рішенні ~яке вирішує проблему~) після (кількох ~помітно більше~)
       обговорень
     Back: We settled on this solution after several discussions
     Audio: IT_0548-We_settled.mp3
@@ -3278,19 +3278,19 @@
   tags: []
 - id: 1774620256992
   fields:
-    Front: Команда (прийняла&nbsp;~і застосовувати~)&nbsp;новий тестувальний підхід
+    Front: Команда (прийняла ~і застосовувати~) новий тестувальний підхід
     Back: The team adopted a new testing approach
     Audio: IT_0554-The_team.mp3
   tags: []
 - id: 1774620256993
   fields:
-    Front: Чому ми вирішили (прийняти ~і застосовувати~)&nbsp;цю технологію?
+    Front: Чому ми вирішили (прийняти ~і застосовувати~) цю технологію?
     Back: Why did we decide to adopt this technology?
     Audio: IT_0555-Why_did.mp3
   tags: []
 - id: 1774620256994
   fields:
-    Front: Цей стандарт був (прийнятий|впроваджений&nbsp;~і застосовувати~) (по|у всій)&nbsp;компанією
+    Front: Цей стандарт був (прийнятий|впроваджений ~і застосовувати~) (по|у всій) компанією
       <b>(PrPerfPas)</b>
     Back: This standard has been adopted across the company
     Audio: IT_0556-This_standard.mp3
@@ -3303,7 +3303,7 @@
   tags: []
 - id: 1774620256996
   fields:
-    Front: Було складно (прийняти&nbsp;~і застосовувати~)&nbsp;цей підхід через legacy код
+    Front: Було складно (прийняти ~і застосовувати~) цей підхід через legacy код
     Back: It was difficult to adopt this approach due to legacy code
     Audio: IT_0558-It_was.mp3
   tags: []
@@ -3345,7 +3345,7 @@
   tags: []
 - id: 1774620257003
   fields:
-    Front: Розглядати означає думати про варіант перед прийняттям (рішення&nbsp;~best alternative~)
+    Front: Розглядати означає думати про варіант перед прийняттям (рішення ~best alternative~)
     Back: To consider means to think about an option before making a decision
     Audio: IT_0565-To_consider.mp3
   tags: []
@@ -3369,7 +3369,7 @@
   tags: []
 - id: 1774620257007
   fields:
-    Front: Це (слід|варто&nbsp;~порада~) (розглянути|врахувати) перед рефакторингом [Modal Passive]
+    Front: Це (слід|варто ~порада~) (розглянути|врахувати) перед рефакторингом [Modal Passive]
     Back: This should be considered before refactoring
     Audio: IT_0569-This_should.mp3
   tags: []
@@ -3388,13 +3388,13 @@
   tags: []
 - id: 1774620257010
   fields:
-    Front: Чи можеш ти (переглянути|перерозглянути)&nbsp;цей підхід?
+    Front: Чи можеш ти (переглянути|перерозглянути) цей підхід?
     Back: Can you reconsider this approach?
     Audio: IT_0572-Can_you.mp3
   tags: []
 - id: 1774620257011
   fields:
-    Front: Він (переглянув|перерозглянути)&nbsp;своє (рішення ~акт вибору~) після фідбеку
+    Front: Він (переглянув|перерозглянути) своє (рішення ~акт вибору~) після фідбеку
     Back: He reconsidered his decision after feedback
     Audio: IT_0573-He_reconsidered.mp3
   tags: []
@@ -3436,7 +3436,7 @@
   tags: []
 - id: 1774620257018
   fields:
-    Front: Amount of&nbsp;<strong>використовується</strong> <em>(пас.)&nbsp;</em>з незлічуваними іменниками
+    Front: Amount of <strong>використовується</strong> <em>(пас.) </em>з незлічуваними іменниками
       і вимагає дієслово в однині
     Back: Amount of is used with uncountable nouns and requires a singular verb
     Audio: IT_0580-Amount_of.mp3
@@ -3467,7 +3467,7 @@
   tags: []
 - id: 1774620257023
   fields:
-    Front: Якщо кількість логів зросте, система (може&nbsp;~50% ймовірність)&nbsp;сповільнитись
+    Front: Якщо кількість логів зросте, система (може ~50% ймовірність) сповільнитись
     Back: If the amount of logs increases, the system may slow down.
     Audio: IT_0585-If_the.mp3
   tags: []
@@ -3551,7 +3551,7 @@
   tags: []
 - id: 1774620257037
   fields:
-    Front: Ця проблема є, ймовірно, пов'язаною з кешуванням&nbsp;
+    Front: Ця проблема є, ймовірно, пов'язаною з кешуванням 
     Back: This issue is likely related to caching
     Audio: IT_0599-This_issue.mp3
   tags: []
@@ -3576,8 +3576,8 @@
   tags: []
 - id: 1774620257041
   fields:
-    Front: Якщо навантаження (зросте|збільшиться ~нейтрально~), (збій|відмова) є ймовірним <b>[First Conditional&nbsp;</b>реальна
-      можливість&nbsp;~70% але не гарантовано<b>]</b>
+    Front: Якщо навантаження (зросте|збільшиться ~нейтрально~), (збій|відмова) є ймовірним <b>[First Conditional </b>реальна
+      можливість ~70% але не гарантовано<b>]</b>
     Back: If the load increases, a failure is likely
     Audio: IT_0603-If_the.mp3
   tags: []
@@ -3602,7 +3602,7 @@
   tags: []
 - id: 1774620257045
   fields:
-    Front: Ця вразливість (могла ~можливість що <strong>не реалізувалася</strong>~) бути використана (атакуючими|зловмисниками)&nbsp;<b>(Modal
+    Front: Ця вразливість (могла ~можливість що <strong>не реалізувалася</strong>~) бути використана (атакуючими|зловмисниками) <b>(Modal
       Perfect Passive)</b>
     Back: This vulnerability could have been exploited by attackers
     Audio: IT_0607-This_vulnerability.mp3
@@ -3681,7 +3681,7 @@
   tags: []
 - id: 1774620257058
   fields:
-    Front: Це&nbsp;<b>вирішення</b>&nbsp;було відхилене через недостатні дані
+    Front: Це <b>вирішення</b> було відхилене через недостатні дані
     Back: This solution was rejected due to insufficient data
     Audio: IT_0620-This_solution.mp3
   tags: []
@@ -3735,7 +3735,7 @@
   tags: []
 - id: 1774620257067
   fields:
-    Front: Це (може&nbsp;~50% ймовірність)&nbsp;мати серйозні наслідки
+    Front: Це (може ~50% ймовірність) мати серйозні наслідки
     Back: This may have serious consequences
     Audio: IT_0629-This_may.mp3
   tags: []
@@ -3759,7 +3759,7 @@
   tags: []
 - id: 1774620257071
   fields:
-    Front: Якщо ми це проігноруємо, наслідки (можуть&nbsp;~50% ймовірність)&nbsp;бути критичними
+    Front: Якщо ми це проігноруємо, наслідки (можуть ~50% ймовірність) бути критичними
     Back: If we ignore this, the consequences may be critical
     Audio: IT_0633-If_we.mp3
   tags: []
@@ -4021,7 +4021,7 @@
   tags: []
 - id: 1774620257114
   fields:
-    Front: Would(як спогад|історія про дії) використовується для опису дій, які відбувалися регулярно&nbsp;в
+    Front: Would(як спогад|історія про дії) використовується для опису дій, які відбувалися регулярно в
       минулому
     Back: Would is used to describe actions that happened regularly in the past
     Audio: IT_0676-Would_is.mp3
@@ -4041,7 +4041,7 @@
   tags: []
 - id: 1774620257117
   fields:
-    Front: Ми перевіряли це вручну для кожного релізу&nbsp;<b>&nbsp;[історія з минулого]</b>
+    Front: Ми перевіряли це вручну для кожного релізу <b> [історія з минулого]</b>
     Back: We would check this manually for every release
     Audio: IT_0679-We_would.mp3
   tags: []
@@ -4053,7 +4053,7 @@
   tags: []
 - id: 1774620257119
   fields:
-    Front: Чи команда використовувала (інший ~<em>відмінний від теперішнього~)</em>&nbsp;підхід раніше?<b>
+    Front: Чи команда використовувала (інший ~<em>відмінний від теперішнього~)</em> підхід раніше?<b>
       [минула звичка]</b>
     Back: Would the team use a different approach before?
     Audio: IT_0681-Would_the.mp3
@@ -4673,7 +4673,7 @@
   tags: []
 - id: 1777250394554
   fields:
-    Front: Я відчував, що я&nbsp; був не в курсі ~ситуації~
+    Front: Я відчував, що я  був не в курсі ~ситуації~
     Back: I felt that I was out of the loop
     Audio: IT_0786-I_felt.mp3
   tags: []
