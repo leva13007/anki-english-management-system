@@ -22,6 +22,7 @@ All scripts live in `scripts/`, require `.venv` activated, use `requests` + `yam
 | `bootstrap_media.py` | pulls media files → `media/` (interactive, confirms before downloading) |
 | `validate.py` | lints repo: structure, duplicates, media refs, HTML noise — exit 1 on errors |
 | `sync.py` | pushes YAML → Anki: add/update notes, upload media, write back new ids |
+| `sync_back.py` | pulls changes from Anki back into YAML (reverse sync) |
 
 Bootstrap scripts are **idempotent** — safe to re-run.  
 `bootstrap_media.py` reads `mediaFields` from `models/*/_meta.yaml` to know which fields contain filenames.

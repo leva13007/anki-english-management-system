@@ -42,7 +42,7 @@ is already known, so 100% focus goes to the English itself (comprehensible input
 
 **Time:** ~2 minutes per clip (30 clips/hour)
 
-**Next candidates:** House MD, Suits, The Office (US), Sherlock S2, Silicon Valley S2+
+**Next candidates:** House MD, Suits, The Office (US), Sherlock S2, Silicon Valley S2+, Halt and Catch Fire
 
 ---
 

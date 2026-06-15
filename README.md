@@ -49,6 +49,7 @@ scripts/
   bootstrap_media.py  — pull media files from Anki
   validate.py         — lint repo before committing
   sync.py             — push YAML changes to Anki
+  sync_back.py        — pull changes from Anki back into YAML
 docs/
   note-types.md       — human-readable summary of models
   word-lists.md       — vocabulary roadmap: IT terms, phrases, phrasal verbs not yet in cards
