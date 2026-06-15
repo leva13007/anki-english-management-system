@@ -21,7 +21,11 @@ python scripts/bootstrap_media.py    # media files → media/
 
 **Ongoing:**
 ```
-Edit decks/*/cards.yaml  →  git commit  →  (sync script, TBD)  →  Anki
+Edit decks/*/cards.yaml
+python scripts/validate.py          # lints repo, exit 1 on errors
+python scripts/sync.py --dry-run    # preview changes
+python scripts/sync.py              # apply to Anki (asks confirmation)
+git commit
 ```
 
 ## structure
@@ -43,6 +47,8 @@ scripts/
   bootstrap_decks.py  — pull card data from Anki
   bootstrap_models.py — pull note types (fields, templates, CSS) from Anki
   bootstrap_media.py  — pull media files from Anki
+  validate.py         — lint repo before committing
+  sync.py             — push YAML changes to Anki
 docs/
   note-types.md       — human-readable summary of models
   word-lists.md       — vocabulary staging area, not yet turned into cards
@@ -62,4 +68,4 @@ backups/              — .colpkg snapshots (gitignored)
 
 ## next step
 
-Write a sync script that pushes local `cards.yaml` changes back to Anki via AnkiConnect (`updateNoteFields`, `addNote`).
+Keep editing `decks/*/cards.yaml`, run `python scripts/validate.py` before committing, then `python scripts/sync.py` to push changes to Anki.

@@ -1,14 +1,14 @@
 """
-bootstrap_media.py — завантажує медіа-файли з Anki у локальну папку media/.
+bootstrap_media.py — downloads media files from Anki into the local media/ directory.
 
-Що робить:
-  - читає mediaFields з кожного models/*/_meta.yaml
-  - визначає, які моделі які поля містять медіа
-  - проходить по decks/*/cards.yaml, збирає всі імена файлів
-  - завантажує через AnkiConnect (ідемпотентно — пропускає вже завантажене)
-  - попереджає про осиротілі файли в media/ (не видаляє)
+What it does:
+  - reads mediaFields from each models/*/_meta.yaml
+  - determines which fields contain media per Note Type
+  - scans decks/*/cards.yaml and collects all referenced filenames
+  - downloads via AnkiConnect (idempotent — skips files already present)
+  - warns about orphaned files in media/ (does not delete them)
 
-Запуск:
+Usage:
   source .venv/bin/activate
   python scripts/bootstrap_media.py
 """
@@ -31,7 +31,7 @@ def anki(action, **params):
     response = requests.post(
         ANKI_URL,
         json={"action": action, "version": 6, "params": params},
-        timeout=60,  # відео можуть бути великі
+        timeout=60,  # videos can be large
     )
     response.raise_for_status()
     data = response.json()
@@ -54,7 +54,7 @@ def human_size(n):
 
 
 def build_model_media_map():
-    """{noteType -> [field_name, ...]} з models/*/_meta.yaml."""
+    """{noteType -> [field_name, ...]} from models/*/_meta.yaml."""
     result = {}
     for meta_path in MODELS_DIR.glob("*/_meta.yaml"):
         meta = load_yaml(meta_path)
@@ -65,22 +65,20 @@ def build_model_media_map():
 
 
 def collect_required_files(model_media_map):
-    """Обходить decks/*/cards*.yaml, збирає унікальні імена медіа."""
+    """Walks decks/*/cards*.yaml and collects unique media filenames."""
     required = set()
     references = 0
 
     for meta_path in DECKS_DIR.glob("*/_meta.yaml"):
         deck_dir = meta_path.parent
-        meta = load_yaml(meta_path)
 
-        # У колоді може бути 1 основний noteType або кілька (cards.<type>.yaml)
+        # A deck may have one primary noteType or several (cards.<type>.yaml)
         for cards_file in deck_dir.glob("cards*.yaml"):
             cards = load_yaml(cards_file) or []
             for note in cards:
                 fields = note.get("fields", {})
-                # Шукаємо який тип нотатки відповідає цьому файлу — за полями
-                # Простіше: для кожного знаного типу перевіряємо, чи всі його
-                # медіа-поля присутні в нотатці
+                # Identify which Note Type matches this card by checking its fields
+                # For each known type, check whether all its media fields are present
                 for note_type, media_fields in model_media_map.items():
                     if all(f in fields for f in media_fields):
                         for field in media_fields:
@@ -88,7 +86,7 @@ def collect_required_files(model_media_map):
                             if value:
                                 required.add(value)
                                 references += 1
-                        break  # знайшли тип — далі не шукаємо
+                        break  # stop once a matching type is found
 
     return required, references
 
@@ -104,48 +102,48 @@ def file_md5(path):
 def main():
     try:
         anki("version")
-        print("✓ AnkiConnect відповідає")
+        print("✓ AnkiConnect is up")
     except requests.exceptions.ConnectionError:
-        print("✗ Не можу підключитись до AnkiConnect. Чи запущений Anki?")
+        print("✗ Cannot connect to AnkiConnect. Is Anki running?")
         sys.exit(1)
 
     model_media_map = build_model_media_map()
     if not model_media_map:
-        print("✗ У жодному models/*/_meta.yaml не знайдено mediaFields")
+        print("✗ No mediaFields found in any models/*/_meta.yaml")
         sys.exit(1)
 
-    print(f"✓ Медіа-поля по типах:")
+    print("✓ Media fields by Note Type:")
     for note_type, fields in model_media_map.items():
         print(f"    {note_type}: {fields}")
 
     required, refs = collect_required_files(model_media_map)
-    print(f"\n✓ У картках {refs} посилань на медіа, унікальних файлів: {len(required)}")
+    print(f"\n✓ Cards reference {refs} media values, {len(required)} unique files")
 
     MEDIA_DIR.mkdir(exist_ok=True)
 
-    # Скільки вже маємо локально
+    # How many we already have locally
     already_have = {p.name for p in MEDIA_DIR.iterdir() if p.is_file()}
     to_download = sorted(required - already_have)
     already_present = required & already_have
 
-    print(f"  вже локально: {len(already_present)}")
-    print(f"  треба завантажити: {len(to_download)}")
+    print(f"  already local: {len(already_present)}")
+    print(f"  to download: {len(to_download)}")
 
     if not to_download:
-        print("\n✓ Усі потрібні файли вже на місці")
+        print("\n✓ All required files already present")
     else:
-        confirm = input(f"\nЗавантажити {len(to_download)} файлів? [y/N] ")
+        confirm = input(f"\nDownload {len(to_download)} files? [y/N] ")
         if confirm.lower() != "y":
-            print("Скасовано")
+            print("Cancelled")
             sys.exit(0)
 
         total_bytes = 0
         for i, filename in enumerate(to_download, 1):
             try:
-                # retrieveMediaFile повертає base64-рядок або False, якщо немає
+                # retrieveMediaFile returns a base64 string or False if not found
                 b64 = anki("retrieveMediaFile", filename=filename)
                 if not b64:
-                    print(f"  [{i:04d}/{len(to_download)}] ✗ {filename}: немає в Anki")
+                    print(f"  [{i:04d}/{len(to_download)}] ✗ {filename}: not found in Anki")
                     continue
 
                 data = base64.b64decode(b64)
@@ -159,17 +157,17 @@ def main():
             except Exception as e:
                 print(f"  [{i:04d}/{len(to_download)}] ✗ {filename}: {e}")
 
-        print(f"\n✓ Завантажено {human_size(total_bytes)}")
+        print(f"\n✓ Downloaded {human_size(total_bytes)}")
 
-    # Осиротілі файли в media/
+    # Orphaned files in media/
     orphans = already_have - required
     if orphans:
-        print(f"\n⚠ Знайдено {len(orphans)} осиротілих файлів у ./{MEDIA_DIR}/")
-        print("  (немає посилань з карток — не видаляю автоматично)")
+        print(f"\n⚠ Found {len(orphans)} orphaned files in ./{MEDIA_DIR}/")
+        print("  (no card references — not deleting automatically)")
         for name in sorted(orphans)[:10]:
             print(f"    {name}")
         if len(orphans) > 10:
-            print(f"    ... і ще {len(orphans) - 10}")
+            print(f"    ... and {len(orphans) - 10} more")
 
 
 if __name__ == "__main__":

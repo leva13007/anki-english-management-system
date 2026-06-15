@@ -1,12 +1,12 @@
 """
-bootstrap_decks.py — одноразовий експорт даних карток з Anki у плоскі YAML-файли.
+bootstrap_decks.py — one-time export of card data from Anki to flat YAML files.
 
-Що робить:
-  - запитує AnkiConnect (HTTP localhost:8765)
-  - для кожної колоди створює decks/<safe-name>/{_meta.yaml, cards.yaml}
-  - НЕ чіпає шаблони, CSS, медіа — тільки дані нотаток
+What it does:
+  - queries AnkiConnect (HTTP localhost:8765)
+  - for each deck creates decks/<safe-name>/{_meta.yaml, cards.yaml}
+  - does NOT touch templates, CSS, or media — card data only
 
-Запуск:
+Usage:
   source .venv/bin/activate
   python scripts/bootstrap_decks.py
 """
@@ -22,12 +22,12 @@ import yaml
 ANKI_URL = "http://localhost:8765"
 OUTPUT_DIR = Path("decks")
 
-# Системні колоди, які пропускаємо
+# Built-in decks to skip
 SKIP_DECKS = {"Default"}
 
 
 def anki(action, **params):
-    """Один виклик AnkiConnect. Кидає виняток при помилці."""
+    """Single AnkiConnect call. Raises on error."""
     response = requests.post(
         ANKI_URL,
         json={"action": action, "version": 6, "params": params},
@@ -41,20 +41,20 @@ def anki(action, **params):
 
 
 def safe_dirname(name):
-    """'How to Win Friends' -> 'how-to-win-friends'. Для імен папок."""
+    """'How to Win Friends' -> 'how-to-win-friends'. Used for directory names."""
     name = name.lower()
     name = re.sub(r"[^a-z0-9а-яіїєґ]+", "-", name, flags=re.IGNORECASE)
     return name.strip("-")
 
 
 def yaml_dump(data, path):
-    """YAML з адекватними налаштуваннями для читабельності."""
+    """YAML with settings for human-readable output."""
     with open(path, "w", encoding="utf-8") as f:
         yaml.safe_dump(
             data,
             f,
-            allow_unicode=True,      # кирилиця як є, не \uXXXX
-            sort_keys=False,         # порядок ключів зберігаємо
+            allow_unicode=True,      # Cyrillic as-is, not \uXXXX
+            sort_keys=False,         # preserve key order
             default_flow_style=False,
             width=100,
             indent=2,
@@ -62,52 +62,52 @@ def yaml_dump(data, path):
 
 
 def main():
-    # 1. Перевірка зв'язку
+    # 1. Connectivity check
     try:
         version = anki("version")
-        print(f"✓ AnkiConnect v{version} відповідає")
+        print(f"✓ AnkiConnect v{version} is up")
     except requests.exceptions.ConnectionError:
-        print("✗ Не можу підключитись до AnkiConnect (localhost:8765).")
-        print("  Чи запущений Anki? Чи встановлений аддон?")
+        print("✗ Cannot connect to AnkiConnect (localhost:8765).")
+        print("  Is Anki running? Is the add-on installed?")
         sys.exit(1)
 
-    # 2. Список колод
+    # 2. Deck list
     deck_names = anki("deckNames")
     deck_names = [d for d in deck_names if d not in SKIP_DECKS]
-    print(f"✓ Знайдено {len(deck_names)} колод: {deck_names}")
+    print(f"✓ Found {len(deck_names)} decks: {deck_names}")
 
     OUTPUT_DIR.mkdir(exist_ok=True)
 
     total_notes = 0
 
-    # 3. Обхід колод
+    # 3. Iterate decks
     for deck_name in deck_names:
-        # Anki query syntax: лапки навколо назви, бо може містити пробіли
+        # Anki query syntax: quotes around name in case it contains spaces
         note_ids = anki("findNotes", query=f'deck:"{deck_name}"')
 
         if not note_ids:
-            print(f"  ⊘ {deck_name}: порожня, пропускаю")
+            print(f"  ⊘ {deck_name}: empty, skipping")
             continue
 
-        # Витягуємо повні дані пачкою (один запит на колоду)
+        # Fetch full note data in one batch request
         notes_info = anki("notesInfo", notes=note_ids)
 
-        # Групуємо по Note Type — на випадок, якщо в одній колоді кілька типів
+        # Group by Note Type — a deck may contain more than one
         by_model = defaultdict(list)
         for note in notes_info:
             by_model[note["modelName"]].append(note)
 
-        # Якщо в колоді кілька Note Type'ів — попереджаємо
+        # Warn if a deck contains multiple Note Types
         if len(by_model) > 1:
             print(
-                f"  ⚠ {deck_name}: знайдено {len(by_model)} різних Note Type'ів — "
-                f"{list(by_model.keys())}. Створю окремі файли cards.<type>.yaml"
+                f"  ⚠ {deck_name}: found {len(by_model)} different Note Types — "
+                f"{list(by_model.keys())}. Creating separate cards.<type>.yaml files"
             )
 
         deck_dir = OUTPUT_DIR / safe_dirname(deck_name)
         deck_dir.mkdir(parents=True, exist_ok=True)
 
-        # _meta.yaml: інформація про колоду
+        # _meta.yaml: deck metadata
         primary_model = max(by_model.keys(), key=lambda m: len(by_model[m]))
         meta = {
             "deckName": deck_name,
@@ -117,14 +117,14 @@ def main():
             meta["additionalNoteTypes"] = [m for m in by_model if m != primary_model]
         yaml_dump(meta, deck_dir / "_meta.yaml")
 
-        # cards.yaml: самі картки
+        # cards.yaml: the notes
         for model_name, notes in by_model.items():
             cards = []
             for note in notes:
                 cards.append({
                     "id": note["noteId"],
-                    # fields в AnkiConnect — це {fieldName: {value, order}}
-                    # нам треба тільки value, в порядку order
+                    # AnkiConnect returns {fieldName: {value, order}}
+                    # we only need value, sorted by order
                     "fields": {
                         name: data["value"]
                         for name, data in sorted(
@@ -135,17 +135,17 @@ def main():
                     "tags": note["tags"],
                 })
 
-            # Якщо тип один — cards.yaml, якщо кілька — cards.<safe-type>.yaml
+            # Single type → cards.yaml, multiple types → cards.<safe-type>.yaml
             if len(by_model) == 1:
                 filename = "cards.yaml"
             else:
                 filename = f"cards.{safe_dirname(model_name)}.yaml"
 
             yaml_dump(cards, deck_dir / filename)
-            print(f"  ✓ {deck_name} / {model_name}: {len(cards)} нотаток → {filename}")
+            print(f"  ✓ {deck_name} / {model_name}: {len(cards)} notes → {filename}")
             total_notes += len(cards)
 
-    print(f"\n✓ Готово. Усього експортовано {total_notes} нотаток у ./{OUTPUT_DIR}/")
+    print(f"\n✓ Done. Exported {total_notes} notes to ./{OUTPUT_DIR}/")
 
 
 if __name__ == "__main__":

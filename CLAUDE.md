@@ -20,9 +20,22 @@ All scripts live in `scripts/`, require `.venv` activated, use `requests` + `yam
 | `bootstrap_models.py` | pulls note types → `models/` (fields, templates, CSS) |
 | `bootstrap_decks.py` | pulls card data → `decks/` (_meta.yaml + cards.yaml) |
 | `bootstrap_media.py` | pulls media files → `media/` (interactive, confirms before downloading) |
+| `validate.py` | lints repo: structure, duplicates, media refs, HTML noise — exit 1 on errors |
+| `sync.py` | pushes YAML → Anki: add/update notes, upload media, write back new ids |
 
 Bootstrap scripts are **idempotent** — safe to re-run.  
 `bootstrap_media.py` reads `mediaFields` from `models/*/_meta.yaml` to know which fields contain filenames.
+
+### sync.py flags
+
+```
+python scripts/sync.py --dry-run             # preview plan, no changes
+python scripts/sync.py                       # apply with confirmation
+python scripts/sync.py --check-media-hashes  # also compare MD5 of media files
+python scripts/sync.py --prune               # remove orphaned notes from Anki (with confirmation)
+```
+
+`sync.py` writes new `id` values back into `cards.yaml` after `addNote`.
 
 ---
 

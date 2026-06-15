@@ -1,22 +1,22 @@
 """
-sync.py — синхронізація локального репо → Anki.
+sync.py — pushes local repo changes to Anki.
 
 Workflow:
-  1. читає decks/*, models/*, media/
-  2. для кожної картки в cards.yaml порівнює стан з Anki
-  3. будує план дій (add, update, upload media)
-  4. у dry-run — друкує план
-  5. інакше — питає підтвердження, виконує, дописує id у YAML для нових карток
+  1. reads decks/*, models/*, media/
+  2. compares each card in cards.yaml against Anki
+  3. builds an action plan (add, update, upload media)
+  4. in dry-run — prints the plan
+  5. otherwise — asks for confirmation, applies, writes new ids to YAML
 
-Запуск:
-  python scripts/sync.py --dry-run             # план без змін
-  python scripts/sync.py                       # з підтвердженням
-  python scripts/sync.py --check-media-hashes  # звіряти хеші локальних і Anki-медіа
-  python scripts/sync.py --prune               # видалити осиротілі нотатки з Anki
+Usage:
+  python scripts/sync.py --dry-run             # preview plan, no changes
+  python scripts/sync.py                       # apply with confirmation
+  python scripts/sync.py --check-media-hashes  # also compare MD5 hashes of media
+  python scripts/sync.py --prune               # remove orphaned notes from Anki
 
 Exit codes:
-  0 — все ок
-  1 — помилка (аномалія в даних, обірваний sync)
+  0 — all good
+  1 — error (data anomaly, interrupted sync)
 """
 
 import argparse
@@ -51,7 +51,7 @@ def anki(action, **params):
     return data["result"]
 
 
-# ─────────────────────────── завантаження репо ───────────────────────────
+# ─────────────────────────── repo loading ───────────────────────────
 
 
 def load_yaml(path):
@@ -60,7 +60,7 @@ def load_yaml(path):
 
 
 def dump_yaml(data, path):
-    """Запис із консервативним форматуванням — щоб git diff був мінімальний."""
+    """Write with conservative formatting to keep git diffs minimal."""
     with open(path, "w", encoding="utf-8") as f:
         yaml.safe_dump(
             data, f,
@@ -91,7 +91,7 @@ def load_models():
 def load_decks():
     """Yields (deck_name, note_type, cards_file_path, cards_list).
 
-    cards_list — посилання на список з YAML, мутації відобразяться при dump.
+    cards_list is a reference to the parsed YAML list — mutations are reflected on dump.
     """
     for deck_meta_path in sorted(DECKS_DIR.glob("*/_meta.yaml")):
         deck_meta = load_yaml(deck_meta_path)
@@ -99,16 +99,16 @@ def load_decks():
 
         for cards_file in sorted(deck_dir.glob("cards*.yaml")):
             cards = load_yaml(cards_file) or []
-            # Якщо в колоді кілька типів — _meta каже тільки про основний.
-            # Для cards.<type>.yaml тип треба визначати інакше — поки що беремо з meta.
+            # If a deck has multiple types, _meta only describes the primary one.
+            # For cards.<type>.yaml the type should be derived differently — for now we use meta.
             yield deck_meta["deckName"], deck_meta["noteType"], cards_file, cards
 
 
-# ─────────────────────────── план змін ───────────────────────────
+# ─────────────────────────── plan ───────────────────────────
 
 
 class Plan:
-    """Збирає всі дії, потім виконує одним пакетом."""
+    """Collects all actions, then executes them in one batch."""
 
     def __init__(self):
         self.to_add = []        # [(deck_name, note_type, card_ref, cards_file)]
@@ -116,7 +116,7 @@ class Plan:
         self.media_to_upload = [] # [filename]
         self.errors = []        # ["text"]
         self.warnings = []      # ["text"]
-        self.orphan_note_ids = []  # noteIds в Anki, але не в YAML
+        self.orphan_note_ids = []  # noteIds present in Anki but missing from YAML
 
     def has_errors(self):
         return bool(self.errors)
@@ -127,12 +127,12 @@ class Plan:
     def print_summary(self):
         print()
         print("─" * 60)
-        print("ПЛАН:")
-        print(f"  додати нотаток:     {len(self.to_add)}")
-        print(f"  оновити нотаток:    {len(self.to_update)}")
-        print(f"  залити медіа:       {len(self.media_to_upload)}")
+        print("PLAN:")
+        print(f"  notes to add:    {len(self.to_add)}")
+        print(f"  notes to update: {len(self.to_update)}")
+        print(f"  media to upload: {len(self.media_to_upload)}")
         if self.orphan_note_ids:
-            print(f"  осиротілих в Anki:  {len(self.orphan_note_ids)} (не чіпаємо без --prune)")
+            print(f"  orphans in Anki: {len(self.orphan_note_ids)} (ignored without --prune)")
         print("─" * 60)
 
         if self.warnings:
@@ -146,16 +146,16 @@ class Plan:
                 print(f"  {e}")
 
 
-# ─────────────────────────── порівняння ───────────────────────────
+# ─────────────────────────── comparison ───────────────────────────
 
 
 def normalize_fields_from_anki(note):
-    """notesInfo повертає {name: {value, order}}, нам треба {name: value}."""
+    """notesInfo returns {name: {value, order}}; we only need {name: value}."""
     return {name: data["value"] for name, data in note["fields"].items()}
 
 
 def fields_differ(yaml_fields, anki_fields):
-    """True якщо є хоч одна різниця."""
+    """Returns True if any field differs."""
     if set(yaml_fields.keys()) != set(anki_fields.keys()):
         return True
     return any(yaml_fields[k] != anki_fields[k] for k in yaml_fields)
@@ -173,41 +173,41 @@ def file_md5(path):
     return h.hexdigest()
 
 
-# ─────────────────────────── побудова плану ───────────────────────────
+# ─────────────────────────── plan building ───────────────────────────
 
 
 def build_plan(models, check_media_hashes):
     plan = Plan()
 
-    # 1. Зібрати всі id з YAML — для пошуку осиротілих
+    # 1. Collect all ids from YAML — used to find orphans
     yaml_note_ids = set()
 
-    # 2. Підвантажити стан Anki: усі noteIds з усіх наших колод
+    # 2. Load Anki state: all noteIds from our decks
     deck_note_ids = {}  # deck_name -> set of noteIds in Anki
     seen_decks = set()
     for deck_name, _, _, _ in load_decks():
         seen_decks.add(deck_name)
 
-    print("✓ Збираю стан Anki...")
+    print("✓ Fetching Anki state...")
     anki_note_ids_all = set()
     for deck_name in seen_decks:
         ids = anki("findNotes", query=f'deck:"{deck_name}"')
         deck_note_ids[deck_name] = set(ids)
         anki_note_ids_all.update(ids)
-    print(f"  в Anki по нашим колодам: {len(anki_note_ids_all)} нотаток")
+    print(f"  notes in Anki across our decks: {len(anki_note_ids_all)}")
 
-    # 3. Підвантажити повну інфу про нотатки одним запитом
+    # 3. Fetch full note info in one request
     anki_notes = {}
     if anki_note_ids_all:
         notes_info = anki("notesInfo", notes=list(anki_note_ids_all))
         for note in notes_info:
             anki_notes[note["noteId"]] = note
 
-    # 4. Обхід YAML
+    # 4. Walk YAML
     for deck_name, note_type, cards_file, cards in load_decks():
         if note_type not in models:
             plan.errors.append(
-                f"{cards_file}: невідомий Note Type {note_type!r}"
+                f"{cards_file}: unknown Note Type {note_type!r}"
             )
             continue
 
@@ -218,13 +218,13 @@ def build_plan(models, check_media_hashes):
             yaml_tags = card.get("tags", []) or []
 
             if card_id is None:
-                # Нова картка
+                # New card
                 plan.to_add.append({
                     "deck": deck_name,
                     "model": note_type,
                     "fields": yaml_fields,
                     "tags": yaml_tags,
-                    "card_ref": card,           # для запису id назад
+                    "card_ref": card,           # for writing id back
                     "cards_file": cards_file,
                     "loc": card_loc,
                 })
@@ -233,10 +233,10 @@ def build_plan(models, check_media_hashes):
             yaml_note_ids.add(card_id)
 
             if card_id not in anki_notes:
-                # Аномалія: id є в YAML, але в Anki такої нотатки немає
+                # Anomaly: id is in YAML but no such note exists in Anki
                 plan.errors.append(
-                    f"{card_loc}: id={card_id} вказаний у YAML, але в Anki такої нотатки немає. "
-                    f"Або відновіть нотатку в Anki, або приберіть id (буде створено заново, прогрес SRS втрачено)."
+                    f"{card_loc}: id={card_id} is set in YAML but the note does not exist in Anki. "
+                    f"Either restore the note in Anki or remove the id (it will be re-created, SRS progress lost)."
                 )
                 continue
 
@@ -252,12 +252,12 @@ def build_plan(models, check_media_hashes):
                     "loc": card_loc,
                 })
 
-    # 5. Осиротілі в Anki
+    # 5. Orphaned notes in Anki
     orphans = anki_note_ids_all - yaml_note_ids
     plan.orphan_note_ids = sorted(orphans)
 
-    # 6. Медіа
-    # Збираємо, які файли реально треба для всіх карток
+    # 6. Media
+    # Collect all media files actually needed by cards
     needed_media = set()
     for _, note_type, _, cards in load_decks():
         if note_type not in models:
@@ -270,10 +270,9 @@ def build_plan(models, check_media_hashes):
                 if filename:
                     needed_media.add(filename)
 
-    print("✓ Звіряю медіа...")
-    # Які з них уже в Anki
+    print("✓ Checking media...")
+    # Which of them are already in Anki
     if needed_media:
-        # AnkiConnect getMediaFilesNames приймає pattern, але ми поіменно перевіряємо
         in_anki = set(anki("getMediaFilesNames", pattern="*"))
     else:
         in_anki = set()
@@ -283,7 +282,7 @@ def build_plan(models, check_media_hashes):
     for filename in sorted(needed_media):
         local_path = MEDIA_DIR / filename
         if not local_path.exists():
-            plan.errors.append(f"медіа {filename!r} згадане в картках, але немає в media/")
+            plan.errors.append(f"media file {filename!r} is referenced in cards but missing from media/")
             continue
 
         if filename not in in_anki:
@@ -291,7 +290,6 @@ def build_plan(models, check_media_hashes):
             continue
 
         if check_media_hashes:
-            # Тягнемо з Anki, порівнюємо хеш
             anki_b64 = anki("retrieveMediaFile", filename=filename)
             if anki_b64:
                 anki_md5 = hashlib.md5(base64.b64decode(anki_b64)).hexdigest()
@@ -299,21 +297,21 @@ def build_plan(models, check_media_hashes):
                 if anki_md5 != local_md5:
                     plan.media_to_upload.append(filename)
                     plan.warnings.append(
-                        f"медіа {filename!r}: локальний хеш ≠ Anki — перезалью"
+                        f"media {filename!r}: local hash ≠ Anki — will re-upload"
                     )
 
     return plan
 
 
-# ─────────────────────────── виконання плану ───────────────────────────
+# ─────────────────────────── plan execution ───────────────────────────
 
 
 def upload_media(plan):
-    """Заливаємо медіа спочатку — щоб коли картки додаються, файли вже були в Anki."""
+    """Upload media first so files are in Anki before notes that reference them are added."""
     if not plan.media_to_upload:
         return
 
-    print(f"\n→ Заливаю {len(plan.media_to_upload)} медіа-файлів...")
+    print(f"\n→ Uploading {len(plan.media_to_upload)} media files...")
     for i, filename in enumerate(plan.media_to_upload, 1):
         local_path = MEDIA_DIR / filename
         with open(local_path, "rb") as f:
@@ -323,13 +321,13 @@ def upload_media(plan):
 
 
 def add_notes(plan):
-    """Додаємо нові нотатки, записуємо отримані noteId назад у YAML-структури."""
+    """Add new notes and write back the generated noteIds into the YAML structures."""
     if not plan.to_add:
         return
 
-    print(f"\n→ Додаю {len(plan.to_add)} нових нотаток...")
+    print(f"\n→ Adding {len(plan.to_add)} new notes...")
 
-    # Групуємо по cards_file — після додавання треба буде переписати файл
+    # Group by cards_file — we need to rewrite each file after adding
     files_changed = set()
 
     for i, item in enumerate(plan.to_add, 1):
@@ -346,8 +344,8 @@ def add_notes(plan):
                     },
                 },
             )
-            # Записуємо id назад у структуру (це посилання — мутація відобразиться у файлі)
-            # Важливо: id має бути першим ключем картки. Перебудовуємо dict.
+            # Write id back into the structure (it's a reference — mutation shows up in the file)
+            # id must be the first key in the card dict — rebuild it.
             new_card = {"id": new_id}
             for k, v in item["card_ref"].items():
                 if k != "id":
@@ -360,15 +358,13 @@ def add_notes(plan):
         except Exception as e:
             print(f"  ✗ {item['loc']}: {e}")
 
-    # Перезаписати змінені файли — треба перечитати, оновити, записати
-    # Простіше: reload + dump кожного файлу через мапінг
-    print(f"\n→ Дописую id у {len(files_changed)} файлів...")
+    print(f"\n→ Writing ids back to {len(files_changed)} file(s)...")
     for cards_file in files_changed:
-        # Знаходимо всі картки з цього файлу серед plan.to_add
+        # Find all cards from this file in plan.to_add
         items_for_file = [item for item in plan.to_add if item["cards_file"] == cards_file]
-        # Перечитуємо файл
+        # Re-read the file
         cards = load_yaml(cards_file) or []
-        # Знаходимо нові id за позицією та оновлюємо
+        # Locate new ids by index and update
         for item in items_for_file:
             loc_idx = int(item["loc"].rsplit("#", 1)[1])
             new_id = item["card_ref"].get("id")
@@ -387,7 +383,7 @@ def update_notes(plan):
     if not plan.to_update:
         return
 
-    print(f"\n→ Оновлюю {len(plan.to_update)} нотаток...")
+    print(f"\n→ Updating {len(plan.to_update)} notes...")
     for i, item in enumerate(plan.to_update, 1):
         try:
             anki(
@@ -398,7 +394,7 @@ def update_notes(plan):
                 },
             )
 
-            # Теги — окремо: вираховуємо diff
+            # Tags — separate call: compute diff
             old_tags = set(item["anki_tags"])
             new_tags = set(item["tags"])
             to_add = new_tags - old_tags
@@ -415,30 +411,30 @@ def update_notes(plan):
 
 def prune_orphans(plan):
     if not plan.orphan_note_ids:
-        print("\nОсиротілих нотаток немає")
+        print("\nNo orphaned notes")
         return
 
-    print(f"\n⚠ Знайдено {len(plan.orphan_note_ids)} нотаток в Anki, що відсутні в YAML:")
-    # Показуємо перші 10 з контекстом
+    print(f"\n⚠ Found {len(plan.orphan_note_ids)} notes in Anki that are absent from YAML:")
+    # Show first 10 with context
     sample_ids = plan.orphan_note_ids[:10]
     sample_info = anki("notesInfo", notes=sample_ids)
     for note in sample_info:
         fields = normalize_fields_from_anki(note)
-        # Беремо перше непорожнє поле для пред'явлення
+        # Use the first non-empty field as a preview
         preview = next((v for v in fields.values() if v), "")
         if len(preview) > 60:
             preview = preview[:57] + "..."
         print(f"  id={note['noteId']}: {preview!r}")
     if len(plan.orphan_note_ids) > 10:
-        print(f"  ... і ще {len(plan.orphan_note_ids) - 10}")
+        print(f"  ... and {len(plan.orphan_note_ids) - 10} more")
 
-    confirm = input(f"\nВидалити всі {len(plan.orphan_note_ids)} нотаток з Anki? Прогрес повторень буде втрачено. [y/N] ")
+    confirm = input(f"\nDelete all {len(plan.orphan_note_ids)} notes from Anki? SRS progress will be lost. [y/N] ")
     if confirm.lower() != "y":
-        print("Скасовано")
+        print("Cancelled")
         return
 
     anki("deleteNotes", notes=plan.orphan_note_ids)
-    print(f"✓ Видалено {len(plan.orphan_note_ids)} нотаток")
+    print(f"✓ Deleted {len(plan.orphan_note_ids)} notes")
 
 
 # ─────────────────────────── main ───────────────────────────
@@ -446,49 +442,49 @@ def prune_orphans(plan):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dry-run", action="store_true", help="показати план, нічого не змінювати")
+    ap.add_argument("--dry-run", action="store_true", help="show the plan without making any changes")
     ap.add_argument("--check-media-hashes", action="store_true",
-                    help="звіряти MD5 локальних медіа і тих, що в Anki (повільніше)")
+                    help="compare MD5 of local and Anki media files (slower)")
     ap.add_argument("--prune", action="store_true",
-                    help="видалити з Anki нотатки, відсутні в YAML (з підтвердженням)")
+                    help="delete from Anki notes absent from YAML (with confirmation)")
     args = ap.parse_args()
 
     try:
         anki("version")
     except requests.exceptions.ConnectionError:
-        print("✗ Не можу підключитись до AnkiConnect. Чи запущений Anki?")
+        print("✗ Cannot connect to AnkiConnect. Is Anki running?")
         sys.exit(1)
 
     models = load_models()
     if not models:
-        print("✗ Не знайшов моделей у models/")
+        print("✗ No models found in models/")
         sys.exit(1)
 
     plan = build_plan(models, check_media_hashes=args.check_media_hashes)
     plan.print_summary()
 
     if plan.has_errors():
-        print("\n✗ Sync зупинено через errors. Виправ і запусти знов.")
+        print("\n✗ Sync aborted due to errors. Fix them and re-run.")
         sys.exit(1)
 
     if not plan.has_changes() and not args.prune:
-        print("\n✓ Все актуально, нічого робити.")
+        print("\n✓ Everything is up to date.")
         return
 
     if args.dry_run:
-        print("\n(dry-run, нічого не змінено)")
+        print("\n(dry-run, nothing changed)")
         return
 
     if plan.has_changes():
-        confirm = input("\nЗастосувати зміни? [y/N] ")
+        confirm = input("\nApply changes? [y/N] ")
         if confirm.lower() != "y":
-            print("Скасовано")
+            print("Cancelled")
             return
 
         upload_media(plan)
         add_notes(plan)
         update_notes(plan)
-        print("\n✓ Sync завершено")
+        print("\n✓ Sync complete")
 
     if args.prune:
         prune_orphans(plan)

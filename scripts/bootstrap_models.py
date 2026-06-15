@@ -1,12 +1,12 @@
 """
-bootstrap_models.py — експорт Note Types з Anki у плоскі файли.
+bootstrap_models.py — exports Note Types from Anki to flat files.
 
-Що робить:
-  - для кожного Note Type створює models/<safe-name>/{_meta.yaml, style.css, templates/}
+What it does:
+  - for each Note Type creates models/<safe-name>/{_meta.yaml, style.css, templates/}
   - templates/<card-name>/{front.html, back.html}
-  - НЕ чіпає дані нотаток і медіа
+  - does NOT touch note data or media
 
-Запуск:
+Usage:
   source .venv/bin/activate
   python scripts/bootstrap_models.py
 """
@@ -55,7 +55,7 @@ def yaml_dump(data, path):
 
 
 def write_text(path, content):
-    """Записує текст з фінальним \\n, щоб git не лаявся."""
+    """Writes text with a trailing newline (avoids git 'no newline at EOF' warnings)."""
     if not content.endswith("\n"):
         content += "\n"
     with open(path, "w", encoding="utf-8") as f:
@@ -65,32 +65,30 @@ def write_text(path, content):
 def main():
     try:
         anki("version")
-        print("✓ AnkiConnect відповідає")
+        print("✓ AnkiConnect is up")
     except requests.exceptions.ConnectionError:
-        print("✗ Не можу підключитись до AnkiConnect. Чи запущений Anki?")
+        print("✗ Cannot connect to AnkiConnect. Is Anki running?")
         sys.exit(1)
 
-    # Які Note Type'и реально використовуються в наших колодах
-    # (фільтруємо невикористовувані, щоб не тягнути сміття)
+    # Find which Note Types are actually used in our decks
     deck_names = [d for d in anki("deckNames") if d != "Default"]
     used_models = set()
     for deck in deck_names:
         note_ids = anki("findNotes", query=f'deck:"{deck}"')
         if not note_ids:
             continue
-        # Беремо тільки першу нотатку — нам треба тільки modelName
+        # Only need one note to get modelName
         info = anki("notesInfo", notes=note_ids[:1])
         used_models.add(info[0]["modelName"])
 
-    # Можуть бути нотатки різних типів у одній колоді — добираємо
-    # перевіряючи всі типи з усіх нотаток (швидкий повторний прохід)
+    # Decks may mix Note Types — the set above may be incomplete
     all_models = set(anki("modelNames"))
-    print(f"✓ Усього Note Type'ів в Anki: {len(all_models)}")
-    print(f"✓ Використовуються в колодах: {len(used_models)} — {sorted(used_models)}")
+    print(f"✓ Total Note Types in Anki: {len(all_models)}")
+    print(f"✓ Used in decks: {len(used_models)} — {sorted(used_models)}")
 
     unused = all_models - used_models
     if unused:
-        print(f"  (пропускаю невикористовувані: {sorted(unused)})")
+        print(f"  (skipping unused: {sorted(unused)})")
 
     OUTPUT_DIR.mkdir(exist_ok=True)
 
@@ -99,29 +97,29 @@ def main():
         model_dir = OUTPUT_DIR / safe_name
         model_dir.mkdir(parents=True, exist_ok=True)
 
-        # 1. Поля моделі
+        # 1. Model fields
         fields = anki("modelFieldNames", modelName=model_name)
 
-        # 2. Шаблони — dict {templateName: {"Front": "...", "Back": "..."}}
+        # 2. Templates — dict {templateName: {"Front": "...", "Back": "..."}}
         templates = anki("modelTemplates", modelName=model_name)
 
         # 3. CSS — dict {"css": "..."}
         styling = anki("modelStyling", modelName=model_name)
         css = styling["css"]
 
-        # _meta.yaml — merge з існуючим, щоб не загубити користувацькі поля
-        # (mediaFields, sortField додаються вручну і не мають перезаписуватись)
+        # _meta.yaml — merge with existing to preserve user-defined fields
+        # (mediaFields, sortField are added manually and must not be overwritten)
         AUTO_FIELDS = {"noteType", "fields", "templates"}
         meta_path = model_dir / "_meta.yaml"
 
-        # Авто-частина — те, що завжди береться з Anki
+        # Auto section — always sourced from Anki
         auto_meta = {
             "noteType": model_name,
             "fields": fields,
             "templates": list(templates.keys()),
         }
 
-        # Якщо файл уже є — підтягуємо все, чого нема в AUTO_FIELDS
+        # If file already exists — keep everything outside AUTO_FIELDS
         if meta_path.exists():
             with open(meta_path, encoding="utf-8") as f:
                 existing = yaml.safe_load(f) or {}
@@ -129,14 +127,14 @@ def main():
         else:
             user_meta = {}
 
-        # Збираємо у фінальному порядку: спочатку авто, потім користувацьке
+        # Final order: auto fields first, then user fields
         meta = {**auto_meta, **user_meta}
         yaml_dump(meta, meta_path)
 
         # style.css
         write_text(model_dir / "style.css", css)
 
-        # Шаблони — кожен у свою підпапку
+        # Templates — each in its own subdirectory
         templates_dir = model_dir / "templates"
         templates_dir.mkdir(exist_ok=True)
 
@@ -150,10 +148,10 @@ def main():
             f"  ✓ {model_name}"
             f"\n    fields: {fields}"
             f"\n    templates: {list(templates.keys())}"
-            f"\n    css: {len(css)} символів"
+            f"\n    css: {len(css)} chars"
         )
 
-    print(f"\n✓ Готово. Експортовано {len(used_models)} Note Type'ів у ./{OUTPUT_DIR}/")
+    print(f"\n✓ Done. Exported {len(used_models)} Note Types to ./{OUTPUT_DIR}/")
 
 
 if __name__ == "__main__":
