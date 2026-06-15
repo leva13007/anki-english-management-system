@@ -1,6 +1,3 @@
-# Anki export artifacts
-*.apkg
-*.colpkg
-
-# OS
-.DS_Store
+.venv/
+__pycache__/
+backups/

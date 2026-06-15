@@ -10,13 +10,15 @@ Version-controlled source of truth for all Anki flashcard decks.
 
 ## workflow
 
+Requires [AnkiConnect](https://ankiweb.net/shared/info/2055492159) plugin running locally (port 8765).
+
 ```
-Edit cards.csv  →  git commit  →  File › Import in Anki
+Edit cards.csv  →  git commit  →  sync script  →  AnkiConnect API  →  Anki
 ```
 
-When importing: File → Import → select `cards.csv` → map columns to Anki fields by header name.
+AnkiConnect replaces the manual File › Import step — cards are pushed programmatically via HTTP.
 
-For cards with media: copy files from `media/` to Anki's `collection.media/` folder first, then import the CSV.
+For cards with media: files in `media/` are copied to Anki's `collection.media/` as part of the sync.
 
 ## structure
 
@@ -42,4 +44,4 @@ docs/
 
 ## next step
 
-Export existing cards from Anki (File → Export → Cards in Plain Text) and paste them into the matching `cards.csv` files.
+Install AnkiConnect in Anki: Tools → Add-ons → Get Add-ons → code `2055492159` → restart Anki.

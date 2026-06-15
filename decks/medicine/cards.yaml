@@ -1,0 +1,600 @@
+- id: 1777250810342
+  fields:
+    Front: У мене болить горло
+    Back: I've got a sore throat
+    Audio: Medicine_0001-I_ve_got.mp3
+  tags: []
+- id: 1777250810343
+  fields:
+    Front: Як довго у вас болить горло?
+    Back: How long have you had a sore throat?
+    Audio: Medicine_0002-How_long.mp3
+  tags: []
+- id: 1777250810344
+  fields:
+    Front: Моя температура 38.5 градусів
+    Back: My temperature is 38.5
+    Audio: Medicine_0003-My_temperature1.mp3
+  tags: []
+- id: 1777250810345
+  fields:
+    Front: Яка у вас температура?
+    Back: What's your temperature?
+    Audio: Medicine_0004-What_s_your.mp3
+  tags: []
+- id: 1777250810346
+  fields:
+    Front: Я сьогодні почуваюся не дуже / мені сьогодні нездужається [idiome]
+    Back: I'm feeling under the weather today
+    Audio: Medicine_0005-I_m_feeling.mp3
+  tags: []
+- id: 1777250810347
+  fields:
+    Front: (У мене|Мій) ніс&nbsp;є закладеним з понеділка
+    Back: My nose has been blocked since Monday
+    Audio: Medicine_0006-My_nose.mp3
+  tags: []
+- id: 1777250810348
+  fields:
+    Front: Він сказав що в нього нежить
+    Back: He said he's got a runny nose
+    Audio: Medicine_0007-He_said.mp3
+  tags: []
+- id: 1777250810349
+  fields:
+    Front: Ви кашляєте з мокротою?`
+    Back: Are you coughing up phlegm?
+    Audio: Medicine_0008-Are_you.mp3
+  tags: []
+- id: 1777250810350
+  fields:
+    Front: Так, у мене мокрий кашель
+    Back: Yes, I&#x27;ve got a chesty cough
+    Audio: Medicine_0009-Yes__I_ve.mp3
+  tags: []
+- id: 1777250810351
+  fields:
+    Front: Мені потрібно записатися на прийом
+    Back: I need to book an appointment
+    Audio: Medicine_0010-I_need.mp3
+  tags: []
+- id: 1777250810352
+  fields:
+    Front: Чи є якісь записи доступними сьогодні?
+    Back: Are there any appointments available today?
+    Audio: Medicine_0011-Are_there.mp3
+  tags: []
+- id: 1777250810353
+  fields:
+    Front: Це досить терміново
+    Back: It&#x27;s quite urgent
+    Audio: Medicine_0012-It_s_quite.mp3
+  tags: []
+- id: 1777250810354
+  fields:
+    Front: Вона не зможе вийти на роботу. [idiome]
+    Back: She can't make it to work
+    Audio: Medicine_0013-She_can_t.mp3
+  tags: []
+- id: 1777250810355
+  fields:
+    Front: Мені потрібен лікарняний на три дні
+    Back: I need a fit note for three days
+    Audio: Medicine_0014-I_need.mp3
+  tags: []
+- id: 1777250810356
+  fields:
+    Front: Коли ці симптоми почалися?
+    Back: When did these symptoms start?
+    Audio: Medicine_0015-When_did.mp3
+  tags: []
+- id: 1777250810357
+  fields:
+    Front: Це почалося позавчора ввечері
+    Back: It started the day before yesterday evening
+    Audio: Medicine_0016-It_started.mp3
+  tags: []
+- id: 1777250810358
+  fields:
+    Front: У мене (сильний/гострий) головний біль у моїх скронях
+    Back: I've got a severe headache in my temples
+    Audio: Medicine_0017-I_ve_got.mp3
+  tags: []
+- id: 1777250810359
+  fields:
+    Front: Біль пульсуючий чи тупий?
+    Back: Is the pain throbbing or dull?
+    Audio: Medicine_0018-Is_the.mp3
+  tags: []
+- id: 1777250810360
+  fields:
+    Front: У мене пульсуючий біль
+    Back: I&#x27;ve got a throbbing pain
+    Audio: Medicine_0019-I_ve_got.mp3
+  tags: []
+- id: 1777250810361
+  fields:
+    Front: Світло дратує мої очі
+    Back: Light is bothering my eyes
+    Audio: Medicine_0020-Light_is.mp3
+  tags: []
+- id: 1777250810362
+  fields:
+    Front: Ви чутливі до світла?
+    Back: Are you sensitive to light?
+    Audio: Medicine_0021-Are_you.mp3
+  tags: []
+- id: 1777250810363
+  fields:
+    Front: Мене нудить від болю
+    Back: The pain is making me feel sick
+    Audio: Medicine_0022-The_pain.mp3
+  tags: []
+- id: 1777250810364
+  fields:
+    Front: Він скаржиться на мігрень
+    Back: He&#x27;s complaining of a migraine
+    Audio: Medicine_0023-He_s_complaining.mp3
+  tags: []
+- id: 1777250810365
+  fields:
+    Front: Чи приймаєте ви якісь ліки?
+    Back: Are you taking any medication?
+    Audio: Medicine_0024-Are_you.mp3
+  tags: []
+- id: 1777250810366
+  fields:
+    Front: Я приймаю парацетамол
+    Back: I&#x27;m taking paracetamol
+    Audio: Medicine_0025-I_m_taking.mp3
+  tags: []
+- id: 1777250810367
+  fields:
+    Front: Парацетамол не допомагає
+    Back: Paracetamol isn&#x27;t helping
+    Audio: Medicine_0026-Paracetamol_isn_t.mp3
+  tags: []
+- id: 1777250810368
+  fields:
+    Front: Скільки парацетамолу ви прийняли?
+    Back: How much paracetamol have you taken?
+    Audio: Medicine_0027-How_much.mp3
+  tags: []
+- id: 1777250810369
+  fields:
+    Front: Я прийняв дві таблетки чотири години тому
+    Back: I took two tablets four hours ago
+    Audio: Medicine_0028-I_took.mp3
+  tags: []
+- id: 1777250810370
+  fields:
+    Front: У мене серцебиття
+    Back: I&#x27;ve got palpitations
+    Audio: Medicine_0029-I_ve_got.mp3
+  tags: []
+- id: 1777250810371
+  fields:
+    Front: Моє серце іноді пропускає удари
+    Back: My heart sometimes skips a beat
+    Audio: Medicine_0030-My_heart.mp3
+  tags: []
+- id: 1777250810372
+  fields:
+    Front: Як часто це відбувається?
+    Back: How often does this happen?
+    Audio: Medicine_0031-How_often.mp3
+  tags: []
+- id: 1777250810373
+  fields:
+    Front: Це трапляється раз на тиждень
+    Back: It happens once a week
+    Audio: Medicine_0032-It_happens.mp3
+  tags: []
+- id: 1777250810374
+  fields:
+    Front: У мене пролапс мітрального клапана
+    Back: I have mitral valve prolapse
+    Audio: Medicine_0033-I_have.mp3
+  tags: []
+- id: 1777250810375
+  fields:
+    Front: Чи відчуваєте ви тремтіння в грудях?
+    Back: Do you feel a fluttering in your chest?
+    Audio: Medicine_0034-Do_you.mp3
+  tags: []
+- id: 1777250810376
+  fields:
+    Front: Так, іноді відчуваю тремтіння
+    Back: Yes, I sometimes feel a fluttering
+    Audio: Medicine_0035-Yes__I.mp3
+  tags: []
+- id: 1777250810377
+  fields:
+    Front: Мені важко дихати при навантаженні
+    Back: I get short of breath with exertion
+    Audio: Medicine_0036-I_get.mp3
+  tags: []
+- id: 1777250810378
+  fields:
+    Front: Чи є біль у грудях?
+    Back: Is there any chest pain?
+    Audio: Medicine_0037-Is_there.mp3
+  tags: []
+- id: 1777250810379
+  fields:
+    Front: Ні, просто стискає груди
+    Back: No, just chest tightness
+    Audio: Medicine_0038-No__just.mp3
+  tags: []
+- id: 1777250810380
+  fields:
+    Front: У мене хронічний біль у нижній частині спини
+    Back: I have chronic lower back pain
+    Audio: Medicine_0039-I_have.mp3
+  tags: []
+- id: 1777250810381
+  fields:
+    Front: Біль постійний чи періодичний?
+    Back: Is the pain constant or intermittent?
+    Audio: Medicine_0040-Is_the.mp3
+  tags: []
+- id: 1777250810382
+  fields:
+    Front: Біль приходить і йде
+    Back: The pain comes and goes
+    Audio: Medicine_0041-The_pain.mp3
+  tags: []
+- id: 1777250810383
+  fields:
+    Front: У мене стріляє в попереку
+    Back: I&#x27;ve got shooting pain in my lower back
+    Audio: Medicine_0042-I_ve_got.mp3
+  tags: []
+- id: 1777250810384
+  fields:
+    Front: Спина заклинила вранці
+    Back: My back seized up this morning
+    Audio: Medicine_0043-My_back.mp3
+  tags: []
+- id: 1777250810385
+  fields:
+    Front: Біль іде вниз по правій нозі
+    Back: The pain goes down my right leg
+    Audio: Medicine_0044-The_pain.mp3
+  tags: []
+- id: 1777250810386
+  fields:
+    Front: Це схоже на радикуліт
+    Back: It sounds like sciatica
+    Audio: Medicine_0045-It_sounds.mp3
+  tags: []
+- id: 1777250810387
+  fields:
+    Front: Вона потягнула спину вчора
+    Back: She pulled her back yesterday
+    Audio: Medicine_0046-She_pulled.mp3
+  tags: []
+- id: 1777250810388
+  fields:
+    Front: Чи допомагає ібупрофен?
+    Back: Does ibuprofen help?
+    Audio: Medicine_0047-Does_ibuprofen.mp3
+  tags: []
+- id: 1777250810389
+  fields:
+    Front: Так, трохи полегшує біль
+    Back: Yes, it eases the pain a bit
+    Audio: Medicine_0048-Yes__it.mp3
+  tags: []
+- id: 1777250810390
+  fields:
+    Front: Мені потрібно направлення до фізіотерапевта
+    Back: I need a referral to a physiotherapist
+    Audio: Medicine_0049-I_need.mp3
+  tags: []
+- id: 1777250810391
+  fields:
+    Front: Чи робили ви рентген?
+    Back: Have you had an X-ray?
+    Audio: Medicine_0050-Have_you.mp3
+  tags: []
+- id: 1777250810392
+  fields:
+    Front: Ні, я ще не робив рентген
+    Back: No, I haven&#x27;t had an X-ray yet
+    Audio: Medicine_0051-No__I.mp3
+  tags: []
+- id: 1777250810393
+  fields:
+    Front: У мене здуття живота після їжі
+    Back: I get bloating after eating
+    Audio: Medicine_0052-I_get.mp3
+  tags: []
+- id: 1777250810394
+  fields:
+    Front: Як довго у вас проблеми з травленням?
+    Back: How long have you had digestive problems?
+    Audio: Medicine_0053-How_long.mp3
+  tags: []
+- id: 1777250810395
+  fields:
+    Front: Вже близько шести місяців
+    Back: For about six months now
+    Audio: Medicine_0054-For_about.mp3
+  tags: []
+- id: 1777250810396
+  fields:
+    Front: У мене спазми в животі
+    Back: I&#x27;ve got stomach cramps
+    Audio: Medicine_0055-I_ve_got.mp3
+  tags: []
+- id: 1777250810397
+  fields:
+    Front: Біль гострий чи тупий?
+    Back: Is the pain sharp or dull?
+    Audio: Medicine_0056-Is_the.mp3
+  tags: []
+- id: 1777250810398
+  fields:
+    Front: Біль гострий і приходить хвилями
+    Back: The pain is sharp and comes in waves
+    Audio: Medicine_0057-The_pain.mp3
+  tags: []
+- id: 1777250810399
+  fields:
+    Front: У мене діарея вже три дні
+    Back: I&#x27;ve had diarrhoea for three days
+    Audio: Medicine_0058-I_ve_had.mp3
+  tags: []
+- id: 1777250810400
+  fields:
+    Front: Чи є кров у калі?
+    Back: Is there any blood in your stools?
+    Audio: Medicine_0059-Is_there.mp3
+  tags: []
+- id: 1777250810401
+  fields:
+    Front: Ні, крові немає
+    Back: No, there&#x27;s no blood
+    Audio: Medicine_0060-No__there_s.mp3
+  tags: []
+- id: 1777250810402
+  fields:
+    Front: Мене нудить після жирної їжі
+    Back: I feel nauseous after fatty foods
+    Audio: Medicine_0061-I_feel.mp3
+  tags: []
+- id: 1777250810403
+  fields:
+    Front: Які продукти викликають проблеми?
+    Back: What foods trigger the problems?
+    Audio: Medicine_0062-What_foods.mp3
+  tags: []
+- id: 1777250810404
+  fields:
+    Front: Я не переношу жирне м&#x27;ясо і смажене
+    Back: I can&#x27;t tolerate fatty meat and fried food
+    Audio: Medicine_0063-I_can_t.mp3
+  tags: []
+- id: 1777250810405
+  fields:
+    Front: У мене була проблема з підшлунковою залозою
+    Back: I had a problem with my pancreas
+    Audio: Medicine_0064-I_had.mp3
+  tags: []
+- id: 1777250810406
+  fields:
+    Front: Чи був у вас панкреатит?
+    Back: Have you had pancreatitis?
+    Audio: Medicine_0065-Have_you.mp3
+  tags: []
+- id: 1777250810407
+  fields:
+    Front: Так, минулого року
+    Back: Yes, last year
+    Audio: Medicine_0066-Yes__last.mp3
+  tags: []
+- id: 1777250810408
+  fields:
+    Front: Тепер я уникаю певної їжі
+    Back: Now I avoid certain foods
+    Audio: Medicine_0067-Now_I.mp3
+  tags: []
+- id: 1777250810409
+  fields:
+    Front: У мене печія вночі
+    Back: I get heartburn at night
+    Audio: Medicine_0068-I_get.mp3
+  tags: []
+- id: 1777250810410
+  fields:
+    Front: Вона скаржиться на запор
+    Back: She&#x27;s complaining of constipation
+    Audio: Medicine_0069-She_s_complaining.mp3
+  tags: []
+- id: 1777250810411
+  fields:
+    Front: Коли востаннє у вас був стілець?
+    Back: When did you last have a bowel movement?
+    Audio: Medicine_0070-When_did.mp3
+  tags: []
+- id: 1777250810412
+  fields:
+    Front: Три дні тому
+    Back: Three days ago
+    Audio: Medicine_0071-Three_days.mp3
+  tags: []
+- id: 1777250810413
+  fields:
+    Front: Мене вирвало сьогодні вранці
+    Back: I was sick this morning
+    Audio: Medicine_0072-I_was.mp3
+  tags: []
+- id: 1777250810414
+  fields:
+    Front: Чи думаєте що це харчове отруєння?
+    Back: Do you think it&#x27;s food poisoning?
+    Audio: Medicine_0073-Do_you.mp3
+  tags: []
+- id: 1777250810415
+  fields:
+    Front: Можливо, я з&#x27;їв щось несвіже вчора
+    Back: Possibly, I ate something dodgy yesterday
+    Audio: Medicine_0074-Possibly__I.mp3
+  tags: []
+- id: 1777250810416
+  fields:
+    Front: Що ви їли вчора ввечері?
+    Back: What did you eat last night?
+    Audio: Medicine_0075-What_did.mp3
+  tags: []
+- id: 1777250810417
+  fields:
+    Front: Я їв курку в ресторані
+    Back: I had chicken at a restaurant
+    Audio: Medicine_0076-I_had.mp3
+  tags: []
+- id: 1777250810418
+  fields:
+    Front: У мене розлад шлунка
+    Back: I&#x27;ve got an upset stomach
+    Audio: Medicine_0077-I_ve_got.mp3
+  tags: []
+- id: 1777250810419
+  fields:
+    Front: Він не може нічого їсти
+    Back: He can&#x27;t keep anything down
+    Audio: Medicine_0078-He_can_t.mp3
+  tags: []
+- id: 1777250810420
+  fields:
+    Front: Чи є у вас температура разом з нудотою?
+    Back: Do you have a fever with the nausea?
+    Audio: Medicine_0079-Do_you.mp3
+  tags: []
+- id: 1777250810421
+  fields:
+    Front: Ні, тільки нудота і спазми
+    Back: No, just nausea and cramps
+    Audio: Medicine_0080-No__just.mp3
+  tags: []
+- id: 1777250810422
+  fields:
+    Front: Мій зір став розмитим
+    Back: My vision has gone blurry
+    Audio: Medicine_0081-My_vision.mp3
+  tags: []
+- id: 1777250810423
+  fields:
+    Front: Як довго у вас проблеми зі зором?
+    Back: How long have you had vision problems?
+    Audio: Medicine_0082-How_long.mp3
+  tags: []
+- id: 1777250810424
+  fields:
+    Front: Приблизно два тижні
+    Back: About two weeks
+    Audio: Medicine_0083-About_two.mp3
+  tags: []
+- id: 1777250810425
+  fields:
+    Front: Я бачу подвійне зображення
+    Back: I&#x27;m seeing double
+    Audio: Medicine_0084-I_m_seeing.mp3
+  tags: []
+- id: 1777250810426
+  fields:
+    Front: Чи маєте ви плями перед очима?
+    Back: Do you have floaters in your vision?
+    Audio: Medicine_0085-Do_you.mp3
+  tags: []
+- id: 1777250810427
+  fields:
+    Front: Так, іноді бачу чорні плями
+    Back: Yes, I sometimes see black spots
+    Audio: Medicine_0086-Yes__I.mp3
+  tags: []
+- id: 1777250810428
+  fields:
+    Front: У мене болять очі від екрану
+    Back: My eyes hurt from the screen
+    Audio: Medicine_0087-My_eyes.mp3
+  tags: []
+- id: 1777250810429
+  fields:
+    Front: Це може бути напруга очей
+    Back: It could be eye strain
+    Audio: Medicine_0088-It_could.mp3
+  tags: []
+- id: 1777250810430
+  fields:
+    Front: Мені потрібно перевірити зір
+    Back: I need to get my eyes tested
+    Audio: Medicine_0089-I_need.mp3
+  tags: []
+- id: 1777250810431
+  fields:
+    Front: Коли ви востаннє перевіряли зір?
+    Back: When did you last have an eye test?
+    Audio: Medicine_0090-When_did.mp3
+  tags: []
+- id: 1777250810432
+  fields:
+    Front: Два роки тому у Specsavers
+    Back: Two years ago at Specsavers
+    Audio: Medicine_0091-Two_years.mp3
+  tags: []
+- id: 1777250810433
+  fields:
+    Front: У мене запаморочення коли встаю
+    Back: I feel dizzy when I stand up
+    Audio: Medicine_0092-I_feel.mp3
+  tags: []
+- id: 1777250810434
+  fields:
+    Front: Кімната обертається навколо мене
+    Back: The room is spinning around me
+    Audio: Medicine_0093-The_room.mp3
+  tags: []
+- id: 1777250810435
+  fields:
+    Front: Чи є у вас вертиго?
+    Back: Do you have vertigo?
+    Audio: Medicine_0094-Do_you.mp3
+  tags: []
+- id: 1777250810436
+  fields:
+    Front: Так, схоже на вертиго
+    Back: Yes, it feels like vertigo
+    Audio: Medicine_0095-Yes__it.mp3
+  tags: []
+- id: 1777250810437
+  fields:
+    Front: Як довго триває запаморочення?
+    Back: How long does the dizziness last?
+    Audio: Medicine_0096-How_long.mp3
+  tags: []
+- id: 1777250810438
+  fields:
+    Front: Кілька хвилин кожен раз
+    Back: A few minutes each time
+    Audio: Medicine_0097-A_few.mp3
+  tags: []
+- id: 1777250810439
+  fields:
+    Front: Мене хитає коли я ходжу
+    Back: I&#x27;m unsteady when I walk
+    Audio: Medicine_0098-I_m_unsteady.mp3
+  tags: []
+- id: 1777250810440
+  fields:
+    Front: Він втратив рівновагу вчора
+    Back: He lost his balance yesterday
+    Audio: Medicine_0099-He_lost.mp3
+  tags: []
+- id: 1777250810441
+  fields:
+    Front: Чи було у вас це раніше?
+    Back: Have you had this before?
+    Audio: Medicine_0100-Have_you.mp3
+  tags: []
