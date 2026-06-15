@@ -51,21 +51,25 @@ scripts/
   sync.py             — push YAML changes to Anki
 docs/
   note-types.md       — human-readable summary of models
-  word-lists.md       — vocabulary staging area, not yet turned into cards
+  word-lists.md       — vocabulary roadmap: IT terms, phrases, phrasal verbs not yet in cards
+  decks-overview.md   — why each deck exists, what gap it fills
+  hint-dsl.md         — planned hint system for card Front fields (concept, not implemented yet)
 backups/              — .colpkg snapshots (gitignored)
 ```
 
 ## decks
 
-| dir | Anki deck name | note type |
-|-----|----------------|-----------|
-| [book](./decks/book/) | Book | Basic (type in the answer) + audio |
-| [interview](./decks/interview/) | Interview | Basic (with typing)+audio+state |
-| [it-deck](./decks/it-deck/) | IT_deck | Basic (type in the answer) + audio |
-| [l2-vocab](./decks/l2-vocab/) | L2_vocab | Basic (type in the answer) + audio |
-| [medicine](./decks/medicine/) | Medicine | Basic (type in the answer) + audio |
-| [video-by-movies](./decks/video-by-movies/) | Video_by_movies | Video (type in the answer) |
+| dir | Anki deck name | purpose |
+|-----|----------------|---------|
+| [it-deck](./decks/it-deck/) | IT_deck | IT professional vocabulary — sentence production for work communication |
+| [video-by-movies](./decks/video-by-movies/) | Video_by_movies | Listening + spoken fluency — clips from Sherlock, Silicon Valley, Secret Life of Pets |
+| [interview](./decks/interview/) | Interview | Gaps found during mock interviews — fluency under pressure |
+| [l2-vocab](./decks/l2-vocab/) | L2_vocab | Vocabulary from ESOL L2 Writing/Reading course |
+| [medicine](./decks/medicine/) | Medicine | Medical vocabulary for GP visits and health conversations |
+| [book](./decks/book/) | Book | Phrases and expressions collected while reading English books |
+
+See [docs/decks-overview.md](./docs/decks-overview.md) for full context on each deck.
 
 ## next step
 
-Keep editing `decks/*/cards.yaml`, run `python scripts/validate.py` before committing, then `python scripts/sync.py` to push changes to Anki.
+Finish Silicon Valley S1 clips for video-by-movies. Expand it-deck with code review and stand-up vocabulary (see [docs/word-lists.md](./docs/word-lists.md)).

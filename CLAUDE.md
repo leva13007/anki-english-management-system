@@ -57,14 +57,16 @@ Stored in `models/<safe-name>/`. `safe-name` is the Anki name lowercased, non-al
 
 Stored in `decks/<safe-name>/`. Each deck has `_meta.yaml` (deckName + noteType) and `cards.yaml`.
 
-| dir | Anki deck name | note type |
-|-----|----------------|-----------|
-| `book` | Book | Basic (type in the answer) + audio |
-| `interview` | Interview | Basic (with typing)+audio+state |
-| `it-deck` | IT_deck | Basic (type in the answer) + audio |
-| `l2-vocab` | L2_vocab | Basic (type in the answer) + audio |
-| `medicine` | Medicine | Basic (type in the answer) + audio |
-| `video-by-movies` | Video_by_movies | Video (type in the answer) |
+| dir | Anki deck name | note type | purpose |
+|-----|----------------|-----------|---------|
+| `it-deck` | IT_deck | Basic (type in the answer) + audio | IT professional vocab — sentence production |
+| `video-by-movies` | Video_by_movies | Video (type in the answer) | Listening + fluency — clips from shows |
+| `interview` | Interview | Basic (with typing)+audio+state | Gaps found in mock interviews |
+| `l2-vocab` | L2_vocab | Basic (type in the answer) + audio | ESOL L2 course vocabulary |
+| `medicine` | Medicine | Basic (type in the answer) + audio | Medical vocab for GP visits |
+| `book` | Book | Basic (type in the answer) + audio | Phrases from English books |
+
+See `docs/decks-overview.md` for full context on each deck.
 
 `cards.yaml` format:
 ```yaml
@@ -77,6 +79,18 @@ Stored in `decks/<safe-name>/`. Each deck has `_meta.yaml` (deckName + noteType)
 ```
 
 If a deck has multiple note types, bootstrap creates `cards.<safe-type>.yaml` files instead of a single `cards.yaml`.
+
+### video-by-movies specifics
+
+Clips are short video fragments (max 5 sec, 320px) cut from shows in Final Cut Pro.
+Front = English transcript (what the user types). Back = Ukrainian translation (secondary).
+
+**Current content:**
+- `sherlok_*.webm` — Sherlock BBC, Season 1 complete (660 clips)
+- `silicon_*.webm` — Silicon Valley HBO, Season 1 ~half done (343 clips)
+- `pets_*.webm` — The Secret Life of Pets, complete (273 clips)
+
+**Next candidates:** finish Silicon Valley S1, then House MD / Suits / Sherlock S2.
 
 ---
 
@@ -97,6 +111,17 @@ pip install requests pyyaml
 ```
 
 `.venv/` is gitignored.
+
+---
+
+## Docs
+
+| file | what it contains |
+|------|-----------------|
+| `docs/decks-overview.md` | why each deck exists, motivation, content details |
+| `docs/word-lists.md` | vocabulary roadmap — IT terms, phrases, phrasal verbs not yet in cards |
+| `docs/hint-dsl.md` | planned hint system for card Front fields (HTML-based, not implemented yet) |
+| `docs/note-types.md` | human-readable summary of note type models |
 
 ---
 
