@@ -5,3 +5,4 @@ fields:
 - VideoFilename
 templates:
 - Card 1
+mediaFields: [VideoFilename]

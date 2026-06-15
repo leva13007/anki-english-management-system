@@ -6,3 +6,4 @@ fields:
 - State
 templates:
 - Card 1
+mediaFields: [Audio]
