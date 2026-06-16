@@ -7686,25 +7686,25 @@
 - id: 1780871841255
   fields:
     VideoFilename: silicon_valley_0330.webm
-    Front: 'Twitter: lowercase “t.”'
+    Front: 'Twitter: lowercase "t"'
     Back: 'Twitter: маленька літера «t».'
   tags: []
 - id: 1780871841256
   fields:
     VideoFilename: silicon_valley_0331.webm
-    Front: 'Google: lowercase “g.”'
+    Front: 'Google: lowercase "g"'
     Back: 'Google: маленька літера «g».'
   tags: []
 - id: 1780871841257
   fields:
     VideoFilename: silicon_valley_0332.webm
-    Front: 'Facebook: lowercase “f.”'
+    Front: 'Facebook: lowercase "f"'
     Back: 'Facebook: маленька літера «f».'
   tags: []
 - id: 1780871841258
   fields:
     VideoFilename: silicon_valley_0333.webm
-    Front: Every fucking company in the Valley has lowercase letters.
+    Front: Every fucking company in the Valley has lowercase letters
     Back: У кожної довбаної компанії в Долині є малі літери.
   tags: []
 - id: 1780871841259

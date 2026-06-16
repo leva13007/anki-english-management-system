@@ -4740,7 +4740,7 @@
 - id: 1777250394566
   fields:
     Front: Ми вже випередили графік на цьому етапі
-    Back: We have already been ahead of schedule at this stage.
+    Back: We have already been ahead of schedule at this stage
     Audio: IT_0798-We_have.mp3
   tags: []
 - id: 1781476357190
@@ -4794,7 +4794,7 @@
 - id: 1781476357198
   fields:
     Front: Система залишалася стабільною під час навантажувального тестування
-    Back: The system remained stable during load testing.
+    Back: The system remained stable during load testing
     Audio: IT_0807-The_system.mp3
   tags: []
 - id: 1781476357199
@@ -4806,13 +4806,13 @@
 - id: 1781476357200
   fields:
     Front: Продуктивність залишалася стабільною протягом кількох місяців
-    Back: Performance has remained stable for several months.
+    Back: Performance has remained stable for several months
     Audio: IT_0809-Performance_has.mp3
   tags: []
 - id: 1781476357201
   fields:
     Front: Ми хочемо, щоб застосунок залишався стабільним навіть під піковим навантаженням
-    Back: We want the application to remain stable even under peak load.
+    Back: We want the application to remain stable even under peak load
     Audio: IT_0810-We_want.mp3
   tags: []
 - id: 1781476357202
