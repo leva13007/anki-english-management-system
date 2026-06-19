@@ -4781,7 +4781,7 @@
   tags: []
 - id: 1781476357196
   fields:
-    Front: Чи використання цієї бібліотеки виявилося корисним?
+    Front: Чи використання цієї бібліотеки виявилося таким що є (корисним|вигідний)?
     Back: Did using this library turn out to be beneficial?
     Audio: IT_0805-Did_using.mp3
   tags: []
@@ -4818,49 +4818,49 @@
 - id: 1781476357202
   fields:
     Front: Сервіс залишався стабільним, хоча кількість запитів подвоїлася
-    Back: The service remained stable although the number of requests doubled.
+    Back: The service remained stable although the number of requests doubled
     Audio: IT_0811-The_service.mp3
   tags: []
 - id: 1781476357203
   fields:
-    Front: Після релізу система не залишилася стабільною
-    Back: The system did not remain stable after the release.
+    Front: Cистема не залишилася стабільною Після релізу
+    Back: The system did not remain stable after the release
     Audio: IT_0812-The_system.mp3
   tags: []
 - id: 1781476357204
   fields:
-    Front: Винаходити означає створювати щось нове, чого раніше не існувало
-    Back: To invent means to create something new that did not exist before.
+    Front: Винаходити означає створювати щось нове, чого не існувало раніше
+    Back: To invent means to create something new that did not exist before
     Audio: IT_0813-To_invent.mp3
   tags: []
 - id: 1781476357205
   fields:
     Front: Команда винайшла новий підхід до кешування
-    Back: The team invented a new approach to caching.
+    Back: The team invented a new approach to caching
     Audio: IT_0814-The_team.mp3
   tags: []
 - id: 1781476357206
   fields:
     Front: Нам не потрібно винаходити власний фреймворк
-    Back: We do not need to invent our own framework.
+    Back: We do not need to invent our own framework
     Audio: IT_0815-We_do.mp3
   tags: []
 - id: 1781476357207
   fields:
-    Front: Чому ми намагаємося винайти те, що вже існує?
+    Front: Чому ми намагаємося винайти щось, що вже існує?
     Back: Why are we trying to invent something that already exists?
     Audio: IT_0816-Why_are.mp3
   tags: []
 - id: 1781476357208
   fields:
     Front: Це рішення було винайдене для вирішення дуже специфічної проблеми
-    Back: This solution was invented to solve a very specific problem.
+    Back: This solution was invented to solve a very specific problem
     Audio: IT_0817-This_solution.mp3
   tags: []
 - id: 1781476357209
   fields:
     Front: Ми могли б використати готовий інструмент замість того, щоб винаходити новий
-    Back: We could use an existing tool instead of inventing a new one.
+    Back: We could use an existing tool instead of inventing a new one
     Audio: IT_0818-We_could.mp3
   tags: []
 - id: 1781476357210

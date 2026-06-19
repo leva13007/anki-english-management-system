@@ -1148,7 +1148,7 @@
 - id: 1780346303449
   fields:
     Front: Лінійний графік порівнює кількість туристів у трьох країнах між 1990 і 2010 роками.
-    Back: The line graph compares the number of tourists in three countries between 1990 and 2010.
+    Back: The line graph compares the number of tourists in three countries between 1990 and 2010
     Audio: L2_0176-The_line.mp3
   tags: []
 - id: 1780346303450
@@ -1370,50 +1370,50 @@
   tags: []
 - id: 1780346303486
   fields:
-    Front: Споживання енергії значно знизилось після 2010 року.
-    Back: Energy consumption declined significantly after 2010.
+    Front: Споживання енергії знизилось значно після 2010 року.
+    Back: Energy consumption declined significantly after 2010
     Audio: L2_0213-Energy_consumption.mp3
   tags: []
 - id: 1780346303487
   fields:
-    Front: Кількість користувачів стрімко зросла протягом цього десятиліття.
-    Back: The number of users grew rapidly throughout the decade.
+    Front: Кількість користувачів зросла стрімко протягом десятиліття.
+    Back: The number of users grew rapidly throughout the decade
     Audio: L2_0214-The_number.mp3
   tags: []
 - id: 1780346303488
   fields:
-    Front: Рівень безробіття поступово знижувався з 2005 по 2015 рік.
-    Back: The unemployment rate fell gradually between 2005 and 2015.
+    Front: Рівень безробіття (падав|знижувався)&nbsp;поступово між 2005 та 2015 роками
+    Back: The unemployment rate fell gradually between 2005 and 2015
     Audio: L2_0215-The_unemployment.mp3
   tags: []
 - id: 1780346303489
   fields:
-    Front: Показник незначно зріс — лише на 3 відсоткових пункти.
-    Back: The figure increased slightly, by just 3 percentage points.
+    Front: Показник зріс (ледь|незначно), на лише 3 відсоткових пункти.
+    Back: The figure increased slightly, by just 3 percentage points
     Audio: L2_0216-The_figure.mp3
   tags: []
 - id: 1780346303490
   fields:
     Front: Частка помірно зросла — з 12% до 18%.
-    Back: The proportion rose moderately, from 12% to 18%.
+    Back: The proportion rose moderately, from 12% to 18%
     Audio: L2_0217-The_proportion.mp3
   tags: []
 - id: 1780346303491
   fields:
     Front: Рівень залишався відносно стабільним протягом усього цього періоду.
-    Back: The level remained relatively stable throughout the entire period.
+    Back: The level remained relatively stable throughout the entire period
     Audio: L2_0218-The_level.mp3
   tags: []
 - id: 1780346303492
   fields:
     Front: Показники коливались між 30% і 45% протягом десятиліття.
-    Back: The figures fluctuated between 30% and 45% over the decade.
+    Back: The figures fluctuated between 30% and 45% over the decade
     Audio: L2_0219-The_figures.mp3
   tags: []
 - id: 1780346303493
   fields:
-    Front: Частка практично не змінилась — з 41% до 43%.
-    Back: The proportion barely changed, from 41% to 43%.
+    Front: Частка практично (ледь|майже не) змінилась — з 41% до 43%.
+    Back: The proportion barely changed, from 41% to 43%
     Audio: L2_0220-The_proportion.mp3
   tags: []
 - id: 1780346303494

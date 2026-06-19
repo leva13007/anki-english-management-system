@@ -109,7 +109,7 @@
 - id: 1777250810360
   fields:
     Front: У мене пульсуючий біль
-    Back: I&#x27;ve got a throbbing pain
+    Back: I've got a throbbing pain
     Audio: Medicine_0019-I_ve_got.mp3
   tags: []
 - id: 1777250810361
@@ -168,8 +168,8 @@
   tags: []
 - id: 1777250810370
   fields:
-    Front: У мене серцебиття
-    Back: I&#x27;ve got palpitations
+    Front: У мене серцебиття(Симптом)
+    Back: I've got palpitations
     Audio: Medicine_0029-I_ve_got.mp3
   tags: []
 - id: 1777250810371
