@@ -7313,7 +7313,7 @@
 - id: 1780056074935
   fields:
     VideoFilename: silicon_valley_0268.webm
-    Front: That's the artist you were talking about? You said he had paintings in galleries.
+    Front: That's the artist you were talking about? You said he had paintings in galleries
     Back: Це той художник, про якого ти говорив? Ти казав, що його картини виставляються в галереях.
   tags: []
 - id: 1780056074937
@@ -7800,25 +7800,25 @@
 - id: 1782075751376
   fields:
     VideoFilename: silicon_valley_0349.webm
-    Front: If you pull out, it looks like Peter is running away from Gavin.
+    Front: If you pull out, it looks like Peter is running away from Gavin
     Back: Якщо ти відмовишся, це виглядатиме так, ніби Пітер тікає від Гевіна.
   tags: []
 - id: 1782075751377
   fields:
     VideoFilename: silicon_valley_0350.webm
-    Front: So let me just tell you what’s gonna happen.
+    Front: So let me just tell you what's gonna happen
     Back: Тож дозволь мені сказати, що зараз буде.
   tags: []
 - id: 1782075751378
   fields:
     VideoFilename: silicon_valley_0351.webm
-    Front: I’m going to be straight with you.
+    Front: I'm gonna be straight with you
     Back: Я скажу тобі прямо.
   tags: []
 - id: 1782075751379
   fields:
     VideoFilename: silicon_valley_0352.webm
-    Front: Peter would spend millions just to mildly annoy Gavin.
+    Front: Peter would spend millions just to mildly annoy Gavin
     Back: Пітер витратив би мільйони, аби лише трохи позлити Гевіна.
   tags: []
 - id: 1782075751380

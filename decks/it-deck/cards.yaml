@@ -2065,7 +2065,7 @@
 - id: 1769256692426
   fields:
     Front: Якщо припущення хибне, воно (поступово призведе) до неправильного рішення
-    Back: If the assumption is wrong, it will lead to an incorrect decision.
+    Back: If the assumption is wrong, it will lead to an incorrect decision
     Audio: IT_0352-If_the.mp3
   tags: []
 - id: 1769256692427
@@ -2669,7 +2669,7 @@
 - id: 1773081427865
   fields:
     Front: До 8 вечора я вже завершив більшість моїх задач
-    Back: By eight PM, I had already completed most of my tasks.
+    Back: By eight PM, I had already completed most of my tasks
     Audio: IT_0452-By_8.mp3
   tags: []
 - id: 1773081427866
@@ -4890,19 +4890,19 @@
 - id: 1781476357214
   fields:
     Front: Вона очолювала кілька великих технічних ініціатив
-    Back: She has led several major technical initiatives.
+    Back: She has led several major technical initiatives
     Audio: IT_0823-She_has.mp3
   tags: []
 - id: 1781476357215
   fields:
     Front: Мені запропонували очолити цей напрямок
-    Back: I was asked to lead this initiative.
+    Back: I was asked to lead this initiative
     Audio: IT_0824-I_was.mp3
   tags: []
 - id: 1781476357216
   fields:
     Front: Ефективний лідер повинен вміти приймати складні рішення
-    Back: An effective leader must be able to make difficult decisions.
+    Back: An effective leader must be able to make difficult decisions
     Audio: IT_0825-An_effective.mp3
   tags: []
 - id: 1781476357217
@@ -4938,25 +4938,25 @@
 - id: 1781476357222
   fields:
     Front: Ці два підходи важко розрізнити на перший погляд
-    Back: These two approaches are difficult to distinguish at first glance.
+    Back: These two approaches are difficult to distinguish at first glance
     Audio: IT_0831-These_two.mp3
   tags: []
 - id: 1781476357223
   fields:
-    Front: Ми повинні навчитися розрізняти вимоги та припущення
-    Back: We must learn to distinguish requirements from assumptions.
+    Front: Ми повинні навчитися розрізняти вимоги від припущеннь
+    Back: We must learn to distinguish requirements from assumptions
     Audio: IT_0832-We_must.mp3
   tags: []
 - id: 1781476357224
   fields:
     Front: Було нелегко розрізнити справжню проблему серед усіх симптомів
-    Back: It was not easy to distinguish the real issue among all the symptoms.
+    Back: It was not easy to distinguish the real issue among all the symptoms
     Audio: IT_0833-It_was.mp3
   tags: []
 - id: 1781476357225
   fields:
-    Front: Покращувати означає робити щось кращим або ефективнішим
-    Back: To enhance means to make something better or more effective.
+    Front: Покращувати означає робити щось кращим або більш ефективним
+    Back: To enhance means to make something better or more effective
     Audio: IT_0834-To_enhance.mp3
   tags: []
 - id: 1781476357226

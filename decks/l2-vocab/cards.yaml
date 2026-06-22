@@ -1454,26 +1454,27 @@
   tags: []
 - id: 1782077182714
   fields:
-    Front: Спочатку мені повідомили інформацію, яка згодом виявилася неправильною.
-    Back: Firstly, I was provided with information that later proved to be incorrect.
+    Front: Спочатку мені повідомили інформацію(я отримав passive), яка згодом виявилася неправильною(підтведилася
+      такою що є...).
+    Back: Firstly, I was provided with information that later proved to be incorrect
     Audio: L2_0227-Firstly__I.mp3
   tags: []
 - id: 1782077182715
   fields:
-    Front: Крім того, мої занепокоєння не були належним чином розглянуті співробітниками.
-    Back: Furthermore, my concerns were not addressed appropriately by the staff.
+    Front: Крім того, мої занепокоєння не були розглянуті&nbsp;належним чином співробітниками.
+    Back: Furthermore, my concerns were not addressed appropriately by the staff
     Audio: L2_0228-Furthermore__my.mp3
   tags: []
 - id: 1782077182716
   fields:
     Front: Більше того, мені довелося чекати значно довше, ніж було обіцяно.
-    Back: Moreover, I had to wait considerably longer than I had been promised.
+    Back: Moreover, I had to wait considerably longer than I had been promised
     Audio: L2_0229-Moreover__I.mp3
   tags: []
 - id: 1782077182717
   fields:
     Front: Незважаючи на мої неодноразові спроби отримати допомогу, ситуація не покращилася.
-    Back: Despite my repeated attempts to seek assistance, the situation did not improve.
+    Back: Despite my repeated attempts to seek assistance, the situation did not improve
     Audio: L2_0230-Despite_my.mp3
   tags: []
 - id: 1782077182718
