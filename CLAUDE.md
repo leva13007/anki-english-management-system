@@ -38,6 +38,18 @@ python scripts/sync.py --prune               # remove orphaned notes from Anki (
 
 `sync.py` writes new `id` values back into `cards.yaml` after `addNote`.
 
+### sync_back.py flags
+
+```
+python scripts/sync_back.py --dry-run             # preview plan, no changes
+python scripts/sync_back.py                       # apply with confirmation
+python scripts/sync_back.py --add-new             # also write new Anki cards to YAML
+python scripts/sync_back.py --download-media      # also download missing media files
+python scripts/sync_back.py --add-new --download-media  # full pull
+```
+
+Cards deleted in Anki are reported but NOT removed from YAML — resolve manually.
+
 ---
 
 ## Note types (models)

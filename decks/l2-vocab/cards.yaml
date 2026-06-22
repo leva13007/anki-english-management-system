@@ -38,7 +38,7 @@
 - id: 1772715543032
   fields:
     Front: У цифрову епоху суспільство змінює свої звички інформаційного споживання.(PrCont)
-    Back: In the digital age, society is changing its information consumption habits.
+    Back: In the digital age, society is changing its information consumption habits
     Audio: L2_0007-In_the.mp3
   tags: []
 - id: 1772715543033
@@ -1136,7 +1136,7 @@
     Front: Стовпчаста діаграма показує зміни в споживанні кави у Обʼеднаному Королівстві протягом періоду
       з 2000 по 2020 рік.
     Back: The bar chart illustrates the changes in coffee consumption in the United Kingdom over the period
-      from 2000 to 2020.
+      from 2000 to 2020
     Audio: L2_0174-The_bar.mp3
   tags: []
 - id: 1780346303448
@@ -1419,12 +1419,282 @@
 - id: 1780346303494
   fields:
     Front: Показник досяг піку у 2008 році на рівні 85 мільйонів.
-    Back: The figure peaked in 2008 at 85 million.
+    Back: The figure peaked in 2008 at 85 million
     Audio: L2_0221-The_figure.mp3
   tags: []
 - id: 1780346303495
   fields:
-    Front: Споживання опустилось до найнижчої позначки у 2003 році.
-    Back: Consumption reached its lowest point in 2003.
+    Front: Споживання (досягло|опустилось) до найнижчої позначки у 2003 році.
+    Back: Consumption reached its lowest point in 2003
     Audio: L2_0222-Consumption_reached.mp3
+  tags: []
+- id: 1782077182710
+  fields:
+    Front: Я пишу, щоб висловити своє невдоволення послугою, яку я нещодавно отримав.
+    Back: I am writing to express my dissatisfaction with the service I recently received
+    Audio: L2_0223-I_am.mp3
+  tags: []
+- id: 1782077182711
+  fields:
+    Front: Я хотів би подати офіційну скаргу щодо мого нещодавнього досвіду.
+    Back: I would like to submit a formal complaint regarding my recent experience
+    Audio: L2_0224-I_would.mp3
+  tags: []
+- id: 1782077182712
+  fields:
+    Front: Я був украй розчарований рівнем обслуговування, який мені було надано.
+    Back: I was extremely disappointed with the standard of service that was provided
+    Audio: L2_0225-I_was.mp3
+  tags: []
+- id: 1782077182713
+  fields:
+    Front: Проблема виникла під час мого останнього візиту до вашого закладу.
+    Back: The issue arose during my most recent visit to your establishment
+    Audio: L2_0226-The_issue.mp3
+  tags: []
+- id: 1782077182714
+  fields:
+    Front: Спочатку мені повідомили інформацію, яка згодом виявилася неправильною.
+    Back: Firstly, I was provided with information that later proved to be incorrect.
+    Audio: L2_0227-Firstly__I.mp3
+  tags: []
+- id: 1782077182715
+  fields:
+    Front: Крім того, мої занепокоєння не були належним чином розглянуті співробітниками.
+    Back: Furthermore, my concerns were not addressed appropriately by the staff.
+    Audio: L2_0228-Furthermore__my.mp3
+  tags: []
+- id: 1782077182716
+  fields:
+    Front: Більше того, мені довелося чекати значно довше, ніж було обіцяно.
+    Back: Moreover, I had to wait considerably longer than I had been promised.
+    Audio: L2_0229-Moreover__I.mp3
+  tags: []
+- id: 1782077182717
+  fields:
+    Front: Незважаючи на мої неодноразові спроби отримати допомогу, ситуація не покращилася.
+    Back: Despite my repeated attempts to seek assistance, the situation did not improve.
+    Audio: L2_0230-Despite_my.mp3
+  tags: []
+- id: 1782077182718
+  fields:
+    Front: У результаті цього я зазнав значних незручностей.
+    Back: As a result, I experienced considerable inconvenience.
+    Audio: L2_0231-As_a.mp3
+  tags: []
+- id: 1782077182719
+  fields:
+    Front: Ця ситуація не лише спричинила стрес, але й призвела до додаткових витрат.
+    Back: This situation not only caused stress but also resulted in additional expenses.
+    Audio: L2_0232-This_situation.mp3
+  tags: []
+- id: 1782077182720
+  fields:
+    Front: Я вважаю, що такий рівень обслуговування є неприйнятним.
+    Back: I believe that this level of service is unacceptable.
+    Audio: L2_0233-I_believe.mp3
+  tags: []
+- id: 1782077182721
+  fields:
+    Front: Більше того, ця проблема могла бути легко вирішена за умови належної комунікації.
+    Back: Furthermore, this issue could have been easily resolved through proper communication.
+    Audio: L2_0234-Furthermore__this.mp3
+  tags: []
+- id: 1782077182722
+  fields:
+    Front: Проте жодних ефективних заходів для виправлення ситуації не було вжито.
+    Back: However, no effective action was taken to rectify the situation.
+    Audio: L2_0235-However__no.mp3
+  tags: []
+- id: 1782077182723
+  fields:
+    Front: Тому я був би вдячний, якби це питання було розслідуване якнайшвидше.
+    Back: Therefore, I would appreciate it if this matter could be investigated as soon as possible.
+    Audio: L2_0236-Therefore__I.mp3
+  tags: []
+- id: 1782077182724
+  fields:
+    Front: Я очікую отримати письмову відповідь протягом наступних двох тижнів.
+    Back: I expect to receive a written response within the next two weeks.
+    Audio: L2_0237-I_expect.mp3
+  tags: []
+- id: 1782077182725
+  fields:
+    Front: Я також хотів би отримати пояснення щодо того, як виникла ця проблема.
+    Back: I would also like to receive an explanation as to how this issue occurred.
+    Audio: L2_0238-I_would.mp3
+  tags: []
+- id: 1782077182726
+  fields:
+    Front: Крім того, я вважаю, що відповідна компенсація була б доречною за цих обставин.
+    Back: In addition, I believe that appropriate compensation would be justified under the circumstances.
+    Audio: L2_0239-In_addition_.mp3
+  tags: []
+- id: 1782077182727
+  fields:
+    Front: Я сподіваюся, що буде знайдено задовільне рішення цієї проблеми.
+    Back: I hope that a satisfactory resolution to this matter can be found.
+    Audio: L2_0240-I_hope.mp3
+  tags: []
+- id: 1782077182728
+  fields:
+    Front: Я з нетерпінням чекаю вашої відповіді.
+    Back: I look forward to your response.
+    Audio: L2_0241-I_look.mp3
+  tags: []
+- id: 1782077182729
+  fields:
+    Front: Дякую за увагу до цього питання.
+    Back: Thank you for your attention to this matter.
+    Audio: L2_0242-Thank_you.mp3
+  tags: []
+- id: 1782077182730
+  fields:
+    Front: Мені було обіцяно, що проблему буде вирішено протягом 48 годин.
+    Back: I was assured that the issue would be resolved within 48 hours.
+    Audio: L2_0243-I_was.mp3
+  tags: []
+- id: 1782077182731
+  fields:
+    Front: На жаль, фактичний рівень обслуговування не відповідав моїм очікуванням.
+    Back: Unfortunately, the actual standard of service did not meet my expectations.
+    Audio: L2_0244-Unfortunately__the.mp3
+  tags: []
+- id: 1782077182732
+  fields:
+    Front: Товар прибув у пошкодженому стані, що зробило його непридатним для використання.
+    Back: The product arrived in a damaged condition, which rendered it unusable.
+    Audio: L2_0245-The_product.mp3
+  tags: []
+- id: 1782077182733
+  fields:
+    Front: Незважаючи на мої попередні звернення, я досі не отримав задовільної відповіді.
+    Back: Despite my previous enquiries, I have yet to receive a satisfactory response.
+    Audio: L2_0246-Despite_my.mp3
+  tags: []
+- id: 1782077182734
+  fields:
+    Front: Особливо розчаровує те, що зі мною ніхто не зв’язався, щоб повідомити про затримку.
+    Back: What is particularly disappointing is that nobody contacted me to inform me of the delay.
+    Audio: L2_0247-What_is.mp3
+  tags: []
+- id: 1782077182735
+  fields:
+    Front: Я вважаю, що клієнти повинні бути поінформовані про будь-які зміни заздалегідь.
+    Back: I believe that customers should be informed of any changes in advance.
+    Audio: L2_0248-I_believe.mp3
+  tags: []
+- id: 1782077182736
+  fields:
+    Front: За цих обставин я хотів би вимагати повного повернення коштів.
+    Back: Under the circumstances, I would like to request a full refund.
+    Audio: L2_0249-Under_the.mp3
+  tags: []
+- id: 1782077182737
+  fields:
+    Front: Крім фінансових втрат, ця ситуація спричинила значний стрес та незручності.
+    Back: In addition to the financial loss, this situation caused considerable stress and inconvenience.
+    Audio: L2_0250-In_addition.mp3
+  tags: []
+- id: 1782077182738
+  fields:
+    Front: Я сподіваюся, що будуть вжиті відповідні заходи для запобігання подібним випадкам у майбутньому.
+    Back: I hope that appropriate measures will be taken to prevent similar incidents in the future.
+    Audio: L2_0251-I_hope.mp3
+  tags: []
+- id: 1782077182739
+  fields:
+    Front: Як постійний клієнт, я очікував значно вищого рівня професіоналізму.
+    Back: As a regular customer, I expected a considerably higher level of professionalism.
+    Audio: L2_0252-As_a.mp3
+  tags: []
+- id: 1782077182740
+  fields:
+    Front: Я вважаю, що ця ситуація стала наслідком неналежної організації.
+    Back: I believe that this situation resulted from inadequate organisation.
+    Audio: L2_0253-I_believe.mp3
+  tags: []
+- id: 1782077182741
+  fields:
+    Front: Мені надали оманливу інформацію щодо умов послуги.
+    Back: I was provided with misleading information regarding the terms of the service.
+    Audio: L2_0254-I_was.mp3
+  tags: []
+- id: 1782077182742
+  fields:
+    Front: Затримка спричинила серйозні незручності для мене та моєї родини.
+    Back: The delay caused significant inconvenience for both me and my family.
+    Audio: L2_0255-The_delay.mp3
+  tags: []
+- id: 1782077182743
+  fields:
+    Front: Я був здивований відсутністю професіоналізму з боку вашого персоналу.
+    Back: I was surprised by the lack of professionalism displayed by your staff.
+    Audio: L2_0256-I_was.mp3
+  tags: []
+- id: 1782077182744
+  fields:
+    Front: Ця проблема могла бути легко вирішена на ранньому етапі.
+    Back: This issue could have been resolved easily at an earlier stage.
+    Audio: L2_0257-This_issue.mp3
+  tags: []
+- id: 1782077182745
+  fields:
+    Front: Я неодноразово намагався зв’язатися з вашою службою підтримки безуспішно.
+    Back: I made several attempts to contact your customer support team without success.
+    Audio: L2_0258-I_made.mp3
+  tags: []
+- id: 1782077182746
+  fields:
+    Front: Мені здається неприйнятним, що клієнтів залишають без будь-яких оновлень щодо ситуації.
+    Back: I find it unacceptable that customers are left without any updates regarding the situation.
+    Audio: L2_0259-I_find.mp3
+  tags: []
+- id: 1782077182747
+  fields:
+    Front: Через цю помилку мені довелося змінити свої плани в останній момент.
+    Back: As a result of this error, I was forced to alter my plans at short notice.
+    Audio: L2_0260-As_a.mp3
+  tags: []
+- id: 1782077182748
+  fields:
+    Front: Я очікував значно кращого обслуговування від компанії з такою репутацією.
+    Back: I expected a considerably higher standard of service from a company with such a reputation.
+    Audio: L2_0261-I_expected.mp3
+  tags: []
+- id: 1782077182749
+  fields:
+    Front: Моє бронювання було скасовано без попереднього повідомлення.
+    Back: My booking was cancelled without prior notice.
+    Audio: L2_0262-My_booking.mp3
+  tags: []
+- id: 1782077182750
+  fields:
+    Front: Особливе занепокоєння викликає той факт, що проблема досі залишається невирішеною.
+    Back: Of particular concern is the fact that the issue remains unresolved.
+    Audio: L2_0263-Of_particular.mp3
+  tags: []
+- id: 1782077182751
+  fields:
+    Front: Я був змушений витратити додатковий час та кошти через цю ситуацію.
+    Back: I was required to spend additional time and money as a consequence of this situation.
+    Audio: L2_0264-I_was.mp3
+  tags: []
+- id: 1782077182752
+  fields:
+    Front: Я хотів би, щоб були вжиті необхідні заходи для виправлення цієї помилки.
+    Back: I would like the necessary steps to be taken to rectify this mistake.
+    Audio: L2_0265-I_would.mp3
+  tags: []
+- id: 1782077182753
+  fields:
+    Front: З огляду на обставини, я вважаю, що маю право на компенсацію.
+    Back: Given the circumstances, I believe that I am entitled to compensation.
+    Audio: L2_0266-Given_the.mp3
+  tags: []
+- id: 1782077182754
+  fields:
+    Front: Якщо це питання не буде вирішене належним чином, я буду змушений передати його далі.
+    Back: If this matter is not handled appropriately, I will have no choice but to escalate it further.
+    Audio: L2_0267-If_this.mp3
   tags: []

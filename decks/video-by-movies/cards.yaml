@@ -7277,7 +7277,7 @@
 - id: 1777582493128
   fields:
     VideoFilename: silicon_valley_0262.webm
-    Front: That's why cloud-based is the holy grail.
+    Front: That's why cloud-based is the holy grail
     Back: Саме тому хмарні рішення — це святий Грааль.
   tags: []
 - id: 1777582493129
@@ -7758,7 +7758,7 @@
 - id: 1780871841267
   fields:
     VideoFilename: silicon_valley_0342.webm
-    Front: But I hear good things.
+    Front: But I hear good things
     Back: Але я чую про тебе хороше.
   tags: []
 - id: 1780871841268
@@ -7770,6 +7770,222 @@
 - id: 1780871841269
   fields:
     VideoFilename: silicon_valley_0344.webm
-    Front: I have begun to do Pilates.
+    Front: I have begun to do Pilates
     Back: Я почав займатися пілатесом.
+  tags: []
+- id: 1782075751372
+  fields:
+    VideoFilename: silicon_valley_0345.webm
+    Front: It inspired me to call TechCrunch and offer to be their keynote speaker
+    Back: Це надихнуло мене зателефонувати в TechCrunch і запропонувати себе як основного доповідача.
+  tags: []
+- id: 1782075751373
+  fields:
+    VideoFilename: silicon_valley_0346.webm
+    Front: So, I will see you all at the conference
+    Back: Отже, побачимося на конференції.
+  tags: []
+- id: 1782075751374
+  fields:
+    VideoFilename: silicon_valley_0347.webm
+    Front: This is displeasing
+    Back: Це мене не тішить.
+  tags: []
+- id: 1782075751375
+  fields:
+    VideoFilename: silicon_valley_0348.webm
+    Front: I have never seen him so incensed.
+    Back: Я ніколи не бачив його таким розлюченим.
+  tags: []
+- id: 1782075751376
+  fields:
+    VideoFilename: silicon_valley_0349.webm
+    Front: If you pull out, it looks like Peter is running away from Gavin.
+    Back: Якщо ти відмовишся, це виглядатиме так, ніби Пітер тікає від Гевіна.
+  tags: []
+- id: 1782075751377
+  fields:
+    VideoFilename: silicon_valley_0350.webm
+    Front: So let me just tell you what’s gonna happen.
+    Back: Тож дозволь мені сказати, що зараз буде.
+  tags: []
+- id: 1782075751378
+  fields:
+    VideoFilename: silicon_valley_0351.webm
+    Front: I’m going to be straight with you.
+    Back: Я скажу тобі прямо.
+  tags: []
+- id: 1782075751379
+  fields:
+    VideoFilename: silicon_valley_0352.webm
+    Front: Peter would spend millions just to mildly annoy Gavin.
+    Back: Пітер витратив би мільйони, аби лише трохи позлити Гевіна.
+  tags: []
+- id: 1782075751380
+  fields:
+    VideoFilename: silicon_valley_0353.webm
+    Front: However angry he is, I am one-tenth as angry.
+    Back: Як`им би злим він не був, я злий лише на одну десяту від цього.
+  tags: []
+- id: 1782075751381
+  fields:
+    VideoFilename: silicon_valley_0354.webm
+    Front: I don’t know. Paint over it.
+    Back: Не знаю. Зафарбуй це.
+  tags: []
+- id: 1782075751382
+  fields:
+    VideoFilename: silicon_valley_0355.webm
+    Front: Here’s the headline
+    Back: Ось заголовок.
+  tags: []
+- id: 1782075751383
+  fields:
+    VideoFilename: silicon_valley_0356.webm
+    Front: Point of fact is, he’s Pakistani.
+    Back: Факт у тому, що він пакистанець.
+  tags: []
+- id: 1782075751384
+  fields:
+    VideoFilename: silicon_valley_0357.webm
+    Front: Homes, you lied to me.
+    Back: Гоумс, ти мені збрехав.
+  tags: []
+- id: 1782075751385
+  fields:
+    VideoFilename: silicon_valley_0358.webm
+    Front: Come on, man. Why would you think that?
+    Back: Та годі, друже. Чому ти так подумав?
+  tags: []
+- id: 1782075751386
+  fields:
+    VideoFilename: silicon_valley_0359.webm
+    Front: I’d like to institute an organizational system called scrum
+    Back: Я хотів би запровадити організаційну систему під назвою Scrum.
+  tags: []
+- id: 1782075751387
+  fields:
+    VideoFilename: silicon_valley_0360.webm
+    Front: Welcome to the next eight weeks of our lives.
+    Back: Ласкаво просимо до наступних восьми тижнів нашого життя.
+  tags: []
+- id: 1782075751388
+  fields:
+    VideoFilename: silicon_valley_0361.webm
+    Front: How long do we think each one will take?
+    Back: Як думаємо, скільки часу займе кожне з них?
+  tags: []
+- id: 1782075751389
+  fields:
+    VideoFilename: silicon_valley_0362.webm
+    Front: I don’t know. Who cares?
+    Back: Не знаю. Кого це хвилює?
+  tags: []
+- id: 1782075751390
+  fields:
+    VideoFilename: silicon_valley_0363.webm
+    Front: Not “tasks,” “stories.”
+    Back: Не «задачі», а «історії».
+  tags: []
+- id: 1782075751391
+  fields:
+    VideoFilename: silicon_valley_0364.webm
+    Front: I’ve got a story, why don’t you choke on my balls?
+    Back: 'У мене є одна історія: чому б тобі не подавитися моїми яйцями?'
+  tags: []
+- id: 1782075751392
+  fields:
+    VideoFilename: silicon_valley_0365.webm
+    Front: He’s trying to get us to compete so we work faster.
+    Back: Він намагається змусити нас конкурувати, щоб ми працювали швидше.
+  tags: []
+- id: 1782075751393
+  fields:
+    VideoFilename: silicon_valley_0366.webm
+    Front: Fine. Don’t compete. Do them at whatever speed you like.
+    Back: Добре. Не конкуруйте. Робіть це з будь-якою швидкістю, яка вам подобається.
+  tags: []
+- id: 1782075751394
+  fields:
+    VideoFilename: silicon_valley_0367.webm
+    Front: Look at this… left from the previous tenant.
+    Back: Подивіться на це… залишилося від попереднього орендаря.
+  tags: []
+- id: 1782075751395
+  fields:
+    VideoFilename: silicon_valley_0368.webm
+    Front: we leave them and wait to see if the criminal returns to the scene of the crime.
+    Back: Ми залишимо їх і подивимося, чи повернеться злочинець на місце злочину.
+  tags: []
+- id: 1782075751396
+  fields:
+    VideoFilename: silicon_valley_0369.webm
+    Front: I’m trying to be vulnerable in front of you. I don’t know. Is this a safe place?
+    Back: Я намагаюся бути відвертим перед вами. Не знаю. Це безпечне місце?
+  tags: []
+- id: 1782075751397
+  fields:
+    VideoFilename: silicon_valley_0370.webm
+    Front: Why would you stab a plumber?
+    Back: Навіщо було бити ножем сантехніка?
+  tags: []
+- id: 1782075751398
+  fields:
+    VideoFilename: silicon_valley_0371.webm
+    Front: All right. It was worth a try. Thanks anyway, Chuy.
+    Back: Гаразд. Спробувати було варто. У будь-якому разі дякую, Чуй.
+  tags: []
+- id: 1782075751399
+  fields:
+    VideoFilename: silicon_valley_0372.webm
+    Front: Another one down.
+    Back: Ще один готовий.
+  tags: []
+- id: 1782075751400
+  fields:
+    VideoFilename: silicon_valley_0373.webm
+    Front: You still working on that last one?
+    Back: Ти все ще працюєш над останнім?
+  tags: []
+- id: 1782075751401
+  fields:
+    VideoFilename: silicon_valley_0374.webm
+    Front: Take your time. There’s no rush, Dinesh.
+    Back: Не поспішай. Час є, Дінеше.
+  tags: []
+- id: 1782075751402
+  fields:
+    VideoFilename: silicon_valley_0375.webm
+    Front: Feeling pretty happy about yourself?
+    Back: Задоволений собою?
+  tags: []
+- id: 1782075751403
+  fields:
+    VideoFilename: silicon_valley_0376.webm
+    Front: I’m impressed. He sold a mural today for a half-million bucks.
+    Back: Я вражений. Сьогодні він продав мурал за пів мільйона доларів.
+  tags: []
+- id: 1782075751404
+  fields:
+    VideoFilename: silicon_valley_0377.webm
+    Front: It wasn’t on a garage door, was it?
+    Back: Це ж не був малюнок на дверях гаража, правда?
+  tags: []
+- id: 1782075751405
+  fields:
+    VideoFilename: silicon_valley_0378.webm
+    Front: You don’t think it’s too incendiary for the offices?
+    Back: Тобі не здається, що це занадто провокаційно для офісу?
+  tags: []
+- id: 1782075751406
+  fields:
+    VideoFilename: silicon_valley_0379.webm
+    Front: You know me well.
+    Back: Ти добре мене знаєш.
+  tags: []
+- id: 1782075751407
+  fields:
+    VideoFilename: silicon_valley_0380.webm
+    Front: It is pretty raunchy, though.
+    Back: Хоча це досить вульгарно.
   tags: []

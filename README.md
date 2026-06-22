@@ -19,12 +19,21 @@ python scripts/bootstrap_decks.py    # cards      → decks/
 python scripts/bootstrap_media.py    # media files → media/
 ```
 
-**Ongoing:**
+**Ongoing (YAML → Anki):**
 ```
 Edit decks/*/cards.yaml
 python scripts/validate.py          # lints repo, exit 1 on errors
 python scripts/sync.py --dry-run    # preview changes
 python scripts/sync.py              # apply to Anki (asks confirmation)
+git commit
+```
+
+**Pull changes from Anki back (Anki → YAML):**
+```
+python scripts/sync_back.py                              # preview plan
+python scripts/sync_back.py --add-new                    # also write new Anki cards to YAML
+python scripts/sync_back.py --download-media             # also download missing media files
+python scripts/sync_back.py --add-new --download-media   # full pull
 git commit
 ```
 
@@ -60,17 +69,17 @@ backups/              — .colpkg snapshots (gitignored)
 
 ## decks
 
-| dir | Anki deck name | purpose |
-|-----|----------------|---------|
-| [it-deck](./decks/it-deck/) | IT_deck | IT professional vocabulary — sentence production for work communication |
-| [video-by-movies](./decks/video-by-movies/) | Video_by_movies | Listening + spoken fluency — clips from Sherlock, Silicon Valley, Secret Life of Pets |
-| [interview](./decks/interview/) | Interview | Gaps found during mock interviews — fluency under pressure |
-| [l2-vocab](./decks/l2-vocab/) | L2_vocab | Vocabulary from ESOL L2 Writing/Reading course |
-| [medicine](./decks/medicine/) | Medicine | Medical vocabulary for GP visits and health conversations |
-| [book](./decks/book/) | Book | Phrases and expressions collected while reading English books |
+| dir | Anki deck name | cards | purpose |
+|-----|----------------|-------|---------|
+| [it-deck](./decks/it-deck/) | IT_deck | 853 | IT professional vocabulary — sentence production for work communication |
+| [video-by-movies](./decks/video-by-movies/) | Video_by_movies | 1331 | Listening + spoken fluency — clips from Sherlock, Silicon Valley, Secret Life of Pets |
+| [interview](./decks/interview/) | Interview | — | Gaps found during mock interviews — fluency under pressure |
+| [l2-vocab](./decks/l2-vocab/) | L2_vocab | 267 | Vocabulary from ESOL L2 Writing/Reading course |
+| [medicine](./decks/medicine/) | Medicine | 100 | Medical vocabulary for GP visits and health conversations |
+| [book](./decks/book/) | Book | 53 | Phrases and expressions collected while reading English books |
 
 See [docs/decks-overview.md](./docs/decks-overview.md) for full context on each deck.
 
 ## next step
 
-Finish Silicon Valley S1 clips for video-by-movies. Expand it-deck with code review and stand-up vocabulary (see [docs/word-lists.md](./docs/word-lists.md)).
+Sync 81 new Silicon Valley S1 clips from Anki (`sync_back.py --add-new --download-media`). Rebuild interview deck. Expand it-deck with code review and stand-up vocabulary (see [docs/word-lists.md](./docs/word-lists.md)).

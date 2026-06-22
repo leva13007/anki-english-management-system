@@ -4180,7 +4180,7 @@
   tags: []
 - id: 1774620257141
   fields:
-    Front: Він колись вірив, що проблема ~вже~ вирішена
+    Front: Він колись вірив, що проблема ~вже~ була вирішеною
     Back: He used to believe that the issue had been resolved
     Audio: IT_0703-He_used.mp3
   tags: []
@@ -4865,20 +4865,20 @@
   tags: []
 - id: 1781476357210
   fields:
-    Front: Іноді найкраще рішення полягає не у винаходженні чогось нового
-    Back: Sometimes the best solution is not to invent something new.
+    Front: Іноді найкраще рішення це не винаходити чогось нове
+    Back: Sometimes the best solution is not to invent something new
     Audio: IT_0819-Sometimes_the.mp3
   tags: []
 - id: 1781476357211
   fields:
     Front: Очолювати означає бути відповідальним за команду, проєкт або ініціативу
-    Back: To lead means to be responsible for a team, project, or initiative.
+    Back: To lead means to be responsible for a team, project, or initiative
     Audio: IT_0820-To_lead.mp3
   tags: []
 - id: 1781476357212
   fields:
     Front: Він очолював команду під час міграції системи
-    Back: He led the team during the system migration.
+    Back: He led the team during the system migration
     Audio: IT_0821-He_led.mp3
   tags: []
 - id: 1781476357213
@@ -4914,13 +4914,13 @@
 - id: 1781476357218
   fields:
     Front: Розрізняти означає бачити або пояснювати відмінність між речами
-    Back: To distinguish means to see or explain the difference between things.
+    Back: To distinguish means to see or explain the difference between things
     Audio: IT_0827-To_distinguish.mp3
   tags: []
 - id: 1781476357219
   fields:
-    Front: Важливо розрізняти симптом і справжню причину проблеми
-    Back: It is important to distinguish the symptom from the actual cause of the problem.
+    Front: Важливо розрізняти симптом від справжньої причини проблеми
+    Back: It is important to distinguish the symptom from the actual cause of the problem
     Audio: IT_0828-It_is.mp3
   tags: []
 - id: 1781476357220
@@ -4932,7 +4932,7 @@
 - id: 1781476357221
   fields:
     Front: Багато розробників не можуть чітко розрізнити ці концепції
-    Back: Many developers cannot clearly distinguish these concepts.
+    Back: Many developers cannot clearly distinguish these concepts
     Audio: IT_0830-Many_developers.mp3
   tags: []
 - id: 1781476357222
