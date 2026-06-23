@@ -28,6 +28,16 @@ python scripts/sync.py              # apply to Anki (asks confirmation)
 git commit
 ```
 
+**Generate audio via ElevenLabs (Anki not required):**
+```
+python scripts/generate_audio.py --deck interview   # walk through cards with empty Audio
+# interactive session: [y] keep  [p] replay  [r] regenerate  [s] skip  [q] quit
+python scripts/validate.py          # verify media refs
+python scripts/sync.py              # push to Anki
+```
+
+Requires `ELEVENLABS_API_KEY` in `.env`. Each card gets a random voice from the built-in pool; `r` picks a fresh one.
+
 **Pull changes from Anki back (Anki → YAML):**
 ```
 python scripts/sync_back.py                              # preview plan
@@ -59,6 +69,8 @@ scripts/
   validate.py         — lint repo before committing
   sync.py             — push YAML changes to Anki
   sync_back.py        — pull changes from Anki back into YAML
+  generate_audio.py   — interactive ElevenLabs TTS session; fills empty Audio fields
+.env                  — API keys (gitignored, never commit)
 docs/
   note-types.md       — human-readable summary of models
   word-lists.md       — vocabulary roadmap: IT terms, phrases, phrasal verbs not yet in cards

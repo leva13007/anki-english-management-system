@@ -23,6 +23,7 @@ All scripts live in `scripts/`, require `.venv` activated, use `requests` + `yam
 | `validate.py` | lints repo: structure, duplicates, media refs, HTML noise — exit 1 on errors |
 | `sync.py` | pushes YAML → Anki: add/update notes, upload media, write back new ids |
 | `sync_back.py` | pulls changes from Anki back into YAML (reverse sync) |
+| `generate_audio.py` | generates MP3 audio for cards via ElevenLabs TTS (interactive session) |
 
 Bootstrap scripts are **idempotent** — safe to re-run.  
 `bootstrap_media.py` reads `mediaFields` from `models/*/_meta.yaml` to know which fields contain filenames.
@@ -49,6 +50,46 @@ python scripts/sync_back.py --add-new --download-media  # full pull
 ```
 
 Cards deleted in Anki are reported but NOT removed from YAML — resolve manually.
+
+### generate_audio.py
+
+Generates MP3 audio for cards where the `Audio` field is empty. Reads the `Back` field (English text), sends it to ElevenLabs TTS, plays back the result, and on confirmation saves the file to `media/` and updates `cards.yaml` immediately. Does not require Anki to be running.
+
+```
+python scripts/generate_audio.py --deck interview   # process interview deck
+python scripts/generate_audio.py --deck l2-vocab    # process any other deck
+```
+
+**Interactive keys:**
+
+| key | action |
+|-----|--------|
+| `y` | accept — save MP3 to `media/`, write `[sound:…]` into cards.yaml, next card |
+| `p` | replay — play the same audio again without a new API call |
+| `r` | regenerate — new ElevenLabs call with a fresh random voice, play again |
+| `s` | skip — leave this card's Audio empty, move to next |
+| `q` | quit — save progress so far and exit |
+
+**Voice pool:** a random voice is picked from `DEFAULT_VOICES` for each new card (and on `r`). The pool is defined in the script. On `p` replay the already-generated audio plays unchanged.
+
+**Config (`.env`):**
+
+```
+ELEVENLABS_API_KEY=...          # required
+ELEVENLABS_VOICE_IDS=id1,id2   # optional — replaces the built-in voice pool
+ELEVENLABS_VOICE_ID=...        # optional — single voice (used if VOICE_IDS not set)
+ELEVENLABS_MODEL_ID=...        # optional — defaults to eleven_multilingual_v2
+```
+
+**Workflow after a session:**
+
+```bash
+python scripts/generate_audio.py --deck interview   # fill in Audio fields
+python scripts/validate.py                          # check media refs are valid
+python scripts/sync.py                              # push to Anki
+```
+
+Video decks (`video-by-movies`) are automatically rejected — they use `VideoFilename`, not `Audio`.
 
 ---
 
@@ -87,7 +128,7 @@ See `docs/decks-overview.md` for full context on each deck.
   fields:
     Front: English sentence
     Back: Ukrainian translation
-    Audio: "[sound:filename.mp3]"   # or VideoFilename: 00001.webm
+    Audio: filename.mp3             # or VideoFilename: 00001.webm
   tags: []
 ```
 
@@ -127,6 +168,19 @@ pip install requests pyyaml
 
 ---
 
+## Environment config (`.env`)
+
+`.env` lives in the project root and is gitignored. Never read, print, or commit it.
+
+| key | required | description |
+|-----|----------|-------------|
+| `ELEVENLABS_API_KEY` | yes (for `generate_audio.py`) | ElevenLabs API key |
+| `ELEVENLABS_VOICE_IDS` | no | comma-separated voice ID pool for random selection |
+| `ELEVENLABS_VOICE_ID` | no | single voice override (fallback if VOICE_IDS not set) |
+| `ELEVENLABS_MODEL_ID` | no | TTS model, defaults to `eleven_multilingual_v2` |
+
+---
+
 ## Docs
 
 | file | what it contains |
@@ -143,3 +197,4 @@ pip install requests pyyaml
 - `.venv/` — Python venv
 - `__pycache__/` — bytecode
 - `backups/` — `.colpkg` snapshots (kept locally, not in git)
+- `.env` — API keys and secrets (never commit)
