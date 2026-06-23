@@ -1,0 +1,516 @@
+- fields:
+    Front: Стандартне відкриття — розкажи про себе
+    Back: I'm a frontend developer — been building mostly React and TypeScript apps for the past few years,
+      currently at The AA in Cardiff.
+    Audio: interview_ce625b994bb6.mp3
+    State: intro
+  tags:
+  - interview
+  - intro
+- fields:
+    Front: Яка твоя основна спеціалізація?
+    Back: Frontend — React and TypeScript are my main tools. I know my way around Node when I need to,
+      but UI is where I live.
+    Audio: interview_8d75d3203ff2.mp3
+    State: intro
+  tags:
+  - interview
+  - intro
+- fields:
+    Front: Де ти зараз працюєш і що там робиш?
+    Back: I'm at The AA — the UK roadside assistance company. I work on the frontend, mostly React.
+    Audio: interview_e8239d125a9a.mp3
+    State: intro
+  tags:
+  - interview
+  - intro
+- fields:
+    Front: Розкажи про свій досвід коротко — для HR
+    Back: A few years of professional frontend, React and TypeScript day-to-day, and I run a tech community
+      on the side.
+    Audio: interview_ccf7373ab650.mp3
+    State: intro
+  tags:
+  - interview
+  - intro
+- fields:
+    Front: Як описати себе одним реченням?
+    Back: Frontend developer who likes clean code, cares about UX, and tends to get involved in community
+      stuff.
+    Audio: interview_b8d0a0711038.mp3
+    State: intro
+  tags:
+  - interview
+  - intro
+- fields:
+    Front: Яка у тебе освіта?
+    Back: I studied engineering in Ukraine, but I'm largely self-taught when it comes to web development.
+    Audio: interview_1640d2d67da9.mp3
+    State: intro
+  tags:
+  - interview
+  - intro
+- fields:
+    Front: Де ти зараз знаходишся / живеш?
+    Back: I'm based in Cardiff — been here for a while now.
+    Audio: interview_e3bf23942657.mp3
+    State: intro
+  tags:
+  - interview
+  - intro
+- fields:
+    Front: Як відповісти на питання про рівень англійської?
+    Back: My English is a work in progress — I'm around B2, comfortable for most work conversations, and
+      actively improving.
+    Audio: interview_7de2df687d69.mp3
+    State: intro
+  tags:
+  - interview
+  - intro
+- fields:
+    Front: Чому ти став розробником?
+    Back: Honestly, I just liked building things. Started tinkering, things clicked — been doing it ever
+      since.
+    Audio: interview_5a38c369dcc5.mp3
+    State: intro
+  tags:
+  - interview
+  - intro
+- fields:
+    Front: Як ти опишеш свій стиль роботи?
+    Back: I like owning things end-to-end — thinking about the full picture, not just my slice. And I
+      prefer small PRs and quick feedback loops.
+    Audio: interview_015494a1c65c.mp3
+    State: intro
+  tags:
+  - interview
+  - intro
+- fields:
+    Front: Який у тебе досвід з React?
+    Back: I've been writing React professionally for a few years — hooks, context, custom hooks. Functional
+      components all the way.
+    Audio: interview_f8fb554c84d7.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Розкажи про TypeScript у твоїй роботі
+    Back: TypeScript's mandatory at The AA — I'm pretty comfortable with it, generics and utility types
+      included.
+    Audio: interview_c396422d1879.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Що таке Vite і чому ти його використовуєш?
+    Back: Vite's a build tool — dev server starts in milliseconds, config is way simpler than Webpack.
+      It's become my default.
+    Audio: ''
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Що таке state management і який підхід ти використовуєш?
+    Back: Depends on the scale — for simpler stuff I use Context, for more complex state I'd reach for
+      Zustand or Redux Toolkit.
+    Audio: interview_509e75ac1578.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Як ти підходиш до оптимізації продуктивності в React?
+    Back: I start with profiling — React DevTools and Lighthouse — before touching anything. Then useMemo,
+      useCallback, lazy loading.
+    Audio: interview_3cf52748aec7.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Що таке useEffect і коли ти його використовуєш?
+    Back: useEffect is for side effects — data fetching, subscriptions, DOM manipulation. I try to keep
+      it minimal and always handle cleanup.
+    Audio: interview_cc4145736a07.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Як ти тестуєш свій код?
+    Back: Unit tests with Jest, component tests with React Testing Library. I try to test behaviour, not
+      implementation details.
+    Audio: interview_346826dd523b.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Розкажи про складний компонент, який ти побудував
+    Back: I built a drag-and-drop interface — managing state between dragged items and drop zones was
+      the tricky part, had to watch rerenders carefully.
+    Audio: interview_64200ee560ca.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Що ти знаєш про Node.js?
+    Back: Enough to be dangerous — I've built APIs and scripts with it, but I wouldn't call myself a backend
+      developer.
+    Audio: interview_378e1bbde246.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Як ти підходиш до code review?
+    Back: I look for clarity first — if I have to read something twice to understand it, that's worth
+      a comment. Then bugs, then tests.
+    Audio: interview_de358fdba6a8.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Як ти працюєш з REST API?
+    Back: I use fetch or axios, and I handle loading and error states explicitly — never assume the request
+      will succeed.
+    Audio: interview_456e4e1a1242.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Розкажи про проблему з продуктивністю, яку ти вирішив
+    Back: Had a component re-rendering on every keystroke — traced it to an inline object in props, wrapped
+      it in useMemo and it was sorted.
+    Audio: interview_a6cf00951498.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Як ти структуруєш великий React проект?
+    Back: Features-based folders usually — each feature has its own components, hooks, and types together.
+      Keeps things close to where they're used.
+    Audio: interview_a9154dba3a19.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Що ти знаєш про git?
+    Back: Day-to-day git — branching, PRs, rebasing, resolving conflicts. I try to keep commits small
+      and meaningful.
+    Audio: interview_d0ec6d60a31e.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Як ти вирішуєш задачу, якої ніколи раніше не робив?
+    Back: Read the docs first, look for examples, maybe a quick proof of concept — then once I understand
+      the shape of it, I build properly.
+    Audio: interview_8da9689886a3.mp3
+    State: technical
+  tags:
+  - interview
+  - technical
+- fields:
+    Front: Розкажи про виклик, який ти подолав на роботі
+    Back: We had a third-party integration failing silently — I added error boundaries and retry logic,
+      which stopped the whole page going blank.
+    Audio: interview_ef9e11e05238.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Як ти поводишся коли не погоджуєшся з технічним рішенням?
+    Back: I'll raise it once, clearly, with my reasoning. If the team still goes a different way, I get
+      on board — and we revisit if it causes issues.
+    Audio: interview_1eb17a7fc904.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Розкажи про помилку і що ти з неї навчився
+    Back: Shipped a change without checking the mobile view — looked fine on desktop, broken on mobile.
+      Now I always check both before opening a PR.
+    Audio: interview_b624b672025b.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Як ти розставляєш пріоритети коли задач багато?
+    Back: I check what's blocking others first, then what's closest to done — and I flag early if something's
+      going to miss a deadline.
+    Audio: interview_661a3516a0e7.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Розкажи про момент коли ти взяв ініціативу
+    Back: Noticed our error handling was inconsistent across the app — proposed a shared error boundary
+      pattern, got it approved, and rolled it out.
+    Audio: interview_5c911db1e7c2.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Як ти працюєш під тиском або з жорсткими дедлайнами?
+    Back: I stay focused on what's shippable — cut scope if needed, not quality. And I communicate early
+      if something's at risk.
+    Audio: interview_4d731045ed51.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Розкажи про успішну командну роботу
+    Back: A new designer joined mid-sprint — I paired with them to walk through our component library
+      so they knew what already existed before designing new things.
+    Audio: interview_0ab3efefbf7a.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Як ти навчаєшся на роботі? Є конкретний приклад?
+    Back: I learn mostly by doing — if I need to pick up something new I build a small demo first, not
+      just read about it.
+    Audio: interview_192f7a405010.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Розкажи про момент коли ти не вклався в дедлайн
+    Back: Underestimated a refactor once — it touched more than I expected. Flagged it a couple of days
+      early and we adjusted the sprint, which was fine.
+    Audio: interview_363ac9c9194e.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Як ти даєш фідбек колезі якщо є проблема з його кодом?
+    Back: In PR comments I'm direct but not harsh — I explain why, not just what. If it's bigger I'd rather
+      have a quick call than a long comment thread.
+    Audio: interview_1d6db3963c6f.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Як ти адаптуєшся до нової кодової бази?
+    Back: I read the docs first, then trace one feature end-to-end — follow a user action from the UI
+      all the way through. Gets me oriented fast.
+    Audio: interview_f890ce5cc947.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Розкажи про момент коли пояснював технічне нетехнічній людині
+    Back: I ran a stream explaining async/await to beginners — learned that analogies land better than
+      definitions. 'Like placing an order and waiting for a text' worked.
+    Audio: interview_2ef891dce57c.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Що ти робиш коли застряг на задачі?
+    Back: Give it 30 minutes of solid trying, rubber-duck it — write down what I know and what I don't.
+      Then ask. Usually surfaces the answer.
+    Audio: interview_785ca3d68a19.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Як ти підходиш до задач з нечіткими вимогами?
+    Back: I list my assumptions, confirm the key ones with whoever owns the ticket, then start — better
+      to clarify up front than build the wrong thing.
+    Audio: interview_9ed38e1d6e00.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Розкажи про момент коли ти отримав важкий фідбек
+    Back: Someone told me my commit messages were useless — they were right. I started writing them with
+      more context and code reviews got much smoother.
+    Audio: interview_30db682735e7.mp3
+    State: behavioural
+  tags:
+  - interview
+  - behavioural
+- fields:
+    Front: Чому ти шукаєш нову роботу?
+    Back: I've grown a lot at The AA but I'm looking for a role where I can go deeper on the architecture
+      side and work in a team that ships fast.
+    Audio: interview_9de98bf5b455.mp3
+    State: motivation
+  tags:
+  - interview
+  - motivation
+- fields:
+    Front: Чому саме ця компанія?
+    Back: I looked at your tech stack and the product — the engineering culture sounds like the kind of
+      place I'd actually enjoy working.
+    Audio: interview_e40d47dc179a.mp3
+    State: motivation
+  tags:
+  - interview
+  - motivation
+- fields:
+    Front: Що тебе мотивує в роботі?
+    Back: Shipping something and seeing people actually use it. And honestly, a good team — makes a huge
+      difference.
+    Audio: interview_6d32ea682738.mp3
+    State: motivation
+  tags:
+  - interview
+  - motivation
+- fields:
+    Front: Де ти бачиш себе через 3-5 років?
+    Back: Senior or lead frontend — and still doing the community thing on the side. I don't want to move
+      away from the code.
+    Audio: interview_d17579f1b99b.mp3
+    State: motivation
+  tags:
+  - interview
+  - motivation
+- fields:
+    Front: Що тебе приваблює в цій ролі конкретно?
+    Back: The fact that it's a product role, not agency work — I want to build something long-term, not
+      jump between clients.
+    Audio: interview_55c61b3d0b95.mp3
+    State: motivation
+  tags:
+  - interview
+  - motivation
+- fields:
+    Front: Що для тебе важливо в компанії?
+    Back: Good engineering culture, honest feedback, and not too much process overhead. I want to spend
+      time building, not in meetings.
+    Audio: interview_c5beed552f31.mp3
+    State: motivation
+  tags:
+  - interview
+  - motivation
+- fields:
+    Front: Чому frontend, а не fullstack або backend?
+    Back: I like the direct feedback loop — you change something and you can see it immediately. That's
+      satisfying in a way backend work isn't.
+    Audio: interview_28c1551024d0.mp3
+    State: motivation
+  tags:
+  - interview
+  - motivation
+- fields:
+    Front: Що тобі найбільше подобається в поточній роботі?
+    Back: The ownership — I own features end-to-end, which means I think about the full picture, not just
+      my slice.
+    Audio: interview_e6c080e8982b.mp3
+    State: motivation
+  tags:
+  - interview
+  - motivation
+- fields:
+    Front: Розкажи про IT Friday
+    Back: I run a weekly tech livestream — IT Friday. About 4K people follow it. We cover everything from
+      code deep-dives to career stuff.
+    Audio: interview_e244c8f02ffc.mp3
+    State: community
+  tags:
+  - interview
+  - community
+- fields:
+    Front: Чому ти ведеш стріми якщо і так зайнятий роботою?
+    Back: It keeps me sharp — when you explain things live to people asking hard questions, you realise
+      what you actually know versus what you just think you know.
+    Audio: interview_cc508b30b5ca.mp3
+    State: community
+  tags:
+  - interview
+  - community
+- fields:
+    Front: Що ти публікував з open source?
+    Back: A small npm package — color-names-ts — TypeScript types for CSS colour names. Nothing huge,
+      but it's on npm and people use it.
+    Audio: interview_dcd34d369554.mp3
+    State: community
+  tags:
+  - interview
+  - community
+- fields:
+    Front: Як твоя спільнота допомагає тобі як розробнику?
+    Back: Running a livestream teaches you to explain things clearly under pressure — which I use every
+      day in standups and code reviews.
+    Audio: interview_34507c5aad4d.mp3
+    State: community
+  tags:
+  - interview
+  - community
+- fields:
+    Front: Є у тебе публічні проекти або виступи?
+    Back: I've done live coding streams — built Minesweeper and a Wordle clone with React and TypeScript,
+      all live. Shows how I think through problems.
+    Audio: interview_a316e5c0fcae.mp3
+    State: community
+  tags:
+  - interview
+  - community
+- fields:
+    Front: Питання про перші місяці в ролі
+    Back: What would a successful first three months look like for this role?
+    Audio: interview_5f7f3efae0b0.mp3
+    State: closing
+  tags:
+  - interview
+  - closing
+- fields:
+    Front: Питання про команду
+    Back: What's the team structure like — how many frontend devs, and how closely does everyone work
+      together?
+    Audio: interview_8dbf5de3f488.mp3
+    State: closing
+  tags:
+  - interview
+  - closing
+- fields:
+    Front: Питання про процеси в команді
+    Back: How do you handle code reviews — is it async or do you do it in pairs?
+    Audio: interview_29482c3761d8.mp3
+    State: closing
+  tags:
+  - interview
+  - closing
+- fields:
+    Front: Питання про технічні виклики
+    Back: What's the biggest technical challenge the frontend team is dealing with right now?
+    Audio: interview_762c2a704872.mp3
+    State: closing
+  tags:
+  - interview
+  - closing
+- fields:
+    Front: Питання про наступний крок після інтервʼю
+    Back: What are the next steps after this? And is there anything about my background you'd like me
+      to clarify?
+    Audio: interview_0d5c23c371e1.mp3
+    State: closing
+  tags:
+  - interview
+  - closing
