@@ -6,12 +6,14 @@ Checks invariants that must always hold.
 Usage:
   source .venv/bin/activate
   python scripts/validate.py
+  python scripts/validate.py --prune   # also delete orphaned media files (asks confirmation)
 
 Exit codes:
   0 — all good (warnings may be present)
   1 — errors found; sync will not run
 """
 
+import argparse
 import re
 import sys
 from collections import defaultdict
@@ -232,6 +234,10 @@ def check_media_references(card, card_loc, models, deck_meta, available_media, u
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--prune", action="store_true", help="delete orphaned media files (asks confirmation)")
+    args = ap.parse_args()
+
     report = Report()
 
     # 1. Models
@@ -331,13 +337,24 @@ def main():
                 report.warn("\n".join(lines))
 
     # 6. Orphaned files in media/
-    orphans = available_media - used_media
+    orphans = sorted(available_media - used_media)
     if orphans:
-        examples = sorted(orphans)[:5]
+        examples = orphans[:5]
         more = f", and {len(orphans) - 5} more" if len(orphans) > 5 else ""
         report.warn(
             f"{len(orphans)} files in media/ with no references (examples: {examples}{more})"
         )
+        if args.prune:
+            print(f"\nOrphaned files to delete ({len(orphans)}):")
+            for name in orphans:
+                print(f"  {name}")
+            confirm = input(f"\nDelete {len(orphans)} files? [y/N] ")
+            if confirm.lower() == "y":
+                for name in orphans:
+                    (MEDIA_DIR / name).unlink()
+                print(f"✓ Deleted {len(orphans)} files.")
+            else:
+                print("Cancelled.")
 
     # 7. Summary
     print(f"Checked {total_cards} notes across {len(models)} Note Types")
