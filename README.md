@@ -85,7 +85,7 @@ backups/              — .colpkg snapshots (gitignored)
 |-----|----------------|-------|---------|
 | [it-deck](./decks/it-deck/) | IT_deck | 853 | IT professional vocabulary — sentence production for work communication |
 | [video-by-movies](./decks/video-by-movies/) | Video_by_movies | 1331 | Listening + spoken fluency — clips from Sherlock, Silicon Valley, Secret Life of Pets |
-| [interview](./decks/interview/) | Interview | — | Gaps found during mock interviews — fluency under pressure |
+| [interview](./decks/interview/) | Interview | 58 | Interview prep: State = interview question (ukr), Front = ukr translation of answer (manual), Back = English answer |
 | [l2-vocab](./decks/l2-vocab/) | L2_vocab | 267 | Vocabulary from ESOL L2 Writing/Reading course |
 | [medicine](./decks/medicine/) | Medicine | 100 | Medical vocabulary for GP visits and health conversations |
 | [book](./decks/book/) | Book | 53 | Phrases and expressions collected while reading English books |

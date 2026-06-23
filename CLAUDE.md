@@ -103,6 +103,15 @@ Stored in `models/<safe-name>/`. `safe-name` is the Anki name lowercased, non-al
 | Basic (with typing)+audio+state | `basic-with-typing-audio-state` | Front, Back, Audio, State | Audio |
 | Video (type in the answer) | `video-type-in-the-answer` | Front, Back, VideoFilename | VideoFilename |
 
+**Field semantics for `basic-with-typing-audio-state` (interview deck):**
+
+| field | role |
+|-------|------|
+| `Front` | Ukrainian translation of the English answer — typed by user as a translation hint (filled manually) |
+| `Back` | English answer to produce |
+| `State` | Interview question / situation that prompted this answer (in Ukrainian) |
+| `Audio` | MP3 of the `Back` text — generated via `generate_audio.py` |
+
 `_meta.yaml` in each model dir is the authoritative schema. `mediaFields` key tells `bootstrap_media.py` which fields hold filenames.
 
 ---
@@ -115,7 +124,7 @@ Stored in `decks/<safe-name>/`. Each deck has `_meta.yaml` (deckName + noteType)
 |-----|----------------|-----------|---------|
 | `it-deck` | IT_deck | Basic (type in the answer) + audio | IT professional vocab — sentence production |
 | `video-by-movies` | Video_by_movies | Video (type in the answer) | Listening + fluency — clips from shows |
-| `interview` | Interview | Basic (with typing)+audio+state | Gaps found in mock interviews |
+| `interview` | Interview | Basic (with typing)+audio+state | Interview prep — State = question, Front = ukr. translation (manual), Back = English answer |
 | `l2-vocab` | L2_vocab | Basic (type in the answer) + audio | ESOL L2 course vocabulary |
 | `medicine` | Medicine | Basic (type in the answer) + audio | Medical vocab for GP visits |
 | `book` | Book | Basic (type in the answer) + audio | Phrases from English books |
