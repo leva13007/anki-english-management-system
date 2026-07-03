@@ -3,3 +3,9 @@ __pycache__/
 backups/
 node_modules/
 .env
+
+.DS_Store
+
+*.srt
+video_prepare/tracks
+video_prepare/converted_webm

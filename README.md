@@ -8,42 +8,103 @@ stack: Python, YAML, AnkiConnect
 
 Version-controlled source of truth for all Anki flashcard decks. Cards and note types are stored as YAML; AnkiConnect bridges local files and Anki over HTTP.
 
-## workflow
+## workflows
 
-Requires Anki running with [AnkiConnect](https://ankiweb.net/shared/info/2055492159) plugin (port 8765).
+> Activate venv first: `source .venv/bin/activate`
 
-**Bootstrap (one-time pull from Anki):**
+---
+
+### 1. First-time setup
+
+Pull everything from Anki into the repo. Anki must be open.
+
 ```
 python scripts/bootstrap_models.py   # note types → models/
 python scripts/bootstrap_decks.py    # cards      → decks/
 python scripts/bootstrap_media.py    # media files → media/
+git commit -m "bootstrap"
 ```
 
-**Ongoing (YAML → Anki):**
+---
+
+### 2. Add / edit cards (YAML → Anki)
+
+Edit `decks/*/cards.yaml`, then push to Anki. Anki must be open.
+
 ```
-Edit decks/*/cards.yaml
-python scripts/validate.py          # lints repo, exit 1 on errors
-python scripts/sync.py --dry-run    # preview changes
-python scripts/sync.py              # apply to Anki (asks confirmation)
+# edit decks/*/cards.yaml
+python scripts/validate.py           # lint — fix errors before syncing
+python scripts/sync.py --dry-run     # preview what will change
+python scripts/sync.py               # apply (asks confirmation, writes new ids back)
 git commit
 ```
 
-**Generate audio via ElevenLabs (Anki not required):**
+---
+
+### 3. Generate audio (ElevenLabs → media/ → Anki)
+
+Fills empty `Audio` fields. **Anki not required.** Requires `ELEVENLABS_API_KEY` in `.env`.
+
 ```
-python scripts/generate_audio.py --deck interview   # walk through cards with empty Audio
-# interactive session: [y] keep  [p] replay  [r] regenerate  [s] skip  [q] quit
-python scripts/validate.py          # verify media refs
-python scripts/sync.py              # push to Anki
+python scripts/generate_audio.py --deck interview
 ```
 
-Requires `ELEVENLABS_API_KEY` in `.env`. Each card gets a random voice from the built-in pool; `r` picks a fresh one.
+Interactive keys per card: `y` keep · `p` replay · `r` regenerate (new voice) · `s` skip · `q` quit
 
-**Pull changes from Anki back (Anki → YAML):**
+Each card gets a random voice from the built-in pool. Progress saves immediately on `y`.
+
 ```
-python scripts/sync_back.py                              # preview plan
-python scripts/sync_back.py --add-new                    # also write new Anki cards to YAML
-python scripts/sync_back.py --download-media             # also download missing media files
+python scripts/validate.py           # verify all Audio refs have matching files
+python scripts/sync.py               # push updated cards + new mp3s to Anki
+git commit
+```
+
+---
+
+### 4. Interview deck: fill in Ukrainian translations (Front field)
+
+The `interview` deck has a special field layout:
+
+| field | what goes here |
+|-------|----------------|
+| `State` | Interview question in Ukrainian (already filled) |
+| `Back` | English answer to practice |
+| `Front` | **Your** Ukrainian translation of Back — fill in manually |
+| `Audio` | MP3 of Back — generated via `generate_audio.py` |
+
+Open `decks/interview/cards.yaml`, find cards where `Front: ''`, and fill in the Ukrainian translation of `Back`. Then sync:
+
+```
+python scripts/validate.py
+python scripts/sync.py
+git commit
+```
+
+---
+
+### 5. Pull changes from Anki back to YAML (Anki → YAML)
+
+Use when you edited cards directly in Anki. Anki must be open.
+
+```
+python scripts/sync_back.py                              # updates changed fields
+python scripts/sync_back.py --add-new                    # + write cards added in Anki GUI
+python scripts/sync_back.py --download-media             # + download new media files
 python scripts/sync_back.py --add-new --download-media   # full pull
+git commit
+```
+
+Cards deleted in Anki are reported but NOT auto-removed from YAML — resolve manually.
+
+---
+
+### 6. Clean up orphaned media
+
+Run after deleting cards or regenerating audio files.
+
+```
+python scripts/validate.py           # shows count of unreferenced files in media/
+python scripts/validate.py --prune   # same + offers to delete them (asks confirmation)
 git commit
 ```
 
