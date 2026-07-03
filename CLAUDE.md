@@ -24,6 +24,7 @@ All scripts live in `scripts/`, require `.venv` activated, use `requests` + `yam
 | `sync.py` | pushes YAML → Anki: add/update notes, upload media, write back new ids |
 | `sync_back.py` | pulls changes from Anki back into YAML (reverse sync) |
 | `generate_audio.py` | generates MP3 audio for cards via ElevenLabs TTS (interactive session) |
+| `import_backlog.py` | imports new lines from a deck's `backlog.md` into `cards.yaml` with an auto-translated `Front` (interactive session) |
 
 Bootstrap scripts are **idempotent** — safe to re-run.  
 `bootstrap_media.py` reads `mediaFields` from `models/*/_meta.yaml` to know which fields contain filenames.
@@ -90,6 +91,32 @@ python scripts/sync.py                              # push to Anki
 ```
 
 Video decks (`video-by-movies`) are automatically rejected — they use `VideoFilename`, not `Audio`.
+
+### import_backlog.py
+
+Picks up lines from `decks/<deck>/backlog.md` (plain text, one English sentence per line) that aren't cards yet, proposes a Ukrainian translation (Google Translate via `deep-translator`), and on confirmation appends a new card to `cards.yaml` immediately — `Back` = the English line, `Front` = the translation, `Audio`/`State` left empty. Dedup is by exact match against existing `Back` values, so `backlog.md` can just keep growing and re-running the script only processes what's new. Does not require Anki or any API key.
+
+```
+python scripts/import_backlog.py --deck interview
+```
+
+**Interactive keys:**
+
+| key | action |
+|-----|--------|
+| `y` | accept the proposed translation, save card, next line |
+| `e` | edit the translation before saving |
+| `s` | skip this line (leave it for a future run) |
+| `q` | quit — save progress so far and exit |
+
+**Workflow after a session:**
+
+```bash
+python scripts/import_backlog.py --deck interview   # fill in Front/Back from backlog.md
+python scripts/generate_audio.py --deck interview   # fill in Audio fields
+python scripts/validate.py                          # sanity check
+python scripts/sync.py                              # push to Anki
+```
 
 ---
 
@@ -170,7 +197,7 @@ Filenames in cards reference media directly (e.g. `00001.webm`, not a full path)
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install requests pyyaml
+pip install requests pyyaml deep-translator
 ```
 
 `.venv/` is gitignored.

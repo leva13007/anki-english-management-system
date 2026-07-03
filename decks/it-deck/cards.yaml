@@ -4511,7 +4511,7 @@
   tags: []
 - id: 1777250394527
   fields:
-    Front: Чи ми зараз на одній хвилі щодо цього підходу?
+    Front: Чи ми на одній хвилі щодо цього підходу?
     Back: Are we on the same page about this approach?
     Audio: IT_0759-Are_we.mp3
   tags: []
@@ -4631,7 +4631,7 @@
   tags: []
 - id: 1777250394548
   fields:
-    Front: Мене не тримали в курсі щодо цього
+    Front: Мене не тримали в курсі щодо цього(Я не був таким що тримався в курсі...)
     Back: I was not kept in the loop about this
     Audio: IT_0780-I_was.mp3
   tags: []
@@ -4962,13 +4962,13 @@
 - id: 1781476357226
   fields:
     Front: Ми хочемо покращити продуктивність цього сервісу
-    Back: We want to enhance the performance of this service.
+    Back: We want to enhance the performance of this service
     Audio: IT_0835-We_want.mp3
   tags: []
 - id: 1781476357227
   fields:
     Front: Останній реліз покращив безпеку системи
-    Back: The latest release enhanced system security.
+    Back: The latest release enhanced system security
     Audio: IT_0836-The_latest.mp3
   tags: []
 - id: 1781476357228
@@ -4980,91 +4980,91 @@
 - id: 1781476357229
   fields:
     Front: Ця функція була додана для покращення доступності
-    Back: This feature was added to enhance accessibility.
+    Back: This feature was added to enhance accessibility
     Audio: IT_0838-This_feature.mp3
   tags: []
 - id: 1781476357230
   fields:
     Front: Ми постійно шукаємо способи покращити процес розробки
-    Back: We are constantly looking for ways to enhance the development process.
+    Back: We are constantly looking for ways to enhance the development process
     Audio: IT_0839-We_are.mp3
   tags: []
 - id: 1781476357231
   fields:
     Front: Продуктивність була значно покращена після рефакторингу
-    Back: Performance was significantly enhanced after the refactoring.
+    Back: Performance was significantly enhanced after the refactoring
     Audio: IT_0840-Performance_was.mp3
   tags: []
 - id: 1781476357232
   fields:
     Front: Розгортання — це процес поступового впровадження нової функції або системи
-    Back: A rollout is the process of gradually introducing a new feature or system.
+    Back: A rollout is the process of gradually introducing a new feature or system
     Audio: IT_0841-A_rollout.mp3
   tags: []
 - id: 1781476357233
   fields:
     Front: Розгортання було виконане поетапно
-    Back: The rollout was performed in stages.
+    Back: The rollout was performed in stages
     Audio: IT_0842-The_rollout.mp3
   tags: []
 - id: 1781476357234
   fields:
-    Front: Коли заплановане розгортання цієї функції?
+    Front: Коли розгортання цієї функції&nbsp; є запланованим?
     Back: When is the rollout of this feature scheduled?
     Audio: IT_0843-When_is.mp3
   tags: []
 - id: 1781476357235
   fields:
     Front: Ми зупинили розгортання після виявлення проблеми
-    Back: We stopped the rollout after discovering an issue.
+    Back: We stopped the rollout after discovering an issue
     Audio: IT_0844-We_stopped.mp3
   tags: []
 - id: 1781476357236
   fields:
     Front: Успішне розгортання вимагало ретельної підготовки
-    Back: A successful rollout required careful preparation.
+    Back: A successful rollout required careful preparation
     Audio: IT_0845-A_successful.mp3
   tags: []
 - id: 1781476357237
   fields:
-    Front: Під час розгортання не було зафіксовано жодних інцидентів
-    Back: No incidents were recorded during the rollout.
+    Front: Жодних інцидентів не було зафіксовано під час розгортання
+    Back: No incidents were recorded during the rollout
     Audio: IT_0846-No_incidents.mp3
   tags: []
 - id: 1781476357238
   fields:
     Front: Розгортання вже триває в кількох регіонах
-    Back: The rollout is already underway in several regions.
+    Back: The rollout is already underway in several regions
     Audio: IT_0847-The_rollout.mp3
   tags: []
 - id: 1781476357239
   fields:
-    Front: Переривати означає зупиняти процес або діяльність до її завершення
-    Back: To interrupt means to stop a process or activity before it is completed.
+    Front: Переривати означає зупиняти процес або діяльність до того як це буде завешеним
+    Back: To interrupt means to stop a process or activity before it is completed
     Audio: IT_0848-To_interrupt.mp3
   tags: []
 - id: 1781476357240
   fields:
     Front: Мережевий збій перервав процес синхронізації
-    Back: A network failure interrupted the synchronization process.
+    Back: A network failure interrupted the synchronization process
     Audio: IT_0849-A_network.mp3
   tags: []
 - id: 1781476357241
   fields:
     Front: Перепрошую, що перебиваю, але маю запитання
-    Back: Sorry to interrupt, but I have a question.
+    Back: Sorry to interrupt, but I have a question
     Audio: IT_0850-Sorry_to.mp3
   tags: []
 - id: 1781476357242
   fields:
     Front: Ніщо не повинно переривати процес деплою
-    Back: Nothing should interrupt the deployment process.
+    Back: Nothing should interrupt the deployment process
     Audio: IT_0851-Nothing_should.mp3
   tags: []
 - id: 1781476357243
   fields:
-    Front: Його виступ кілька разів переривали запитаннями
-    Back: His presentation was interrupted several times by questions.
+    Front: Його (презентація|виступ) кілька разів переривали запитаннями
+    Back: His presentation was interrupted several times by questions
     Audio: IT_0852-His_presentation.mp3
   tags: []
 - id: 1781476357244
@@ -5076,20 +5076,20 @@
 - id: 1781476357245
   fields:
     Front: Система повинна відновлюватися після перерваних процесів
-    Back: The system should recover from interrupted processes.
+    Back: The system should recover from interrupted processes
     Audio: IT_0854-The_system.mp3
   tags: []
 - id: 1781476357246
   fields:
     Front: (Синтезувати|об’єднувати в одне ціле) означає поєднувати інформацію з різних джерел в одне
       ціле
-    Back: To synthesize means to combine information from different sources into a whole.
+    Back: To synthesize means to combine information from different sources into a whole
     Audio: IT_0855-To_synthesize.mp3
   tags: []
 - id: 1781476357247
   fields:
     Front: Ми повинні синтезувати результати кількох досліджень
-    Back: We need to synthesize the findings from several studies.
+    Back: We need to synthesize the findings from several studies
     Audio: IT_0856-We_need.mp3
   tags: []
 - id: 1781476357248
@@ -5101,66 +5101,430 @@
 - id: 1781476357249
   fields:
     Front: Архітектор синтезував вимоги від кількох команд
-    Back: The architect synthesized requirements from several teams.
+    Back: The architect synthesized requirements from several teams
     Audio: IT_0858-The_architect.mp3
   tags: []
 - id: 1781476357250
   fields:
     Front: Цей документ синтезує інформацію з різних джерел
-    Back: This document synthesizes information from different sources.
+    Back: This document synthesizes information from different sources
     Audio: IT_0859-This_document.mp3
   tags: []
 - id: 1781476357251
   fields:
     Front: Перш ніж приймати рішення, ми синтезували всі доступні дані
-    Back: Before making a decision, we synthesized all available data.
+    Back: Before making a decision, we synthesized all available data
     Audio: IT_0860-Before_making.mp3
   tags: []
 - id: 1781476357252
   fields:
     Front: Здатність синтезувати складну інформацію є важливою навичкою для ліда
-    Back: The ability to synthesize complex information is an important skill for a lead.
+    Back: The ability to synthesize complex information is an important skill for a lead
     Audio: IT_0861-The_ability.mp3
   tags: []
 - id: 1781476357253
   fields:
-    Front: Генерувати означає створювати або виробляти щось автоматично або в результаті процесу
-    Back: To generate means to create or produce something automatically or as a result of a process.
+    Front: Генерувати означає створювати або виробляти щось автоматично або як результат процесу
+    Back: To generate means to create or produce something automatically or as a result of a process
     Audio: IT_0862-To_generate.mp3
   tags: []
 - id: 1781476357254
   fields:
     Front: Система генерує звіт кожної ночі
-    Back: The system generates a report every night.
+    Back: The system generates a report every night
     Audio: IT_0863-The_system.mp3
   tags: []
 - id: 1781476357255
   fields:
-    Front: Чи можемо ми автоматично генерувати документацію?
+    Front: Чи можемо ми генерувати документацію автоматично?
     Back: Can we generate the documentation automatically?
     Audio: IT_0864-Can_we.mp3
   tags: []
 - id: 1781476357256
   fields:
     Front: Ця зміна згенерувала неочікувані побічні ефекти
-    Back: This change generated unexpected side effects.
+    Back: This change generated unexpected side effects
     Audio: IT_0865-This_change.mp3
   tags: []
 - id: 1781476357257
   fields:
     Front: Логи були згенеровані під час виконання задачі
-    Back: The logs were generated during task execution.
+    Back: The logs were generated during task execution
     Audio: IT_0866-The_logs.mp3
   tags: []
 - id: 1781476357258
   fields:
     Front: Модель здатна генерувати код на основі опису
-    Back: The model is capable of generating code based on a description.
+    Back: The model is capable of generating code based on a description
     Audio: IT_0867-The_model.mp3
   tags: []
 - id: 1781476357259
   fields:
     Front: Ми вже згенерували достатньо даних для тестування
-    Back: We have already generated enough data for testing.
+    Back: We have already generated enough data for testing
     Audio: IT_0868-We_have.mp3
+  tags: []
+- id: 1783031365842
+  fields:
+    Front: Адаптуватися означає змінювати свою поведінку з метою більш успішно справлятися з новою ситуацією
+    Back: To adapt means to change your behaviour in order to deal more successfully with a new situation
+    Audio: IT_0869-To_adapt_v1.mp3
+  tags: []
+- id: 1783031365844
+  fields:
+    Front: Ми вже адаптували сервіс до нових вимог
+    Back: We have already adapted the service to the new requirements
+    Audio: IT_0870-We_have.mp3
+  tags: []
+- id: 1783031365845
+  fields:
+    Front: Якби ми адаптували архітектуру раніше, міграція була б набагато простішою зараз[Mixed cond,
+      Нереальна умова в минулому а наслідо зараз]
+    Back: If we had adapted the architecture earlier, the migration would be much easier now
+    Audio: IT_0871-If_we.mp3
+  tags: []
+- id: 1783031365846
+  fields:
+    Front: Лише після того, як команда адаптувала процес, кількість інцидентів почала зменшуватися
+    Back: Only after the team had adapted the process did the number of incidents begin to decrease.
+    Audio: IT_0872-Only_after.mp3
+  tags: []
+- id: 1783031365847
+  fields:
+    Front: Чи доводилося вам коли-небудь адаптувати систему до несподіваного трафіку?
+    Back: Have you ever had to adapt a system to unexpected traffic?
+    Audio: IT_0873-Have_you.mp3
+  tags: []
+- id: 1783031365848
+  fields:
+    Front: Компонент був адаптований таким чином, щоб він підтримував обидві версії API
+    Back: The component was adapted in such a way that it supported both API versions.
+    Audio: IT_0874-The_component.mp3
+  tags: []
+- id: 1783031365849
+  fields:
+    Front: Якби сервіс не був адаптований до горизонтального масштабування, він би не витримав сьогоднішнього
+      навантаження [<strong>Third Conditional</strong>, але з прив'язкою до today's]
+    Back: Had the service not been adapted for horizontal scaling, it would not have survived today's
+      load
+    Audio: IT_0875-Had_the.mp3
+  tags: []
+- id: 1783031365850
+  fields:
+    Front: Наймати означає офіційно запросити когось працювати в компанії
+    Back: To hire means to officially employ someone to work for a company
+    Audio: IT_0876-To_hire.mp3
+  tags: []
+- id: 1783031365851
+  fields:
+    Front: Компанія найняла ще двох backend-розробників
+    Back: The company has hired two more backend developers.
+    Audio: IT_0877-The_company.mp3
+  tags: []
+- id: 1783031365852
+  fields:
+    Front: Чому компанія вирішила найняти зовнішнього консультанта?
+    Back: Why did the company decide to hire an external consultant?
+    Audio: IT_0878-Why_did.mp3
+  tags: []
+- id: 1783031365853
+  fields:
+    Front: Якби ми найняли DevOps-інженера раніше, ми б уникнули багатьох проблем
+    Back: If we had hired a DevOps engineer earlier, we would have avoided many problems.
+    Audio: IT_0879-If_we.mp3
+  tags: []
+- id: 1783031365854
+  fields:
+    Front: Рідко компанія наймає Senior-розробника без технічної співбесіди
+    Back: Rarely does a company hire a Senior developer without a technical interview.
+    Audio: IT_0880-Rarely_does.mp3
+  tags: []
+- id: 1783031365855
+  fields:
+    Front: До того часу, коли я приєднався до команди, вже було найнято п’ятьох нових інженерів
+    Back: By the time I joined the team, five new engineers had already been hired.
+    Audio: IT_0881-By_the.mp3
+  tags: []
+- id: 1783031365856
+  fields:
+    Front: Ми наймемо ще одного QA, якщо кількість проєктів продовжить зростати
+    Back: We will hire another QA engineer if the number of projects continues to grow.
+    Audio: IT_0882-We_will.mp3
+  tags: []
+- id: 1783031365857
+  fields:
+    Front: Робити внесок означає допомагати досягти результату або розвитку чогось
+    Back: To contribute means to help achieve a result or improve something.
+    Audio: IT_0883-To_contribute.mp3
+  tags: []
+- id: 1783031365858
+  fields:
+    Front: Він регулярно робить внесок в open-source проєкти
+    Back: He regularly contributes to open-source projects.
+    Audio: IT_0884-He_regularly.mp3
+  tags: []
+- id: 1783031365859
+  fields:
+    Front: Що, на твою думку, найбільше сприяло успіху релізу?
+    Back: What do you think contributed most to the success of the release?
+    Audio: IT_0885-What_do.mp3
+  tags: []
+- id: 1783031365860
+  fields:
+    Front: Якби кожен зробив невеликий внесок, задача вже була б завершена
+    Back: If everyone had made a small contribution, the task would already be finished.
+    Audio: IT_0886-If_everyone.mp3
+  tags: []
+- id: 1783031365861
+  fields:
+    Front: Не лише код сприяє якості продукту, але й хороша документація
+    Back: Not only does the code contribute to the quality of the product, but good documentation does
+      as well.
+    Audio: IT_0887-Not_only.mp3
+  tags: []
+- id: 1783031365862
+  fields:
+    Front: Було доведено, що кешування значно покращує продуктивність
+    Back: Caching has been shown to contribute significantly to performance.
+    Audio: IT_0888-Caching_has.mp3
+  tags: []
+- id: 1783031365863
+  fields:
+    Front: Вона робить внесок у цей проєкт уже понад три роки
+    Back: She has been contributing to this project for more than three years.
+    Audio: IT_0889-She_has.mp3
+  tags: []
+- id: 1783031365864
+  fields:
+    Front: Брати на себе означає погодитися виконувати нову відповідальність або роботу
+    Back: To take on means to accept a new responsibility or piece of work.
+    Audio: IT_0890-To_take.mp3
+  tags: []
+- id: 1783031365865
+  fields:
+    Front: Я вирішив взяти на себе цей рефакторинг
+    Back: I decided to take on this refactoring.
+    Audio: IT_0891-I_decided.mp3
+  tags: []
+- id: 1783031365866
+  fields:
+    Front: Чи варто нам брати на себе ще один проєкт?
+    Back: Should we take on another project?
+    Audio: IT_0892-Should_we.mp3
+  tags: []
+- id: 1783031365867
+  fields:
+    Front: Якби я знав, скільки часу це займе, я б не брався за цю задачу
+    Back: If I had known how much time it would take, I would not have taken on this task.
+    Audio: IT_0893-If_I.mp3
+  tags: []
+- id: 1783031365868
+  fields:
+    Front: Лише після релізу ми усвідомили, наскільки складною була ця відповідальність
+    Back: Only after the release did we realize how challenging this responsibility had been.
+    Audio: IT_0894-Only_after.mp3
+  tags: []
+- id: 1783031365869
+  fields:
+    Front: Вона бере на себе дедалі більше технічних рішень
+    Back: She has been taking on more and more technical decisions.
+    Audio: IT_0895-She_has.mp3
+  tags: []
+- id: 1783031365870
+  fields:
+    Front: Це завдання було взято на себе найдосвідченішим інженером
+    Back: The task was taken on by the most experienced engineer.
+    Audio: IT_0896-The_task.mp3
+  tags: []
+- id: 1783031365871
+  fields:
+    Front: Існувати означає бути реальним або бути присутнім
+    Back: To exist means to be real or to be present.
+    Audio: IT_0897-To_exist.mp3
+  tags: []
+- id: 1783031365872
+  fields:
+    Front: Ця проблема існує вже багато років
+    Back: This issue has existed for many years.
+    Audio: IT_0898-This_issue.mp3
+  tags: []
+- id: 1783031365873
+  fields:
+    Front: Чи існує кращий спосіб вирішити це?
+    Back: Does a better solution exist?
+    Audio: IT_0899-Does_a.mp3
+  tags: []
+- id: 1783031365874
+  fields:
+    Front: Якби таке обмеження не існувало, архітектура була б набагато простішою
+    Back: If such a limitation did not exist, the architecture would be much simpler.
+    Audio: IT_0900-If_such.mp3
+  tags: []
+- id: 1783031365875
+  fields:
+    Front: Лише тоді ми зрозуміли, що проблема взагалі існувала
+    Back: Only then did we realize that the issue had existed at all.
+    Audio: IT_0901-Only_then.mp3
+  tags: []
+- id: 1783031365876
+  fields:
+    Front: Подібні рішення існують майже в кожному великому проєкті
+    Back: Similar solutions exist in almost every large project.
+    Audio: IT_0902-Similar_solutions.mp3
+  tags: []
+- id: 1783031365877
+  fields:
+    Front: Досягати означає успішно отримувати бажаний результат
+    Back: To achieve means to successfully reach a desired result.
+    Audio: IT_0903-To_achieve.mp3
+  tags: []
+- id: 1783031365878
+  fields:
+    Front: Ми вже досягли більшості наших цілей
+    Back: We have already achieved most of our goals.
+    Audio: IT_0904-We_have.mp3
+  tags: []
+- id: 1783031365879
+  fields:
+    Front: Що потрібно зробити, щоб досягти цієї продуктивності?
+    Back: What needs to be done to achieve this level of performance?
+    Audio: IT_0905-What_needs.mp3
+  tags: []
+- id: 1783031365880
+  fields:
+    Front: Якби ми не автоматизували процес, ми б не досягли такого результату
+    Back: Had we not automated the process, we would not have achieved such a result.
+    Audio: IT_0906-Had_we.mp3
+  tags: []
+- id: 1783031365881
+  fields:
+    Front: Рідко команді вдається досягти такого рівня стабільності
+    Back: Rarely does a team achieve such a level of stability.
+    Audio: IT_0907-Rarely_does.mp3
+  tags: []
+- id: 1783031365882
+  fields:
+    Front: До кінця року ми досягнемо повної автоматизації
+    Back: By the end of the year, we will have achieved full automation.
+    Audio: IT_0908-By_the.mp3
+  tags: []
+- id: 1783031365883
+  fields:
+    Front: Трохи змінювати означає робити невеликі зміни для покращення результату
+    Back: To tweak means to make small changes in order to improve something.
+    Audio: IT_0909-To_tweak.mp3
+  tags: []
+- id: 1783031365884
+  fields:
+    Front: Ми лише трохи підкрутили конфігурацію
+    Back: We have only tweaked the configuration.
+    Audio: IT_0910-We_have.mp3
+  tags: []
+- id: 1783031365885
+  fields:
+    Front: Чи варто ще трохи підкрутити алгоритм?
+    Back: Should we tweak the algorithm a little more?
+    Audio: IT_0911-Should_we.mp3
+  tags: []
+- id: 1783031365886
+  fields:
+    Front: Якби ми трохи підкрутили кешування, затримка була б меншою
+    Back: If we tweaked the caching strategy slightly, the latency would be lower.
+    Audio: IT_0912-If_we.mp3
+  tags: []
+- id: 1783031365887
+  fields:
+    Front: Після кількох невеликих змін система почала працювати значно швидше
+    Back: After a few tweaks, the system began to perform much faster.
+    Audio: IT_0913-After_a.mp3
+  tags: []
+- id: 1783031365888
+  fields:
+    Front: Пакет — це група елементів, які обробляються разом
+    Back: A batch is a group of items that are processed together.
+    Audio: IT_0914-A_batch.mp3
+  tags: []
+- id: 1783031365889
+  fields:
+    Front: Ми обробляємо файли пакетами
+    Back: We process the files in batches.
+    Audio: IT_0915-We_process.mp3
+  tags: []
+- id: 1783031365890
+  fields:
+    Front: Чому цей пакет ще не був оброблений?
+    Back: Why hasn’t this batch been processed yet?
+    Audio: IT_0916-Why_hasn_t.mp3
+  tags: []
+- id: 1783031365891
+  fields:
+    Front: Якби пакет був меншим, час відповіді був би коротшим
+    Back: If the batch were smaller, the response time would be shorter.
+    Audio: IT_0917-If_the.mp3
+  tags: []
+- id: 1783031365892
+  fields:
+    Front: Усі записи були оброблені одним пакетним процесом
+    Back: All records were processed by a single batch job.
+    Audio: IT_0918-All_records.mp3
+  tags: []
+- id: 1783031365893
+  fields:
+    Front: Вживати заходів означає почати робити щось для вирішення проблеми
+    Back: To take action means to begin doing something to solve a problem.
+    Audio: IT_0919-To_take.mp3
+  tags: []
+- id: 1783031365894
+  fields:
+    Front: Ми повинні негайно вжити заходів
+    Back: We must take action immediately.
+    Audio: IT_0920-We_must.mp3
+  tags: []
+- id: 1783031365895
+  fields:
+    Front: Чому досі не було вжито жодних заходів?
+    Back: Why has no action been taken yet?
+    Audio: IT_0921-Why_has.mp3
+  tags: []
+- id: 1783031365896
+  fields:
+    Front: Якби ми діяли швидше, інцидент був би менш серйозним
+    Back: Had we taken action sooner, the incident would have been less severe.
+    Audio: IT_0922-Had_we.mp3
+  tags: []
+- id: 1783031365897
+  fields:
+    Front: Лише після скарг користувачів компанія почала діяти
+    Back: Only after users had complained did the company take action.
+    Audio: IT_0923-Only_after.mp3
+  tags: []
+- id: 1783031365898
+  fields:
+    Front: Глибоко розбиратися означає ретельно досліджувати проблему, щоб знайти справжню причину
+    Back: To dig deep means to investigate a problem carefully in order to find its real cause.
+    Audio: IT_0924-To_dig.mp3
+  tags: []
+- id: 1783031365899
+  fields:
+    Front: Нам довелося глибоко розібратися, щоб знайти причину витоку пам’яті
+    Back: We had to dig deep to find the cause of the memory leak.
+    Audio: IT_0925-We_had.mp3
+  tags: []
+- id: 1783031365900
+  fields:
+    Front: Чи достатньо глибоко ми дослідили цей інцидент?
+    Back: Have we dug deep enough into this incident?
+    Audio: IT_0926-Have_we.mp3
+  tags: []
+- id: 1783031365901
+  fields:
+    Front: Якби ми не розібралися глибше, ми б ніколи не знайшли справжню причину
+    Back: Had we not dug deeper, we would never have found the real cause.
+    Audio: IT_0927-Had_we.mp3
+  tags: []
+- id: 1783031365902
+  fields:
+    Front: Лише після кількох годин аналізу нам вдалося докопатися до проблеми
+    Back: Only after several hours of investigation did we manage to dig deep enough to identify the issue.
+    Audio: IT_0928-Only_after.mp3
   tags: []

@@ -1,9 +1,96 @@
-- fields:
-    Front: ''
-    Back: I'm a frontend developer — been building mostly React and TypeScript apps for the past few years,
-      currently at The AA in Cardiff.
-    Audio: interview_ce625b994bb6.mp3
-    State: Стандартне відкриття — розкажи про себе
+- id: 1783113857768
+  fields:
+    Front: Я сіньор JavaScript розробник із семирічним досвідом роботи.
+    Back: I'm a senior full stack JavaScript developer with over seven years of experience.
+    Audio: interview_b35a66df4232.mp3
+    State: ''
   tags:
   - interview
-  - intro
+- id: 1783113857794
+  fields:
+    Front: Я створюю масштабовані веб-додатки — використовуючи інфраструктуру React, NestJS та AWS.
+    Back: I build scalable web applications — using React, NestJS and AWS infrastructure.
+    Audio: interview_08174664a2a6.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783113857816
+  fields:
+    Front: Я починав свою кар’єру як розробник PHP, працюючи з WordPress і Laravel.
+    Back: I started my career as a PHP developer, working with WordPress and Laravel.
+    Audio: interview_e49a39aa09b8.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783113857840
+  fields:
+    Front: У TopDevs і DataArt я працював з React, TypeScript і Node.js.
+    Back: At TopDevs and DataArt I worked with React, TypeScript, and Node.js.
+    Audio: interview_a09def8462bb.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783115114713
+  fields:
+    Front: Останні чотири роки я працював в The AA, одному з найбільших брендів Великобританії.
+    Back: For the past four years I've been at The AA, one of the UK's largest brands.
+    Audio: interview_335766abbbed.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783115114735
+  fields:
+    Front: В АА я керував переробкою платформ із застарілих систем на сучасну архітектуру.
+    Back: In The AA, I've been leading re-platforming from legacy systems to modern architecture.
+    Audio: interview_4d78d751fa35.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783115114771
+  fields:
+    Front: Я також веду перевірку коду та наставляю розробників у всій команді.
+    Back: I also lead code reviews and mentor developers across the team.
+    Audio: interview_f04854547aaf.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783115114786
+  fields:
+    Front: Поза роботою я веду YouTube-канал, присвячений розробці та розробці.
+    Back: Outside of work, I run a YouTube channel focused on engineering and development.
+    Audio: interview_07dc7ae14e38.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783115114811
+  fields:
+    Front: Наразі я записав понад триста годин на різні теми.
+    Back: I've recorded over three hundred hours of different topics so far.
+    Audio: interview_2b162e93ef0f.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783115114835
+  fields:
+    Front: Я також створюю інструменти з відкритим кодом і використовую їх як навчальний матеріал.
+    Back: I also build open-source tools and use them as teaching material.
+    Audio: interview_079dbaad7e76.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783115114861
+  fields:
+    Front: Я також заснував ITFriday — живу технічну спільноту для ІТ.
+    Back: I also founded ITFriday — a live tech community for IT.
+    Audio: interview_eb3d7b7b4768.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783115114885
+  fields:
+    Front: Ми проводимо трансляції щоп’ятниці та охоплюємо все зі світу IT.
+    Back: We stream every Friday and cover everything from the IT world.
+    Audio: interview_d1531f5596cf.mp3
+    State: ''
+  tags:
+  - interview

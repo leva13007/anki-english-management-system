@@ -105,13 +105,13 @@
 - id: 1772715543043
   fields:
     Front: Уряди часто запускають програми ~щоб~ (підвищіти|покращити) рівнів грамотності.
-    Back: Governments often launch programmes to improve literacy levels.
+    Back: Governments often launch programmes to improve literacy levels
     Audio: L2_0018-Governments_often1.mp3
   tags: []
 - id: 1772715543044
   fields:
     Front: Читання з раннього віку допомагає розвивати грамотність.
-    Back: Reading from an early age helps develop literacy.
+    Back: Reading from an early age helps develop literacy
     Audio: L2_0019-Reading_from.mp3
   tags: []
 - id: 1772715543045
@@ -1141,8 +1141,8 @@
   tags: []
 - id: 1780346303448
   fields:
-    Front: Кругова діаграма показує частки різних джерел енергії в Німеччині у 2015 році.
-    Back: The pie chart presents the proportion of different energy sources in Germany in 2015.
+    Front: Кругова діаграма показує частки різних джерел енергії в Німеччині у 2000 році.
+    Back: The pie chart presents the proportion of different energy sources in Germany in 2000
     Audio: L2_0175-The_pie.mp3
   tags: []
 - id: 1780346303449
@@ -1166,7 +1166,7 @@
 - id: 1780346303452
   fields:
     Front: Найбільш помітною тенденцією є різке зростання використання смартфонів після 2010 року.
-    Back: The most striking feature is the sharp increase in smartphone usage after 2010.
+    Back: The most striking feature is the sharp increase in smartphone usage after 2010
     Audio: L2_0179-The_most.mp3
   tags: []
 - id: 1780346303453
@@ -1207,7 +1207,7 @@
   tags: []
 - id: 1780346303459
   fields:
-    Front: Показник для Канади був значно вищим, ніж для Мексики — 62% проти 31%.
+    Front: Показник для Канади був значно вищим, ніж для Мексики — знаходячись на 62% проти 31%.
     Back: The figure for Canada was considerably higher than that of Mexico, standing at 62% compared
       to 31%.
     Audio: L2_0186-The_figure.mp3
@@ -1220,7 +1220,8 @@
   tags: []
 - id: 1780346303461
   fields:
-    Front: Схожа тенденція спостерігалась у Китаї, де показники подвоїлись за десятиліття.
+    Front: (Схожим чином|Аналогічно), Китай продемонстрував подібну тенденцію, з показниками які подвоїлися
+      за десятиліття
     Back: Similarly, China showed a comparable trend, with figures doubling over the decade
     Audio: L2_0188-Similarly__China.mp3
   tags: []
@@ -1479,74 +1480,74 @@
   tags: []
 - id: 1782077182718
   fields:
-    Front: У результаті цього я зазнав значних незручностей.
-    Back: As a result, I experienced considerable inconvenience.
+    Front: Як результат, я зазнав значних незручностей.
+    Back: As a result, I experienced considerable inconvenience
     Audio: L2_0231-As_a.mp3
   tags: []
 - id: 1782077182719
   fields:
     Front: Ця ситуація не лише спричинила стрес, але й призвела до додаткових витрат.
-    Back: This situation not only caused stress but also resulted in additional expenses.
+    Back: This situation not only caused stress but also resulted in additional expenses
     Audio: L2_0232-This_situation.mp3
   tags: []
 - id: 1782077182720
   fields:
     Front: Я вважаю, що такий рівень обслуговування є неприйнятним.
-    Back: I believe that this level of service is unacceptable.
+    Back: I believe that this level of service is unacceptable
     Audio: L2_0233-I_believe.mp3
   tags: []
 - id: 1782077182721
   fields:
-    Front: Більше того, ця проблема могла бути легко вирішена за умови належної комунікації.
-    Back: Furthermore, this issue could have been easily resolved through proper communication.
+    Front: Більше того, ця проблема могла бути легко вирішена (через|за умови) належної комунікації.
+    Back: Furthermore, this issue could have been easily resolved through proper communication
     Audio: L2_0234-Furthermore__this.mp3
   tags: []
 - id: 1782077182722
   fields:
-    Front: Проте жодних ефективних заходів для виправлення ситуації не було вжито.
-    Back: However, no effective action was taken to rectify the situation.
+    Front: Проте жодного ефективного заходу для виправлення ситуації не було вжито.
+    Back: However, no effective action was taken to rectify the situation
     Audio: L2_0235-However__no.mp3
   tags: []
 - id: 1782077182723
   fields:
     Front: Тому я був би вдячний, якби це питання було розслідуване якнайшвидше.
-    Back: Therefore, I would appreciate it if this matter could be investigated as soon as possible.
+    Back: Therefore, I would appreciate it if this matter could be investigated as soon as possible
     Audio: L2_0236-Therefore__I.mp3
   tags: []
 - id: 1782077182724
   fields:
     Front: Я очікую отримати письмову відповідь протягом наступних двох тижнів.
-    Back: I expect to receive a written response within the next two weeks.
+    Back: I expect to receive a written response within the next two weeks
     Audio: L2_0237-I_expect.mp3
   tags: []
 - id: 1782077182725
   fields:
     Front: Я також хотів би отримати пояснення щодо того, як виникла ця проблема.
-    Back: I would also like to receive an explanation as to how this issue occurred.
+    Back: I would also like to receive an explanation as to how this issue occurred
     Audio: L2_0238-I_would.mp3
   tags: []
 - id: 1782077182726
   fields:
-    Front: Крім того, я вважаю, що відповідна компенсація була б доречною за цих обставин.
-    Back: In addition, I believe that appropriate compensation would be justified under the circumstances.
+    Front: Крім того, я вважаю, що відповідна компенсація була б (виправданою|доречною) за цих обставин.
+    Back: In addition, I believe that appropriate compensation would be justified under the circumstances
     Audio: L2_0239-In_addition_.mp3
   tags: []
 - id: 1782077182727
   fields:
-    Front: Я сподіваюся, що буде знайдено задовільне рішення цієї проблеми.
-    Back: I hope that a satisfactory resolution to this matter can be found.
+    Front: Я сподіваюся, що задовільне рішення цієї проблеми буде знайдено
+    Back: I hope that a satisfactory resolution to this matter can be found
     Audio: L2_0240-I_hope.mp3
   tags: []
 - id: 1782077182728
   fields:
     Front: Я з нетерпінням чекаю вашої відповіді.
-    Back: I look forward to your response.
+    Back: I look forward to your response
     Audio: L2_0241-I_look.mp3
   tags: []
 - id: 1782077182729
   fields:
     Front: Дякую за увагу до цього питання.
-    Back: Thank you for your attention to this matter.
+    Back: Thank you for your attention to this matter
     Audio: L2_0242-Thank_you.mp3
   tags: []
 - id: 1782077182730
@@ -1564,7 +1565,7 @@
 - id: 1782077182732
   fields:
     Front: Товар прибув у пошкодженому стані, що зробило його непридатним для використання.
-    Back: The product arrived in a damaged condition, which rendered it unusable.
+    Back: The product arrived in a damaged condition, which rendered it unusable
     Audio: L2_0245-The_product.mp3
   tags: []
 - id: 1782077182733
@@ -1575,20 +1576,20 @@
   tags: []
 - id: 1782077182734
   fields:
-    Front: Особливо розчаровує те, що зі мною ніхто не зв’язався, щоб повідомити про затримку.
+    Front: Що особливо розчаровує це те, що зі мною ніхто не зв’язався, щоб повідомити про затримку.
     Back: What is particularly disappointing is that nobody contacted me to inform me of the delay.
     Audio: L2_0247-What_is.mp3
   tags: []
 - id: 1782077182735
   fields:
     Front: Я вважаю, що клієнти повинні бути поінформовані про будь-які зміни заздалегідь.
-    Back: I believe that customers should be informed of any changes in advance.
+    Back: I believe that customers should be informed of any changes in advance
     Audio: L2_0248-I_believe.mp3
   tags: []
 - id: 1782077182736
   fields:
     Front: За цих обставин я хотів би вимагати повного повернення коштів.
-    Back: Under the circumstances, I would like to request a full refund.
+    Back: Under the circumstances, I would like to request a full refund
     Audio: L2_0249-Under_the.mp3
   tags: []
 - id: 1782077182737
@@ -1600,37 +1601,37 @@
 - id: 1782077182738
   fields:
     Front: Я сподіваюся, що будуть вжиті відповідні заходи для запобігання подібним випадкам у майбутньому.
-    Back: I hope that appropriate measures will be taken to prevent similar incidents in the future.
+    Back: I hope that appropriate measures will be taken to prevent similar incidents in the future
     Audio: L2_0251-I_hope.mp3
   tags: []
 - id: 1782077182739
   fields:
     Front: Як постійний клієнт, я очікував значно вищого рівня професіоналізму.
-    Back: As a regular customer, I expected a considerably higher level of professionalism.
+    Back: As a regular customer, I expected a considerably higher level of professionalism
     Audio: L2_0252-As_a.mp3
   tags: []
 - id: 1782077182740
   fields:
     Front: Я вважаю, що ця ситуація стала наслідком неналежної організації.
-    Back: I believe that this situation resulted from inadequate organisation.
+    Back: I believe that this situation resulted from inadequate organisation
     Audio: L2_0253-I_believe.mp3
   tags: []
 - id: 1782077182741
   fields:
     Front: Мені надали оманливу інформацію щодо умов послуги.
-    Back: I was provided with misleading information regarding the terms of the service.
+    Back: I was provided with misleading information regarding the terms of the service
     Audio: L2_0254-I_was.mp3
   tags: []
 - id: 1782077182742
   fields:
-    Front: Затримка спричинила серйозні незручності для мене та моєї родини.
-    Back: The delay caused significant inconvenience for both me and my family.
+    Front: Затримка спричинила значні незручності для мене та моєї родини.
+    Back: The delay caused significant inconvenience for both me and my family
     Audio: L2_0255-The_delay.mp3
   tags: []
 - id: 1782077182743
   fields:
-    Front: Я був здивований відсутністю професіоналізму з боку вашого персоналу.
-    Back: I was surprised by the lack of professionalism displayed by your staff.
+    Front: Я був здивований браком професіоналізму, продемонстрований вашим персоналом
+    Back: I was surprised by the lack of professionalism displayed by your staff
     Audio: L2_0256-I_was.mp3
   tags: []
 - id: 1782077182744

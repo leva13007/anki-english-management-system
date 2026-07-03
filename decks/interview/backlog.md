@@ -60,9 +60,6 @@ My channel covers real engineering problems, not just tutorial content.
 ITFriday started as a way to reconnect the Ukrainian IT community abroad.
 We stream every Friday and discuss both technical and human topics.
 It's grown into something I'm genuinely proud of outside of my day job.
-
-
-
 I avoid premature optimization — the code often needs to change later anyway.
 First, I ask if a hook is even necessary, or if structure can solve it instead.
 Often useCallback isn't needed if you move the function outside the component.
@@ -73,8 +70,5 @@ Re-render issues are usually a sign of poor component decomposition.
 Breaking components down properly often solves re-render problems naturally.
 Reconciliation compares the old virtual DOM tree with the new one.
 If there's a difference, React triggers a cascading re-render from that point.
-
-
----
 I'm sorry, you're kind of breaking up there
 If you led the team, what would you change?
