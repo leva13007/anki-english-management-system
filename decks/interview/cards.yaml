@@ -1,15 +1,15 @@
 - id: 1783113857768
   fields:
-    Front: Я сіньор JavaScript розробник із семирічним досвідом роботи.
-    Back: I'm a senior full stack JavaScript developer with over seven years of experience.
+    Front: Я сіньор фулстек JavaScript розробник із понад семи роками досвіду.
+    Back: I'm a senior fullstack Javascript developer with over seven years of experience
     Audio: interview_b35a66df4232.mp3
     State: ''
   tags:
   - interview
 - id: 1783113857794
   fields:
-    Front: Я створюю масштабовані веб-додатки — використовуючи інфраструктуру React, NestJS та AWS.
-    Back: I build scalable web applications — using React, NestJS and AWS infrastructure.
+    Front: Я створюю масштабовані веб-додатки — використовуючи React, NestJS та AWS інфраструктуру.
+    Back: I build scalable web applications - using React, Nestjs and AWS infrastructure
     Audio: interview_08174664a2a6.mp3
     State: ''
   tags:
@@ -17,7 +17,7 @@
 - id: 1783113857816
   fields:
     Front: Я починав свою кар’єру як розробник PHP, працюючи з WordPress і Laravel.
-    Back: I started my career as a PHP developer, working with WordPress and Laravel.
+    Back: I started my career as a PHP developer, working with WordPress and Laravel
     Audio: interview_e49a39aa09b8.mp3
     State: ''
   tags:
@@ -25,7 +25,7 @@
 - id: 1783113857840
   fields:
     Front: У TopDevs і DataArt я працював з React, TypeScript і Node.js.
-    Back: At TopDevs and DataArt I worked with React, TypeScript, and Node.js.
+    Back: At TopDevs and DataArt I worked with React, TypeScript, and Nodejs
     Audio: interview_a09def8462bb.mp3
     State: ''
   tags:
@@ -41,7 +41,7 @@
 - id: 1783115114735
   fields:
     Front: В АА я керував переробкою платформ із застарілих систем на сучасну архітектуру.
-    Back: In The AA, I've been leading re-platforming from legacy systems to modern architecture.
+    Back: In The AA, I've been leading re-platforming from legacy systems to modern architecture
     Audio: interview_4d78d751fa35.mp3
     State: ''
   tags:
@@ -49,14 +49,14 @@
 - id: 1783115114771
   fields:
     Front: Я також веду перевірку коду та наставляю розробників у всій команді.
-    Back: I also lead code reviews and mentor developers across the team.
+    Back: I also lead code reviews and mentor developers across the team
     Audio: interview_f04854547aaf.mp3
     State: ''
   tags:
   - interview
 - id: 1783115114786
   fields:
-    Front: Поза роботою я веду YouTube-канал, присвячений розробці та розробці.
+    Front: Поза роботою я веду YouTube-канал, сфокусований на інженерії та розробці.
     Back: Outside of work, I run a YouTube channel focused on engineering and development.
     Audio: interview_07dc7ae14e38.mp3
     State: ''

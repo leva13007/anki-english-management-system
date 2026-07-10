@@ -31,8 +31,8 @@ INPUT_DIR="../tracks"
 OUTPUT_DIR="../converted_webm"
 mkdir -p "$OUTPUT_DIR"
 
-# silicon_valley_0380.webm
-counter=381
+# silicon_valley_0397.webm
+counter=398
 
 for file in "$INPUT_DIR"/*.mov; do
   # Створюємо імʼя з ведучими нулями: 0001, 0002, ...

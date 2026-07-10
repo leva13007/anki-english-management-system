@@ -1227,7 +1227,8 @@
   tags: []
 - id: 1780346303462
   fields:
-    Front: На відміну від інших країн, Австралія демонструвала коливання протягом усього цього періоду.
+    Front: На відміну від інших країн, Австралія (коливалася|демонструвала коливання) протягом усього
+      цього періоду.
     Back: Unlike the other countries, Australia fluctuated throughout the entire period
     Audio: L2_0189-Unlike_the.mp3
   tags: []
@@ -1239,8 +1240,8 @@
   tags: []
 - id: 1780346303464
   fields:
-    Front: Загалом ці цифри вказують на стійку тенденцію до зростання міського населення.
-    Back: Overall, the figures indicate a consistent trend towards growing urban populations.
+    Front: Загалом показники вказують на стійку тенденцію (у напрямку|до) зростання міського населення.
+    Back: Overall, the figures indicate a consistent trend towards growing urban populations
     Audio: L2_0191-Overall__the.mp3
   tags: []
 - id: 1780346303465
@@ -1251,7 +1252,7 @@
   tags: []
 - id: 1780346303466
   fields:
-    Front: Показник опустився до найнижчої позначки у 2010 році на рівні 18%.
+    Front: Показник досяг своєї найнижчої (точки|позначки) у 2010 році на рівні 18%.
     Back: The figure reached its lowest point in 2010 at 18%
     Audio: L2_0193-The_figure.mp3
   tags: []
@@ -1288,7 +1289,7 @@
 - id: 1780346303472
   fields:
     Front: Однак обсяг продажів у Японії значно знизився.
-    Back: However, the volume of sales in Japan declined considerably.
+    Back: However, the volume of sales in Japan declined considerably
     Audio: L2_0199-However__the.mp3
   tags: []
 - id: 1780346303473
@@ -1311,7 +1312,7 @@
   tags: []
 - id: 1780346303476
   fields:
-    Front: Більше того, ця тенденція тривала ще десять років.
+    Front: Більше того, ця тенденція (продовжувалася|тривала) ще десять років.
     Back: Moreover, this trend continued for another ten years
     Audio: L2_0203-Moreover__this.mp3
   tags: []
@@ -1630,56 +1631,57 @@
   tags: []
 - id: 1782077182743
   fields:
-    Front: Я був здивований браком професіоналізму, продемонстрований вашим персоналом
+    Front: Я був здивований браком професіоналізму, продемонстрованого вашим персоналом
     Back: I was surprised by the lack of professionalism displayed by your staff
     Audio: L2_0256-I_was.mp3
   tags: []
 - id: 1782077182744
   fields:
     Front: Ця проблема могла бути легко вирішена на ранньому етапі.
-    Back: This issue could have been resolved easily at an earlier stage.
+    Back: This issue could have been resolved easily at an earlier stage
     Audio: L2_0257-This_issue.mp3
   tags: []
 - id: 1782077182745
   fields:
-    Front: Я неодноразово намагався зв’язатися з вашою службою підтримки безуспішно.
-    Back: I made several attempts to contact your customer support team without success.
+    Front: Я зробив декілька спроб зв’язатися з вашою службою підтримки безуспішно.
+    Back: I made several attempts to contact your customer support team without success
     Audio: L2_0258-I_made.mp3
   tags: []
 - id: 1782077182746
   fields:
-    Front: Мені здається неприйнятним, що клієнтів залишають без будь-яких оновлень щодо ситуації.
-    Back: I find it unacceptable that customers are left without any updates regarding the situation.
+    Front: (Я знаходжу|Мені здається) це неприйнятним, що клієнти є залишинеми без будь-яких оновлень
+      щодо ситуації.
+    Back: I find it unacceptable that customers are left without any updates regarding the situation
     Audio: L2_0259-I_find.mp3
   tags: []
 - id: 1782077182747
   fields:
-    Front: Через цю помилку мені довелося змінити свої плани в останній момент.
-    Back: As a result of this error, I was forced to alter my plans at short notice.
+    Front: (Як результат цієї помилки|Через цю помилку) мені довелося змінити свої плани в останній момент.
+    Back: As a result of this error, I was forced to alter my plans at short notice
     Audio: L2_0260-As_a.mp3
   tags: []
 - id: 1782077182748
   fields:
     Front: Я очікував значно кращого обслуговування від компанії з такою репутацією.
-    Back: I expected a considerably higher standard of service from a company with such a reputation.
+    Back: I expected a considerably higher standard of service from a company with such a reputation
     Audio: L2_0261-I_expected.mp3
   tags: []
 - id: 1782077182749
   fields:
     Front: Моє бронювання було скасовано без попереднього повідомлення.
-    Back: My booking was cancelled without prior notice.
+    Back: My booking was cancelled without prior notice
     Audio: L2_0262-My_booking.mp3
   tags: []
 - id: 1782077182750
   fields:
-    Front: Особливе занепокоєння викликає той факт, що проблема досі залишається невирішеною.
-    Back: Of particular concern is the fact that the issue remains unresolved.
+    Front: Особливе занепокоєння викликає є той факт, що проблема досі залишається невирішеною.
+    Back: Of particular concern is the fact that the issue remains unresolved
     Audio: L2_0263-Of_particular.mp3
   tags: []
 - id: 1782077182751
   fields:
-    Front: Я був змушений витратити додатковий час та кошти через цю ситуацію.
-    Back: I was required to spend additional time and money as a consequence of this situation.
+    Front: Я був змушений витратити додатковий час та кошти як наслідок цієї ситуації
+    Back: I was required to spend additional time and money as a consequence of this situation
     Audio: L2_0264-I_was.mp3
   tags: []
 - id: 1782077182752
@@ -1691,7 +1693,7 @@
 - id: 1782077182753
   fields:
     Front: З огляду на обставини, я вважаю, що маю право на компенсацію.
-    Back: Given the circumstances, I believe that I am entitled to compensation.
+    Back: Given the circumstances, I believe that I am entitled to compensation
     Audio: L2_0266-Given_the.mp3
   tags: []
 - id: 1782077182754
@@ -1700,3 +1702,171 @@
     Back: If this matter is not handled appropriately, I will have no choice but to escalate it further.
     Audio: L2_0267-If_this.mp3
   tags: []
+- id: 1783463190926
+  fields:
+    Front: Я пишу, щоб висловити свою стурбованість щодо поточного стану місцевого парку.
+    Back: I am writing to express my concerns regarding the current condition of the local park.
+    Audio: l2-vocab_40ac9ebc473b.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463190950
+  fields:
+    Front: Я хотів би запропонувати кілька покращень, які можуть принести користь як персоналу, так і
+      відвідувачам.
+    Back: I would like to suggest several improvements that could benefit both staff and visitors.
+    Audio: l2-vocab_d3b86cebb5f7.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463190974
+  fields:
+    Front: Розглянувши ситуацію, що склалася, вважаю, що потрібні негайні дії.
+    Back: Having considered the current situation, I believe that immediate action is required.
+    Audio: l2-vocab_0d247397287b.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463190999
+  fields:
+    Front: Однією з головних проблем є відсутність належних умов для персоналу.
+    Back: One of the main issues is the lack of adequate facilities for members of staff.
+    Audio: l2-vocab_2f6c04fae0eb.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191023
+  fields:
+    Front: Ще один момент, який заслуговує на увагу, – незадовільне обслуговування місць загального користування.
+    Back: Another matter that deserves attention is the poor maintenance of public areas.
+    Audio: l2-vocab_6664715f29b0.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191049
+  fields:
+    Front: Крім того, існуючі об’єкти вже не відповідають потребам місцевої громади.
+    Back: Furthermore, the existing facilities no longer meet the needs of the local community.
+    Audio: l2-vocab_7649aac89f55.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191074
+  fields:
+    Front: У результаті багато людей перестали регулярно користуватися парком.
+    Back: As a result, many people have stopped using the park on a regular basis.
+    Audio: l2-vocab_18d5c6f19e73.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191098
+  fields:
+    Front: На мою думку, інвестиції в ці покращення принесуть користь усім у довгостроковій перспективі.
+    Back: In my opinion, investing in these improvements would benefit everyone in the long term.
+    Audio: l2-vocab_1b57d6502aa3.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191124
+  fields:
+    Front: Я настійно рекомендую замінити пошкоджене обладнання якнайшвидше.
+    Back: I would strongly recommend replacing the damaged equipment as soon as possible.
+    Audio: l2-vocab_cb961c42dc6e.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191148
+  fields:
+    Front: Крім того, по всій території потрібно встановити більше урн для сміття.
+    Back: In addition, more litter bins should be installed throughout the area.
+    Audio: l2-vocab_f618ba95ecfa.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191174
+  fields:
+    Front: Кімнату відпочинку можна було б зробити значно комфортнішою, поставивши сучасні меблі та покращивши
+      освітлення.
+    Back: The break room could be made considerably more comfortable by providing modern furniture and
+      better lighting.
+    Audio: l2-vocab_5fda314dc87b.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191199
+  fields:
+    Front: Співробітники були б більш продуктивними, якби вони мали доступ до приємної та добре обладнаної
+      зони відпочинку.
+    Back: Employees would be more productive if they had access to a pleasant and well-equipped break
+      area.
+    Audio: l2-vocab_f03387d1c203.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191223
+  fields:
+    Front: Можливо, варто також подумати про продовження часу роботи закладу.
+    Back: It may also be worth considering extending the opening hours of the facility.
+    Audio: l2-vocab_5931f400c1b6.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191248
+  fields:
+    Front: Іншим можливим рішенням було б запровадити регулярний графік технічного обслуговування.
+    Back: Another possible solution would be to introduce a regular maintenance schedule.
+    Audio: l2-vocab_a62de0d16d06.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191274
+  fields:
+    Front: Хоча ці вдосконалення вимагатимуть додаткового фінансування, вони будуть гідними інвестиціями.
+    Back: Although these improvements would require additional funding, they would represent a worthwhile
+      investment.
+    Audio: l2-vocab_5df212bd229b.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191299
+  fields:
+    Front: Я розумію, що фінансові ресурси можуть бути обмеженими; однак деякі зміни слід розглядати як
+      пріоритетні.
+    Back: I appreciate that financial resources may be limited; however, some changes should be regarded
+      as a priority.
+    Audio: l2-vocab_7936a0d4cea7.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191323
+  fields:
+    Front: Буду вдячний, якщо ці пропозиції будуть враховані.
+    Back: I would be grateful if these suggestions could be taken into consideration.
+    Audio: l2-vocab_9814b30aa0e1.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191348
+  fields:
+    Front: Сподіваюся, що найближчим часом будуть вжиті відповідні заходи для вирішення цих питань.
+    Back: I hope that appropriate measures will be taken to address these issues in the near future.
+    Audio: l2-vocab_3bf914ff0108.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191374
+  fields:
+    Front: Дякую, що знайшли час розглянути мої коментарі та рекомендації.
+    Back: Thank you for taking the time to consider my comments and recommendations.
+    Audio: l2-vocab_82bc08cbf783.mp3
+    State: ''
+  tags:
+  - interview
+- id: 1783463191399
+  fields:
+    Front: Я з нетерпінням чекаю почути від вас якнайшвидше.
+    Back: I look forward to hearing from you at your earliest convenience.
+    Audio: l2-vocab_345ebf6bf48b.mp3
+    State: ''
+  tags:
+  - interview

@@ -4703,7 +4703,7 @@
   tags: []
 - id: 1777250394560
   fields:
-    Front: Ми вже були відставали від графіка до цього
+    Front: Ми вже були відставали від графіка до цього [PrPer]
     Back: We had already been behind schedule before this
     Audio: IT_0792-We_had.mp3
   tags: []
@@ -5166,7 +5166,8 @@
   tags: []
 - id: 1783031365842
   fields:
-    Front: Адаптуватися означає змінювати свою поведінку з метою більш успішно справлятися з новою ситуацією
+    Front: Адаптуватися означає змінювати свою поведінку з метою справлятися&nbsp;більш успішно з новою
+      ситуацією
     Back: To adapt means to change your behaviour in order to deal more successfully with a new situation
     Audio: IT_0869-To_adapt_v1.mp3
   tags: []
@@ -5198,7 +5199,7 @@
 - id: 1783031365848
   fields:
     Front: Компонент був адаптований таким чином, щоб він підтримував обидві версії API
-    Back: The component was adapted in such a way that it supported both API versions.
+    Back: The component was adapted in such a way that it supported both API versions
     Audio: IT_0874-The_component.mp3
   tags: []
 - id: 1783031365849
@@ -5218,7 +5219,7 @@
 - id: 1783031365851
   fields:
     Front: Компанія найняла ще двох backend-розробників
-    Back: The company has hired two more backend developers.
+    Back: The company has hired two more backend developers
     Audio: IT_0877-The_company.mp3
   tags: []
 - id: 1783031365852
@@ -5230,74 +5231,76 @@
 - id: 1783031365853
   fields:
     Front: Якби ми найняли DevOps-інженера раніше, ми б уникнули багатьох проблем
-    Back: If we had hired a DevOps engineer earlier, we would have avoided many problems.
+    Back: If we had hired a DevOps engineer earlier, we would have avoided many problems
     Audio: IT_0879-If_we.mp3
   tags: []
 - id: 1783031365854
   fields:
     Front: Рідко компанія наймає Senior-розробника без технічної співбесіди
-    Back: Rarely does a company hire a Senior developer without a technical interview.
+    Back: Rarely does a company hire a Senior developer without a technical interview
     Audio: IT_0880-Rarely_does.mp3
   tags: []
 - id: 1783031365855
   fields:
-    Front: До того часу, коли я приєднався до команди, вже було найнято п’ятьох нових інженерів
-    Back: By the time I joined the team, five new engineers had already been hired.
+    Front: До того часу, коли я приєднався до команди, п’ятьох нових інженерів вже було найнято&nbsp;
+    Back: By the time I joined the team, five new engineers had already been hired
     Audio: IT_0881-By_the.mp3
   tags: []
 - id: 1783031365856
   fields:
     Front: Ми наймемо ще одного QA, якщо кількість проєктів продовжить зростати
-    Back: We will hire another QA engineer if the number of projects continues to grow.
+    Back: We will hire another QA engineer if the number of projects continues to grow
     Audio: IT_0882-We_will.mp3
   tags: []
 - id: 1783031365857
   fields:
-    Front: Робити внесок означає допомагати досягти результату або розвитку чогось
-    Back: To contribute means to help achieve a result or improve something.
+    Front: Робити внесок означає допомагати досягти результату або покращити щось
+    Back: To contribute means to help achieve a result or improve something
     Audio: IT_0883-To_contribute.mp3
   tags: []
 - id: 1783031365858
   fields:
     Front: Він регулярно робить внесок в open-source проєкти
-    Back: He regularly contributes to open-source projects.
+    Back: He regularly contributes to open-source projects
     Audio: IT_0884-He_regularly.mp3
   tags: []
 - id: 1783031365859
   fields:
-    Front: Що, на твою думку, найбільше сприяло успіху релізу?
+    Front: Що, на твою думку, сприяло найбільше успіху релізу?
     Back: What do you think contributed most to the success of the release?
     Audio: IT_0885-What_do.mp3
   tags: []
 - id: 1783031365860
   fields:
-    Front: Якби кожен зробив невеликий внесок, задача вже була б завершена
-    Back: If everyone had made a small contribution, the task would already be finished.
+    Front: Якби кожен зробив невеликий внесок, задача вже була б завершена [Mixed Conditional]
+    Back: If everyone had made a small contribution, the task would already be finished
     Audio: IT_0886-If_everyone.mp3
   tags: []
 - id: 1783031365861
   fields:
-    Front: Не лише код сприяє якості продукту, але й хороша документація
+    Front: Не лише код сприяє якості продукту, але й хороша документація також
     Back: Not only does the code contribute to the quality of the product, but good documentation does
       as well.
     Audio: IT_0887-Not_only.mp3
   tags: []
 - id: 1783031365862
   fields:
-    Front: Було доведено, що кешування значно покращує продуктивність
-    Back: Caching has been shown to contribute significantly to performance.
+    Front: Було доведено, що кешування значно покращує продуктивність | Кешування було таким що доведено
+      покращує значно продуктивність
+    Back: Caching has been shown to contribute significantly to performance
     Audio: IT_0888-Caching_has.mp3
   tags: []
 - id: 1783031365863
   fields:
-    Front: Вона робить внесок у цей проєкт уже понад три роки
-    Back: She has been contributing to this project for more than three years.
+    Front: Вона робить внесок у цей проєкт уже понад три роки [ PrPerfCont - дія почалась у минулому і
+      триває досі]
+    Back: She has been contributing to this project for more than three years
     Audio: IT_0889-She_has.mp3
   tags: []
 - id: 1783031365864
   fields:
-    Front: Брати на себе означає погодитися виконувати нову відповідальність або роботу
-    Back: To take on means to accept a new responsibility or piece of work.
+    Front: Брати на себе означає погодитися ~з~ нову відповідальність або частку роботу
+    Back: To take on means to accept a new responsibility or piece of work
     Audio: IT_0890-To_take.mp3
   tags: []
 - id: 1783031365865

@@ -5121,7 +5121,7 @@
 - id: 1768423872986
   fields:
     VideoFilename: pets_0124.webm
-    Front: He&#x27;s a short-hair, roguishly handsome.
+    Front: He's a short-hair, roguishly handsome
     Back: Він короткошерстий, зухвало привабливий.
   tags: []
 - id: 1768423872987
@@ -5793,7 +5793,7 @@
 - id: 1769992700270
   fields:
     VideoFilename: pets_0236.webm
-    Front: Maybe I made a mistake, saying we should come here. Let's go.
+    Front: Maybe I made a mistake, saying we should come here. Let's go
     Back: Може, я помилився, сказавши, що нам варто сюди прийти. Ходімо.
   tags: []
 - id: 1769992700271
@@ -8040,54 +8040,264 @@
 - id: 1783029969160
   fields:
     VideoFilename: silicon_valley_0389.webm
-    Front: And we’re just sitting around waiting for you.
-    Back: А ми просто сидимо й чекаємо на тебе.
+    Front: And we're just sitting around waiting for you
+    Back: А ми просто сидимо чекаючи на тебе.
   tags: []
 - id: 1783029969161
   fields:
     VideoFilename: silicon_valley_0390.webm
-    Front: I can solve it.
+    Front: I can solve it
     Back: Я можу це вирішити.
   tags: []
 - id: 1783029969162
   fields:
     VideoFilename: silicon_valley_0391.webm
-    Front: Richard, you’re a fucking rock star.
+    Front: Richard, you're a fucking rock star
     Back: Річарде, ти просто, блін, рок-зірка.
   tags: []
 - id: 1783029969163
   fields:
     VideoFilename: silicon_valley_0392.webm
-    Front: You just don’t know cloud.
+    Front: You just don't know cloud
     Back: Ти просто не знаєш хмарних технологій.
   tags: []
 - id: 1783029969164
   fields:
     VideoFilename: silicon_valley_0393.webm
-    Front: I’ve already talked to Peter Gregory about insourcing a consultant.
+    Front: I've already talked to Peter Gregory about insourcing a consultant
     Back: Я вже поговорив із Пітером Грегорі про залучення консультанта в штат.
   tags: []
 - id: 1783029969165
   fields:
     VideoFilename: silicon_valley_0394.webm
-    Front: We should get him if we can.
+    Front: We should get him if we can
     Back: Ми повинні найняти його, якщо зможемо.
   tags: []
 - id: 1783029969166
   fields:
     VideoFilename: silicon_valley_0395.webm
-    Front: I mean, he’s really gonna have to sell me.
+    Front: I mean, he's really gonna have to sell me
     Back: Тобто йому справді доведеться мене переконати.
   tags: []
 - id: 1783029969167
   fields:
     VideoFilename: silicon_valley_0396.webm
-    Front: The Carver’s here doing teardown.
+    Front: The Carver's here doing teardown
     Back: Карвер тут, проводить розбір системи.
   tags: []
 - id: 1783029969168
   fields:
     VideoFilename: silicon_valley_0397.webm
-    Front: Don’t touch anything. Failure is contagious.
+    Front: Don't touch anything. Failure is contagious
     Back: Нічого не чіпайте. Невдача заразна.
+  tags: []
+- id: 1783351233156
+  fields:
+    VideoFilename: silicon_valley_0398.webm
+    Front: I think that's him
+    Back: Думаю, це він.
+  tags: []
+- id: 1783351233157
+  fields:
+    VideoFilename: silicon_valley_0399.webm
+    Front: People refer to me as The Carver, but no one actually calls me that
+    Back: Люди називають мене The Carver, але ніхто насправді так мене не кличе.
+  tags: []
+- id: 1783351233158
+  fields:
+    VideoFilename: silicon_valley_0400.webm
+    Front: It's what people call a screen name
+    Back: Це те, що люди називають псевдонімом (нікнеймом).
+  tags: []
+- id: 1783351233159
+  fields:
+    VideoFilename: silicon_valley_0401.webm
+    Front: Yes, you guys are fucked, huh?
+    Back: Так, схоже, ви, хлопці, у повній дупі, га?
+  tags: []
+- id: 1783351233160
+  fields:
+    VideoFilename: silicon_valley_0402.webm
+    Front: We have a live demo in one week and our cloud is in the shitter
+    Back: У нас жива демонстрація через тиждень, а наша хмара в повній сраці.
+  tags: []
+- id: 1783351233161
+  fields:
+    VideoFilename: silicon_valley_0403.webm
+    Front: Yikes
+    Back: Йой.
+  tags: []
+- id: 1783351233162
+  fields:
+    VideoFilename: silicon_valley_0404.webm
+    Front: No one offered ten million dollars to acquire Gittawonk
+    Back: Ніхто не пропонував десять мільйонів доларів, щоб купити Gittawonk.
+  tags: []
+- id: 1783351233163
+  fields:
+    VideoFilename: silicon_valley_0405.webm
+    Front: Yeah, I agree with Richard, you should come work for us.
+    Back: Так, я згоден із Річардом, тобі варто працювати з нами.
+  tags: []
+- id: 1783351233164
+  fields:
+    VideoFilename: silicon_valley_0406.webm
+    Front: What’s it gonna take, a blow-job?
+    Back: Що для цього потрібно — мінет?
+  tags: []
+- id: 1783351233165
+  fields:
+    VideoFilename: silicon_valley_0407.webm
+    Front: Now you make me laugh, shaggy man.
+    Back: Тепер ти мене смішиш, волохатий чоловіче.
+  tags: []
+- id: 1783351233166
+  fields:
+    VideoFilename: silicon_valley_0408.webm
+    Front: All right, I’m in. I’ll see you guys Friday.
+    Back: Гаразд, я в справі. Побачимося в п’ятницю.
+  tags: []
+- id: 1783351233167
+  fields:
+    VideoFilename: silicon_valley_0409.webm
+    Front: Whole thing’s a scam, little scumbags.
+    Back: Усе це шахрайство, дрібні покидьки.
+  tags: []
+- id: 1783351233168
+  fields:
+    VideoFilename: silicon_valley_0410.webm
+    Front: Tara, this is the fellas
+    Back: Таро, це хлопці.
+  tags: []
+- id: 1783351233169
+  fields:
+    VideoFilename: silicon_valley_0411.webm
+    Front: Richard, I just need you to approve Kevin’s fee.
+    Back: Річарде, мені потрібно, щоб ти затвердив гонорар Кевіна.
+  tags: []
+- id: 1783351233170
+  fields:
+    VideoFilename: silicon_valley_0412.webm
+    Front: Twenty thousand dollars for two days.
+    Back: Двадцять тисяч доларів за два дні.
+  tags: []
+- id: 1783351233171
+  fields:
+    VideoFilename: silicon_valley_0413.webm
+    Front: Are you OK over there? You have any questions…?
+    Back: У тебе там усе гаразд? Є якісь запитання…?
+  tags: []
+- id: 1783351233172
+  fields:
+    VideoFilename: silicon_valley_0414.webm
+    Front: Why do you keep your lips pressed so tight together when you’re not talking?
+    Back: Чому ти так міцно стискаєш губи, коли мовчиш?
+  tags: []
+- id: 1783351233173
+  fields:
+    VideoFilename: silicon_valley_0415.webm
+    Front: So how did you bypass Bank of America’s network security?
+    Back: То як ти обійшов мережевий захист Bank of America?
+  tags: []
+- id: 1783351233174
+  fields:
+    VideoFilename: silicon_valley_0416.webm
+    Front: My lawyers told me I’m not allowed to discuss it.
+    Back: Мої юристи сказали, що мені не можна це обговорювати.
+  tags: []
+- id: 1783351233175
+  fields:
+    VideoFilename: silicon_valley_0417.webm
+    Front: Totally get it. That’s baller.
+    Back: Повністю розумію. Це круто.
+  tags: []
+- id: 1783351233176
+  fields:
+    VideoFilename: silicon_valley_0418.webm
+    Front: All right, I’m gonna go have a shower.
+    Back: Гаразд, я піду прийму душ.
+  tags: []
+- id: 1783351233177
+  fields:
+    VideoFilename: silicon_valley_0419.webm
+    Front: Uh, what was that?
+    Back: Е-е, що це було?
+  tags: []
+- id: 1783351233178
+  fields:
+    VideoFilename: silicon_valley_0420.webm
+    Front: It’s the opposite of jealousy.
+    Back: Це протилежність ревнощів.
+  tags: []
+- id: 1783351233179
+  fields:
+    VideoFilename: silicon_valley_0421.webm
+    Front: It sounds like it’s the opposite of normal.
+    Back: Звучить так, ніби це протилежність нормальному.
+  tags: []
+- id: 1783351233180
+  fields:
+    VideoFilename: silicon_valley_0422.webm
+    Front: Why are you telling me about this thing?
+    Back: Навіщо ти мені про це розповідаєш?
+  tags: []
+- id: 1783351233181
+  fields:
+    VideoFilename: silicon_valley_0423.webm
+    Front: Tara is attracted to you.
+    Back: Тара відчуває до тебе потяг.
+  tags: []
+- id: 1783351233182
+  fields:
+    VideoFilename: silicon_valley_0424.webm
+    Front: Yeah, freaked me out too
+    Back: Так, мене це теж налякало.
+  tags: []
+- id: 1783351233183
+  fields:
+    VideoFilename: silicon_valley_0425.webm
+    Front: I don’t want to have a threesome with you.
+    Back: Я не хочу займатися сексом утрьох із тобою.
+  tags: []
+- id: 1783351233184
+  fields:
+    VideoFilename: silicon_valley_0426.webm
+    Front: Listen, I don’t even have to be in the room
+    Back: Слухай, мені навіть не обов’язково бути в кімнаті.
+  tags: []
+- id: 1783351233185
+  fields:
+    VideoFilename: silicon_valley_0427.webm
+    Front: Right, so we’re all settled then.
+    Back: Чудово, отже, усе вирішено.
+  tags: []
+- id: 1783351233186
+  fields:
+    VideoFilename: silicon_valley_0428.webm
+    Front: Peter’s not really big on walking.
+    Back: Пітер не дуже любить ходити пішки.
+  tags: []
+- id: 1783351233187
+  fields:
+    VideoFilename: silicon_valley_0429.webm
+    Front: Driverless car.
+    Back: Безпілотний автомобіль.
+  tags: []
+- id: 1783351233188
+  fields:
+    VideoFilename: silicon_valley_0430.webm
+    Front: Select destination
+    Back: Оберіть пункт призначення.
+  tags: []
+- id: 1783351233189
+  fields:
+    VideoFilename: silicon_valley_0431.webm
+    Front: I’m going to 5230 Newell Road, Palo Alto.
+    Back: Я їду за адресою 5230 Newell Road, Пало-Альто.
+  tags: []
+- id: 1783351233190
+  fields:
+    VideoFilename: silicon_valley_0432.webm
+    Front: Buckle up, please.
+    Back: Будь ласка, пристебніться.
   tags: []
