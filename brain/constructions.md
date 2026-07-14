@@ -10,9 +10,10 @@
 | Not until | Not until X **did** Y begin |
 | Hardly | Hardly **had** X happened when Y... |
 
+| Have you ever had...? | |
 | introduce | впроваджувати, представляти |
 | miss | пропускати, не помічати |
-| inconvenience | незручність, турбота |
+| inconvenience/convenience | незручність, турбота |
 | lack | нестача, відсутність |
 | teardown | демонтаж, розбирання |
 | deviation | відхилення, відступ |
@@ -43,6 +44,19 @@
 | to bear the fruit | нести наслідки, відповідати за результат |
 | to bear in mind | мати на увазі, пам'ятати |
 | to bear the brunt | нести основний удар, приймати на себе основний тягар |
+| delighted/delightful | в захваті, радий / чудовий, приємний |
+| ...remember ... as if smth were yesterday | пам'ятати щось так, ніби це було вчора |
+| to manage to do smth | вдаватися щось зробити, справлятися з чимось |
+| obtain | отримувати, здобувати |
+| Evaluate | оцінювати, визначати |
+| Interpret | тлумачити, пояснювати |
+| Encourage | заохочувати, підтримувати |
+| Persuade | переконувати, умовляти |
+| Praise | хвалити, вихваляти |
+| State | заявляти, стверджувати |
+| ...appreciate that | цінувати, розуміти, усвідомлювати |
+| ...as good as | настільки ж добре, як |
+| be worried sick | бути дуже стурбованим, хвилюватися |
 
 
 
@@ -64,3 +78,6 @@ Conditional Questions
 What do you think (verb)...?
 
 exhibit A - шутка про бармена от Ендрю - типа бармен показывает что-то, а потом говорит "exhibit A" и все смеются
+
+
+I finally managed to obtain a copy of the report.

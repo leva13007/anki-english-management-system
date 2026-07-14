@@ -1708,73 +1708,73 @@
     Front: Я пишу, щоб висловити свою стурбованість щодо поточного стану місцевого парку.
     Back: I am writing to express my concerns regarding the current condition of the local park
     Audio: l2-vocab_40ac9ebc473b.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463190950
   fields:
     Front: Я хотів би запропонувати кілька покращень, які можуть принести користь як персоналу, так і
       відвідувачам.
     Back: I would like to suggest several improvements that could benefit both staff and visitors
     Audio: l2-vocab_d3b86cebb5f7.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463190974
   fields:
     Front: Розглянувши&nbsp;поточну ситуацію, я вважаю, що&nbsp;&nbsp;негайні дії необхідні. [<strong>Perfect
       Participle</strong> — дія завершена ДО головного речення]
     Back: Having considered the current situation, I believe that immediate action is required
     Audio: l2-vocab_0d247397287b.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463190999
   fields:
     Front: Однією з головних проблем є відсутність належних умов для персоналу
     Back: One of the main issues is the lack of adequate facilities for members of staff.
     Audio: l2-vocab_2f6c04fae0eb.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191023
   fields:
     Front: Ще один момент, який заслуговує на увагу, – незадовільне обслуговування місць загального користування.
     Back: Another matter that deserves attention is the poor maintenance of public areas
     Audio: l2-vocab_6664715f29b0.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191049
   fields:
     Front: Крім того, існуючі об’єкти вже не відповідають потребам місцевої громади.
     Back: Furthermore, the existing facilities no longer meet the needs of the local community
     Audio: l2-vocab_7649aac89f55.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191074
   fields:
     Front: У результаті багато людей перестали регулярно користуватися парком.
     Back: As a result, many people have stopped using the park on a regular basis.
     Audio: l2-vocab_18d5c6f19e73.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191098
   fields:
     Front: На мою думку, інвестування в ці покращення принесуть користь усім у довгостроковій перспективі.
     Back: In my opinion, investing in these improvements would benefit everyone in the long term
     Audio: l2-vocab_1b57d6502aa3.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191124
   fields:
     Front: Я б сильно рекомендував заміну пошкодженого обладнання якнайшвидше.
     Back: I would strongly recommend replacing the damaged equipment as soon as possible
     Audio: l2-vocab_cb961c42dc6e.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191148
   fields:
     Front: Крім того, більше урн для сміття повині бути встановленими по всій території.
     Back: In addition, more litter bins should be installed throughout the area
     Audio: l2-vocab_f618ba95ecfa.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191174
   fields:
     Front: Кімнату відпочинку можна було б зробити значно більш комфортною, поставивши сучасні меблі та
@@ -1782,8 +1782,8 @@
     Back: The break room could be made considerably more comfortable by providing modern furniture and
       better lighting
     Audio: l2-vocab_5fda314dc87b.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191199
   fields:
     Front: Співробітники були б більш продуктивними, якби вони мали доступ до приємної та добре обладнаної
@@ -1791,30 +1791,30 @@
     Back: Employees would be more productive if they had access to a pleasant and well-equipped break
       area.
     Audio: l2-vocab_f03387d1c203.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191223
   fields:
     Front: Це може також бути вартим розглянути продовження часу роботи закладу.
     Back: It may also be worth considering extending the opening hours of the facility.
     Audio: l2-vocab_5931f400c1b6.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191248
   fields:
     Front: Іншим можливим рішенням було б запровадити регулярний графік технічного обслуговування.
     Back: Another possible solution would be to introduce a regular maintenance schedule
     Audio: l2-vocab_a62de0d16d06.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191274
   fields:
     Front: Хоча ці вдосконалення вимагатимуть додаткового фінансування, вони відобразять гідну інвестицію
     Back: Although these improvements would require additional funding, they would represent a worthwhile
       investment
     Audio: l2-vocab_5df212bd229b.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191299
   fields:
     Front: Я розумію, що фінансові ресурси можуть бути обмеженими; однак деякі зміни повині бути розглянутими
@@ -1822,33 +1822,427 @@
     Back: I appreciate that financial resources may be limited; however, some changes should be regarded
       as a priority
     Audio: l2-vocab_7936a0d4cea7.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191323
   fields:
     Front: Я був би вдячний, якби ці пропозиції могли бути взяті (до розгляду|до уваги)
     Back: I would be grateful if these suggestions could be taken into consideration
     Audio: l2-vocab_9814b30aa0e1.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191348
   fields:
     Front: Я сподіваюся, що відповідні заходи будуть вжиті для вирішення цих проблем у найближчому майбутньому
     Back: I hope that appropriate measures will be taken to address these issues in the near future
     Audio: l2-vocab_3bf914ff0108.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191374
   fields:
     Front: Дякую, що знайшли час розглянути мої коментарі та рекомендації.
     Back: Thank you for taking the time to consider my comments and recommendations.
     Audio: l2-vocab_82bc08cbf783.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
 - id: 1783463191399
   fields:
     Front: Я з нетерпінням чекаю почути від вас якнайшвидше.
     Back: I look forward to hearing from you at your earliest convenience.
     Audio: l2-vocab_345ebf6bf48b.mp3
-  tags:
-  - interview
+    State: ''
+  tags: []
+- id: 1784071343868
+  fields:
+    Front: Ви коли-небудь замислювалися, чому так багато людей намагаються підтримувати здоровий баланс
+      між роботою та особистим життям?
+    Back: Have you ever wondered why so many people struggle to maintain a healthy work-life balance?
+    Audio: l2-vocab_9f9ced0e39f5.mp3
+    State: ''
+  tags: []
+- id: 1784071343890
+  fields:
+    Front: Уявіть собі світ, де штучний інтелект виконує більшість завдань, які виконують сьогодні люди.
+    Back: Imagine a world where artificial intelligence performs most of the tasks that people do today.
+    Audio: l2-vocab_e411dceac911.mp3
+    State: ''
+  tags: []
+- id: 1784071343915
+  fields:
+    Front: Небагато проблем привернули стільки уваги громадськості, як швидке зростання соціальних мереж.
+    Back: Few issues have attracted as much public attention as the rapid growth of social media.
+    Audio: l2-vocab_f0c271e63987.mp3
+    State: ''
+  tags: []
+- id: 1784071343940
+  fields:
+    Front: Сьогодні все більше людей обирають віддалену роботу, а не в традиційних офісах.
+    Back: Nowadays, more and more people are choosing to work remotely rather than in traditional offices.
+    Audio: l2-vocab_705d9321e053.mp3
+    State: ''
+  tags: []
+- id: 1784071343964
+  fields:
+    Front: Не можна заперечувати, що технології змінили майже всі аспекти сучасного життя.
+    Back: There is no denying that technology has transformed almost every aspect of modern life.
+    Audio: l2-vocab_b65f664e39b4.mp3
+    State: ''
+  tags: []
+- id: 1784071343989
+  fields:
+    Front: Ви коли-небудь замислювалися над тим, скільки часу щодня витрачаєте на екран?
+    Back: Have you ever considered how much time you spend looking at a screen every day?
+    Audio: l2-vocab_349958bf2ab9.mp3
+    State: ''
+  tags: []
+- id: 1784071344014
+  fields:
+    Front: В останні роки захист навколишнього середовища став однією з найбільш обговорюваних тем у всьому
+      світі.
+    Back: In recent years, environmental protection has become one of the most widely discussed topics
+      around the world.
+    Audio: l2-vocab_624da89190d8.mp3
+    State: ''
+  tags: []
+- id: 1784071344039
+  fields:
+    Front: Багато хто вважає, що волонтерство приносить користь лише тим, хто отримує допомогу, але чи
+      так це насправді?
+    Back: Many people believe that volunteering only benefits those who receive help, but is that really
+      the case?
+    Audio: l2-vocab_586306c174fc.mp3
+    State: ''
+  tags: []
+- id: 1784071344064
+  fields:
+    Front: Спосіб нашого спілкування кардинально змінився за останні два десятиліття.
+    Back: The way we communicate has changed dramatically over the past two decades.
+    Audio: l2-vocab_7f188b0024e5.mp3
+    State: ''
+  tags: []
+- id: 1784071344090
+  fields:
+    Front: Однією з найбільших проблем сучасного суспільства є пошук надійної інформації в Інтернеті.
+    Back: One of the greatest challenges facing modern society is finding reliable information online.
+    Audio: l2-vocab_fbc6b06e34a0.mp3
+    State: ''
+  tags: []
+- id: 1784071344115
+  fields:
+    Front: Ви коли-небудь замислювалися про те, скільки відходів ви виробляєте за один тиждень?
+    Back: Have you ever stopped to think about how much waste you produce in a single week?
+    Audio: l2-vocab_ed268f128fb8.mp3
+    State: ''
+  tags: []
+- id: 1784071344141
+  fields:
+    Front: Штучний інтелект розвивається безпрецедентними темпами, що викликає хвилювання та занепокоєння.
+    Back: Artificial intelligence is developing at an unprecedented pace, raising both excitement and
+      concern.
+    Audio: l2-vocab_e1efe69f7144.mp3
+    State: ''
+  tags: []
+- id: 1784071344163
+  fields:
+    Front: У сучасному стрімкому світі вести здоровий спосіб життя стає все складніше.
+    Back: Maintaining a healthy lifestyle has become increasingly difficult in today’s fast-paced world.
+    Audio: l2-vocab_7d8ca7bfbd98.mp3
+    State: ''
+  tags: []
+- id: 1784071344189
+  fields:
+    Front: Зміна клімату більше не є віддаленою загрозою; це реальність, яка впливає на мільйони людей.
+    Back: Climate change is no longer a distant threat; it is a reality affecting millions of people.
+    Audio: l2-vocab_d0560a41141a.mp3
+    State: ''
+  tags: []
+- id: 1784071344214
+  fields:
+    Front: Читання для задоволення стає все менш поширеним, особливо серед молодих поколінь.
+    Back: Reading for pleasure appears to be becoming less common, particularly among younger generations.
+    Audio: l2-vocab_ccb9817f4312.mp3
+    State: ''
+  tags: []
+- id: 1784071344240
+  fields:
+    Front: Віддалена робота стає все більш популярною після пандемії COVID-19, але думки залишаються розділеними.
+    Back: Remote working has become increasingly popular since the COVID-19 pandemic, but opinions remain
+      divided.
+    Audio: l2-vocab_9dc5e388b665.mp3
+    State: ''
+  tags: []
+- id: 1784071344264
+  fields:
+    Front: Багато спільнот шукають ефективні способи заохотити людей частіше переробляти відходи.
+    Back: Many communities are searching for effective ways to encourage people to recycle more regularly.
+    Audio: l2-vocab_37f048fb5a46.mp3
+    State: ''
+  tags: []
+- id: 1784071344290
+  fields:
+    Front: Усвідомлюємо ми це чи ні, соціальні мережі впливають на багато рішень, які ми приймаємо щодня.
+    Back: Whether we realise it or not, social media influence many of the decisions we make every day.
+    Audio: l2-vocab_ff05e0fbf672.mp3
+    State: ''
+  tags: []
+- id: 1784071344314
+  fields:
+    Front: Зростає занепокоєння, що люди стають занадто залежними від цифрових технологій.
+    Back: There is growing concern that people are becoming too dependent on digital technology.
+    Audio: l2-vocab_820fd23a2719.mp3
+    State: ''
+  tags: []
+- id: 1784071344338
+  fields:
+    Front: Важливість критичного мислення ніколи не була такою, як сьогодні.
+    Back: The importance of critical thinking has never been greater than it is today.
+    Audio: l2-vocab_865b73c072c5.mp3
+    State: ''
+  tags: []
+- id: 1784071344365
+  fields:
+    Front: Стихійні лиха часто нагадують нам, наскільки вразливими можуть бути сучасні суспільства.
+    Back: Natural disasters often remind us how vulnerable modern societies can be.
+    Audio: l2-vocab_e7398a3589fe.mp3
+    State: ''
+  tags: []
+- id: 1784071344392
+  fields:
+    Front: Не всі згодні з тим, що технічний прогрес завжди покращує якість нашого життя.
+    Back: Not everyone agrees that technological progress always improves our quality of life.
+    Audio: l2-vocab_216d9dc2b224.mp3
+    State: ''
+  tags: []
+- id: 1784071344414
+  fields:
+    Front: Уряди в усьому світі стикаються з дедалі складнішими екологічними та соціальними викликами.
+    Back: Across the world, governments are facing increasingly complex environmental and social challenges.
+    Audio: l2-vocab_9d43c710bccf.mp3
+    State: ''
+  tags: []
+- id: 1784071344439
+  fields:
+    Front: Часто стверджують, що невеликі індивідуальні дії можуть призвести до значних позитивних змін.
+    Back: It is often argued that small individual actions can lead to significant positive change.
+    Audio: l2-vocab_413c2af00f28.mp3
+    State: ''
+  tags: []
+- id: 1784071344465
+  fields:
+    Front: Оскільки суспільство продовжує розвиватися, люди постійно змушені пристосовуватися до нових
+      викликів і можливостей.
+    Back: As society continues to evolve, people are constantly being forced to adapt to new challenges
+      and opportunities.
+    Audio: l2-vocab_db7cc68d1174.mp3
+    State: ''
+  tags: []
+- id: 1784071344489
+  fields:
+    Front: Люди часто вважають, що сучасні технології завжди полегшують життя, але реальність набагато
+      складніша.
+    Back: People often assume that modern technology always makes life easier, but the reality is far
+      more complex.
+    Audio: l2-vocab_f1887f4335d1.mp3
+    State: ''
+  tags: []
+- id: 1784071344514
+  fields:
+    Front: Чи хотіли б ви змінити свої щоденні звички, якби це означало захист навколишнього середовища
+      для майбутніх поколінь?
+    Back: Would you be willing to change your daily habits if it meant protecting the environment for
+      future generations?
+    Audio: l2-vocab_17ef1023a300.mp3
+    State: ''
+  tags: []
+- id: 1784071344539
+  fields:
+    Front: На перший погляд, дистанційна робота здається ідеальним рішенням як для роботодавців, так і
+      для працівників.
+    Back: At first glance, remote working appears to be the perfect solution for both employers and employees.
+    Audio: l2-vocab_a04a4268cf9e.mp3
+    State: ''
+  tags: []
+- id: 1784071344564
+  fields:
+    Front: Важко уявити сучасне суспільство без соціальних мереж, незважаючи на виклики, які вони створюють.
+    Back: It is difficult to imagine modern society without social media, despite the challenges they
+      create.
+    Audio: l2-vocab_8963bc15439b.mp3
+    State: ''
+  tags: []
+- id: 1784071344589
+  fields:
+    Front: Щодня мільйони людей приймають рішення, які впливають не лише на них самих, а й на світ навколо
+      них.
+    Back: Every day, millions of people make decisions that affect not only themselves but also the world
+      around them.
+    Audio: l2-vocab_4f7c65716db5.mp3
+    State: ''
+  tags: []
+- id: 1784071344614
+  fields:
+    Front: Чому одні громади досягають успіху у вирішенні екологічних проблем, а інші продовжують боротися?
+    Back: Why do some communities succeed in solving environmental problems while others continue to struggle?
+    Audio: l2-vocab_15d294eb6514.mp3
+    State: ''
+  tags: []
+- id: 1784071344639
+  fields:
+    Front: Хоча штучний інтелект пропонує чудові можливості, він також піднімає важливі етичні питання.
+    Back: Although artificial intelligence offers remarkable opportunities, it also raises important ethical
+      questions.
+    Audio: l2-vocab_e57f8ed43d81.mp3
+    State: ''
+  tags: []
+- id: 1784071344665
+  fields:
+    Front: Тривають дискусії про те, чи технічний прогрес покращує чи погіршує якість нашого життя.
+    Back: There is an ongoing debate about whether technological progress is improving or damaging our
+      quality of life.
+    Audio: l2-vocab_ec263188a7b5.mp3
+    State: ''
+  tags: []
+- id: 1784071344689
+  fields:
+    Front: Більшість людей погодиться, що підтримувати здоровий спосіб життя важливо; однак набагато менше
+      досягають цього.
+    Back: Most people would agree that maintaining a healthy lifestyle is important; however, far fewer
+      actually achieve it.
+    Audio: l2-vocab_a1e77b20fb41.mp3
+    State: ''
+  tags: []
+- id: 1784071344715
+  fields:
+    Front: Що, якби одне рішення могло мати тривалий вплив як на ваше майбутнє, так і на ширшу спільноту?
+    Back: What if a single decision could have a lasting impact on both your future and the wider community?
+    Audio: l2-vocab_c3d8b154f12e.mp3
+    State: ''
+  tags: []
+- id: 1784071344739
+  fields:
+    Front: Багато сучасних глобальних проблем неможливо вирішити без співпраці між окремими людьми, підприємствами
+      та урядами.
+    Back: Many of today’s global challenges cannot be solved without cooperation between individuals,
+      businesses and governments.
+    Audio: l2-vocab_472e81dc416b.mp3
+    State: ''
+  tags: []
+- id: 1784071344764
+  fields:
+    Front: Стає все більш очевидним, що освіта відіграє вирішальну роль у підготовці людей до непередбачуваного
+      майбутнього.
+    Back: It is becoming increasingly clear that education plays a crucial role in preparing people for
+      an unpredictable future.
+    Audio: l2-vocab_489b185d1703.mp3
+    State: ''
+  tags: []
+- id: 1784071344790
+  fields:
+    Front: Деякі люди стверджують, що волонтерство – це просто прояв доброти, тоді як інші бачать у ньому
+      можливість особистісного зростання.
+    Back: Some people argue that volunteering is simply an act of kindness, whereas others see it as an
+      opportunity for personal growth.
+    Audio: l2-vocab_00ef37350de6.mp3
+    State: ''
+  tags: []
+- id: 1784071344814
+  fields:
+    Front: Жодне покоління не зазнавало технологічних змін так швидко, як це ми живемо сьогодні.
+    Back: No generation has experienced technological change as rapidly as the one we are living through
+      today.
+    Audio: l2-vocab_e08bd35bf6a8.mp3
+    State: ''
+  tags: []
+- id: 1784071344839
+  fields:
+    Front: 'Незалежно від того, обговорюємо ми зміну клімату, громадське здоров’я чи штучний інтелект,
+      один факт залишається незаперечним: обґрунтовані рішення мають значення.'
+    Back: 'Whether we are discussing climate change, public health or artificial intelligence, one fact
+      remains undeniable: informed decisions matter.'
+    Audio: l2-vocab_64e0becc5e40.mp3
+    State: ''
+  tags: []
+- id: 1784071344865
+  fields:
+    Front: Питання про те, чи приносять технології більше переваг, ніж недоліків, продовжує розділяти
+      громадську думку.
+    Back: The question of whether technology brings more benefits than drawbacks continues to divide public
+      opinion.
+    Audio: l2-vocab_4a8ab28acd95.mp3
+    State: ''
+  tags: []
+- id: 1784071344889
+  fields:
+    Front: Для багатьох людей досягнення здорового балансу між роботою та особистим життям стало одним
+      із найбільших викликів сучасного життя.
+    Back: For many people, achieving a healthy work-life balance has become one of the greatest challenges
+      of modern life.
+    Audio: l2-vocab_4008db9cb369.mp3
+    State: ''
+  tags: []
+- id: 1784071344914
+  fields:
+    Front: Чи справді одна людина може змінити ситуацію у вирішенні глобальних екологічних проблем?
+    Back: Can a single individual really make a difference in tackling global environmental problems?
+    Audio: l2-vocab_53e865f60596.mp3
+    State: ''
+  tags: []
+- id: 1784071344939
+  fields:
+    Front: Незважаючи на значний технічний прогрес, багато соціальних питань залишаються невирішеними.
+    Back: Despite significant technological advances, many social issues remain unresolved.
+    Audio: l2-vocab_3eeb5d103f73.mp3
+    State: ''
+  tags: []
+- id: 1784071344964
+  fields:
+    Front: За останні кілька років спостерігається помітне підвищення обізнаності громадськості про психічне
+      здоров’я.
+    Back: There has been a noticeable increase in public awareness of mental health over the past few
+      years.
+    Audio: l2-vocab_3b597da6dc80.mp3
+    State: ''
+  tags: []
+- id: 1784071344989
+  fields:
+    Front: Від зміни клімату до штучного інтелекту, сучасні виклики вимагають продуманих і обґрунтованих
+      рішень.
+    Back: From climate change to artificial intelligence, today’s challenges require thoughtful and well-informed
+      decisions.
+    Audio: l2-vocab_be50d115f495.mp3
+    State: ''
+  tags: []
+- id: 1784071345014
+  fields:
+    Front: Громадська думка залишається розділеною щодо ролі, яку повинні відігравати уряди у вирішенні
+      соціальних та екологічних проблем.
+    Back: Public opinion remains divided over the role that governments should play in addressing social
+      and environmental issues.
+    Audio: l2-vocab_daedb881e2ec.mp3
+    State: ''
+  tags: []
+- id: 1784071345039
+  fields:
+    Front: Останні події докорінно змінили спосіб роботи, навчання та спілкування людей.
+    Back: Recent developments have fundamentally changed the way people work, learn and communicate.
+    Audio: l2-vocab_cca3b636a44e.mp3
+    State: ''
+  tags: []
+- id: 1784071345064
+  fields:
+    Front: У той час як одні вважають, що прогрес залежить лише від інновацій, інші стверджують, що освіта
+      та критичне мислення однаково важливі.
+    Back: While some believe that progress is driven by innovation alone, others argue that education
+      and critical thinking are equally important.
+    Audio: l2-vocab_3ceee466f768.mp3
+    State: ''
+  tags: []
+- id: 1784071345089
+  fields:
+    Front: У все більш взаємопов’язаному світі вибір, який ми робимо сьогодні, може мати наслідки для
+      майбутніх поколінь.
+    Back: In an increasingly interconnected world, the choices we make today may have consequences for
+      generations to come.
+    Audio: l2-vocab_1da65305b47b.mp3
+    State: ''
+  tags: []
