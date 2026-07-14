@@ -20,7 +20,7 @@
 - id: 1772715543029
   fields:
     Front: Інвестиції в освіту (можуть) мати позитивний вплив на економіку країни.
-    Back: Investment in education can have a positive impact on a country's economy.
+    Back: Investment in education can have a positive impact on a country's economy
     Audio: L2_0004-Investment_in.mp3
   tags: []
 - id: 1772715543030
@@ -51,7 +51,7 @@
 - id: 1772715543034
   fields:
     Front: Книги допомагають людям краще розуміти проблеми суспільства.
-    Back: Books help people better understand the problems of society.
+    Back: Books help people better understand the problems of society
     Audio: L2_0009-Books_help.mp3
   tags: []
 - id: 1772715543035
@@ -99,7 +99,7 @@
 - id: 1772715543042
   fields:
     Front: Висока грамотність дозволяє людям розуміти складні тексти більш легко
-    Back: High literacy allows people to understand complex texts more easily.
+    Back: High literacy allows people to understand complex texts more easily
     Audio: L2_0017-High_literacy.mp3
   tags: []
 - id: 1772715543043
@@ -1422,11 +1422,11 @@
   fields:
     Front: Показник досяг піку у 2008 році на рівні 85 мільйонів.
     Back: The figure peaked in 2008 at 85 million
-    Audio: L2_0221-The_figure.mp3
+    Audio: L2_0221-The_figure_v2.mp3
   tags: []
 - id: 1780346303495
   fields:
-    Front: Споживання (досягло|опустилось) до найнижчої позначки у 2003 році.
+    Front: Споживання досягло своєї найнижчої позначки у 2003 році.
     Back: Consumption reached its lowest point in 2003
     Audio: L2_0222-Consumption_reached.mp3
   tags: []
@@ -1505,7 +1505,7 @@
   tags: []
 - id: 1782077182722
   fields:
-    Front: Проте жодного ефективного заходу для виправлення ситуації не було вжито.
+    Front: Однак жодних ефективних заходів не було вжито для виправлення ситуації
     Back: However, no effective action was taken to rectify the situation
     Audio: L2_0235-However__no.mp3
   tags: []
@@ -1686,8 +1686,8 @@
   tags: []
 - id: 1782077182752
   fields:
-    Front: Я хотів би, щоб були вжиті необхідні заходи для виправлення цієї помилки.
-    Back: I would like the necessary steps to be taken to rectify this mistake.
+    Front: Я хотів би, щоб були вжиті необхідні (кроки|заходи) для виправлення цієї помилки.
+    Back: I would like the necessary steps to be taken to rectify this mistake
     Audio: L2_0265-I_would.mp3
   tags: []
 - id: 1782077182753
@@ -1698,57 +1698,53 @@
   tags: []
 - id: 1782077182754
   fields:
-    Front: Якщо це питання не буде вирішене належним чином, я буду змушений передати його далі.
-    Back: If this matter is not handled appropriately, I will have no choice but to escalate it further.
+    Front: Якщо це питання не буде вирішене належним чином, у мене не буде іншого вибору&nbsp;окрім як
+      ескалювати його далі.
+    Back: If this matter is not handled appropriately, I will have no choice but to escalate it further
     Audio: L2_0267-If_this.mp3
   tags: []
 - id: 1783463190926
   fields:
     Front: Я пишу, щоб висловити свою стурбованість щодо поточного стану місцевого парку.
-    Back: I am writing to express my concerns regarding the current condition of the local park.
+    Back: I am writing to express my concerns regarding the current condition of the local park
     Audio: l2-vocab_40ac9ebc473b.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463190950
   fields:
     Front: Я хотів би запропонувати кілька покращень, які можуть принести користь як персоналу, так і
       відвідувачам.
-    Back: I would like to suggest several improvements that could benefit both staff and visitors.
+    Back: I would like to suggest several improvements that could benefit both staff and visitors
     Audio: l2-vocab_d3b86cebb5f7.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463190974
   fields:
-    Front: Розглянувши ситуацію, що склалася, вважаю, що потрібні негайні дії.
-    Back: Having considered the current situation, I believe that immediate action is required.
+    Front: Розглянувши&nbsp;поточну ситуацію, я вважаю, що&nbsp;&nbsp;негайні дії необхідні. [<strong>Perfect
+      Participle</strong> — дія завершена ДО головного речення]
+    Back: Having considered the current situation, I believe that immediate action is required
     Audio: l2-vocab_0d247397287b.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463190999
   fields:
-    Front: Однією з головних проблем є відсутність належних умов для персоналу.
+    Front: Однією з головних проблем є відсутність належних умов для персоналу
     Back: One of the main issues is the lack of adequate facilities for members of staff.
     Audio: l2-vocab_2f6c04fae0eb.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191023
   fields:
     Front: Ще один момент, який заслуговує на увагу, – незадовільне обслуговування місць загального користування.
-    Back: Another matter that deserves attention is the poor maintenance of public areas.
+    Back: Another matter that deserves attention is the poor maintenance of public areas
     Audio: l2-vocab_6664715f29b0.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191049
   fields:
     Front: Крім того, існуючі об’єкти вже не відповідають потребам місцевої громади.
-    Back: Furthermore, the existing facilities no longer meet the needs of the local community.
+    Back: Furthermore, the existing facilities no longer meet the needs of the local community
     Audio: l2-vocab_7649aac89f55.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191074
@@ -1756,41 +1752,36 @@
     Front: У результаті багато людей перестали регулярно користуватися парком.
     Back: As a result, many people have stopped using the park on a regular basis.
     Audio: l2-vocab_18d5c6f19e73.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191098
   fields:
-    Front: На мою думку, інвестиції в ці покращення принесуть користь усім у довгостроковій перспективі.
-    Back: In my opinion, investing in these improvements would benefit everyone in the long term.
+    Front: На мою думку, інвестування в ці покращення принесуть користь усім у довгостроковій перспективі.
+    Back: In my opinion, investing in these improvements would benefit everyone in the long term
     Audio: l2-vocab_1b57d6502aa3.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191124
   fields:
-    Front: Я настійно рекомендую замінити пошкоджене обладнання якнайшвидше.
-    Back: I would strongly recommend replacing the damaged equipment as soon as possible.
+    Front: Я б сильно рекомендував заміну пошкодженого обладнання якнайшвидше.
+    Back: I would strongly recommend replacing the damaged equipment as soon as possible
     Audio: l2-vocab_cb961c42dc6e.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191148
   fields:
-    Front: Крім того, по всій території потрібно встановити більше урн для сміття.
-    Back: In addition, more litter bins should be installed throughout the area.
+    Front: Крім того, більше урн для сміття повині бути встановленими по всій території.
+    Back: In addition, more litter bins should be installed throughout the area
     Audio: l2-vocab_f618ba95ecfa.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191174
   fields:
-    Front: Кімнату відпочинку можна було б зробити значно комфортнішою, поставивши сучасні меблі та покращивши
-      освітлення.
+    Front: Кімнату відпочинку можна було б зробити значно більш комфортною, поставивши сучасні меблі та
+      краще освітлення.
     Back: The break room could be made considerably more comfortable by providing modern furniture and
-      better lighting.
+      better lighting
     Audio: l2-vocab_5fda314dc87b.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191199
@@ -1800,58 +1791,51 @@
     Back: Employees would be more productive if they had access to a pleasant and well-equipped break
       area.
     Audio: l2-vocab_f03387d1c203.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191223
   fields:
-    Front: Можливо, варто також подумати про продовження часу роботи закладу.
+    Front: Це може також бути вартим розглянути продовження часу роботи закладу.
     Back: It may also be worth considering extending the opening hours of the facility.
     Audio: l2-vocab_5931f400c1b6.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191248
   fields:
     Front: Іншим можливим рішенням було б запровадити регулярний графік технічного обслуговування.
-    Back: Another possible solution would be to introduce a regular maintenance schedule.
+    Back: Another possible solution would be to introduce a regular maintenance schedule
     Audio: l2-vocab_a62de0d16d06.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191274
   fields:
-    Front: Хоча ці вдосконалення вимагатимуть додаткового фінансування, вони будуть гідними інвестиціями.
+    Front: Хоча ці вдосконалення вимагатимуть додаткового фінансування, вони відобразять гідну інвестицію
     Back: Although these improvements would require additional funding, they would represent a worthwhile
-      investment.
+      investment
     Audio: l2-vocab_5df212bd229b.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191299
   fields:
-    Front: Я розумію, що фінансові ресурси можуть бути обмеженими; однак деякі зміни слід розглядати як
-      пріоритетні.
+    Front: Я розумію, що фінансові ресурси можуть бути обмеженими; однак деякі зміни повині бути розглянутими
+      як пріоритетні.
     Back: I appreciate that financial resources may be limited; however, some changes should be regarded
-      as a priority.
+      as a priority
     Audio: l2-vocab_7936a0d4cea7.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191323
   fields:
-    Front: Буду вдячний, якщо ці пропозиції будуть враховані.
-    Back: I would be grateful if these suggestions could be taken into consideration.
+    Front: Я був би вдячний, якби ці пропозиції могли бути взяті (до розгляду|до уваги)
+    Back: I would be grateful if these suggestions could be taken into consideration
     Audio: l2-vocab_9814b30aa0e1.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191348
   fields:
-    Front: Сподіваюся, що найближчим часом будуть вжиті відповідні заходи для вирішення цих питань.
-    Back: I hope that appropriate measures will be taken to address these issues in the near future.
+    Front: Я сподіваюся, що відповідні заходи будуть вжиті для вирішення цих проблем у найближчому майбутньому
+    Back: I hope that appropriate measures will be taken to address these issues in the near future
     Audio: l2-vocab_3bf914ff0108.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191374
@@ -1859,7 +1843,6 @@
     Front: Дякую, що знайшли час розглянути мої коментарі та рекомендації.
     Back: Thank you for taking the time to consider my comments and recommendations.
     Audio: l2-vocab_82bc08cbf783.mp3
-    State: ''
   tags:
   - interview
 - id: 1783463191399
@@ -1867,6 +1850,5 @@
     Front: Я з нетерпінням чекаю почути від вас якнайшвидше.
     Back: I look forward to hearing from you at your earliest convenience.
     Audio: l2-vocab_345ebf6bf48b.mp3
-    State: ''
   tags:
   - interview
