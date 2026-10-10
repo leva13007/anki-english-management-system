@@ -1,0 +1,19 @@
+ANKI ENGLISH DECKS — INSTALLATION
+
+1. Install Anki Desktop from https://apps.ankiweb.net/ and open it.
+2. Extract this ZIP archive.
+3. In Anki, choose File → Import and select each .apkg file in the decks folder.
+   You can also open each .apkg file directly. Import all seven packages to get
+   the complete collection. Anki will add the notes and media to your profile.
+4. Start studying from the Decks screen. Each deck can be studied separately.
+
+The packages include their card templates and media. You do not need Python,
+AnkiConnect, or this source repository to study the decks.
+
+This is a content snapshot. Review scheduling and learning history are not
+included, so every learner starts with their own progress. Importing again into
+the same profile may update matching notes; back up your Anki collection first
+if you have edited these notes yourself.
+
+For updates, download the newest anki-english-decks.zip release and import the
+packages again. Use AnkiWeb Sync to sync your personal progress across devices.

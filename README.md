@@ -7,6 +7,40 @@ stack: Python, YAML, AnkiConnect
 
 Version-controlled source of truth for all Anki flashcard decks. Cards and note types are stored as YAML; AnkiConnect bridges local files and Anki over HTTP.
 
+## Download and study the decks
+
+To use the cards, download the latest **`anki-english-decks.zip`** from the repository's
+[GitHub Releases](https://github.com/leva13007/anki-english-management-system/releases). Extract it
+and import the `.apkg` files from the `decks/` folder into Anki (`File → Import`, or open each
+package). Import all seven packages for the full collection. The packages include the card models,
+templates, and media; learners do not need Python, AnkiConnect, or this source repository.
+
+The release is a clean content snapshot: it does not contain the maintainer's review schedule or
+learning history. Each learner gets their own progress. After importing, use Anki's normal study
+screen and AnkiWeb Sync to carry personal progress between devices. See the included `INSTALL.txt`
+for the short install guide.
+
+### Publishing an updated download
+
+Maintainers need Anki Desktop open with AnkiConnect enabled and the repository synced to the desired
+content. Build and check the archive with:
+
+```
+source .venv/bin/activate
+python scripts/validate.py
+python scripts/sync.py --dry-run
+python scripts/build_distribution.py
+```
+
+The builder stops if any YAML card is missing from Anki, so the exported packages cannot silently
+omit cards. It writes `distribution/build/anki-english-decks.zip`; upload that file to a new GitHub
+Release and describe the content changes in the release notes. The build directory is ignored by
+Git because the archive is a generated release artifact, not a second source of truth.
+
+The download is deliberately provided as Anki packages instead of asking learners to clone this
+repository or run its sync scripts. The repository is the editable source and maintainer workflow;
+the `.apkg` files are Anki's portable import format and carry each deck's media and note templates.
+
 ## workflows
 
 > Activate venv first: `source .venv/bin/activate`
@@ -181,6 +215,9 @@ scripts/
   generate_audio.py   — interactive ElevenLabs TTS session; fills empty Audio fields
   import_backlog.py   — imports backlog.md lines into cards.yaml with auto-translated Front
   generate_handwriting_pdf.py — PDF of today's due cards in a dotted tracing font
+  build_distribution.py — exports portable .apkg files and assembles the release ZIP
+distribution/
+  INSTALL.txt           — learner-facing import instructions included in the ZIP
 kg_primary_dots/      — dotted handwriting-practice fonts (.ttf)
 handwriting_practice/ — generated PDFs from generate_handwriting_pdf.py (gitignored)
 .env                  — API keys (gitignored, never commit)
@@ -205,16 +242,16 @@ reviews_and_strategy/  — YouTube stream review/strategy notes, unrelated to fl
 
 | dir                                        | Anki deck name  | cards | purpose                                                                                                             |
 | ------------------------------------------ | --------------- | ----- | ------------------------------------------------------------------------------------------------------------------- |
-| [it-deck](./decks/it-deck/)                 | IT_deck         | 1038  | IT professional vocabulary — sentence production for work communication                                            |
-| [video-by-movies](./decks/video-by-movies/) | Video_by_movies | 1481  | Listening + spoken fluency — clips from Sherlock, Silicon Valley, Secret Life of Pets                              |
-| [interview](./decks/interview/)             | Interview       | 79    | Interview prep: State = interview question (ukr), Front = ukr translation of answer (manual), Back = English answer |
+| [it-deck](./decks/it-deck/)                 | IT_deck         | 1071  | IT professional vocabulary — sentence production for work communication                                            |
+| [video-by-movies](./decks/video-by-movies/) | Video_by_movies | 1516  | Listening + spoken fluency — clips from Sherlock, Silicon Valley, Secret Life of Pets                              |
+| [interview](./decks/interview/)             | Interview       | 240   | Interview prep: State = interview question (ukr), Front = ukr translation of answer (manual), Back = English answer |
 | [l2-vocab](./decks/l2-vocab/)               | L2_vocab        | 407   | Vocabulary from ESOL L2 Writing/Reading course — has drifted toward IELTS Writing (see docs/ielts-roadmap.md)       |
-| [medicine](./decks/medicine/)               | Medicine        | 100   | Medical vocabulary for GP visits and health conversations                                                           |
+| [medicine](./decks/medicine/)               | Medicine        | 201   | Medical vocabulary for GP visits and health conversations                                                           |
 | [book](./decks/book/)                       | Book            | 53    | Phrases and expressions collected while reading English books                                                       |
 | [test-english](./decks/test-english/)       | test-english    | 130   | Grammar & vocabulary from test-english.com — sentence production                                                    |
 
 See [docs/decks-overview.md](./docs/decks-overview.md) for full context on each deck.
 
-## next step
-
-Sync 81 new Silicon Valley S1 clips from Anki (`sync_back.py --add-new --download-media`). Rebuild interview deck. Expand it-deck with code review and stand-up vocabulary (see [docs/word-lists.md](./docs/word-lists.md)).
+The current source contains **3,618 cards across seven decks**. Counts above describe the YAML source
+and are refreshed when this README is updated; the generated release manifest records exact counts
+and checksums for each package.

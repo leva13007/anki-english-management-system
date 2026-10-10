@@ -273,7 +273,13 @@ def build_plan(models, check_media_hashes):
     print("✓ Checking media...")
     # Which of them are already in Anki
     if needed_media:
-        in_anki = set(anki("getMediaFilesNames", pattern="*"))
+        # Anki's media manager normalizes filenames to lowercase on storage.
+        # Compare case-insensitively so cards that refer to mixed-case source
+        # filenames do not appear to need repeated uploads.
+        in_anki = {
+            filename.casefold()
+            for filename in anki("getMediaFilesNames", pattern="*")
+        }
     else:
         in_anki = set()
 
@@ -285,7 +291,7 @@ def build_plan(models, check_media_hashes):
             plan.errors.append(f"media file {filename!r} is referenced in cards but missing from media/")
             continue
 
-        if filename not in in_anki:
+        if filename.casefold() not in in_anki:
             plan.media_to_upload.append(filename)
             continue
 

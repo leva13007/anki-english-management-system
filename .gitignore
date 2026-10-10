@@ -3,6 +3,7 @@ __pycache__/
 backups/
 node_modules/
 handwriting_practice/
+distribution/build/
 .env
 
 .DS_Store
